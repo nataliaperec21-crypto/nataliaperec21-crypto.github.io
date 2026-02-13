@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Мой первый сайт</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Подключение CSS -->
-  <link rel="stylesheet" href="style.css">
+    <title>Иван Кулинич — Портфолио</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Мой сайт2</h1>
-    <nav>
-      <a href="#">Главная</a>
-      <a href="#">Обо мне</a>
-      <a href="#">Контакты</a>
-    </nav>
-  </header>
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">IK</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
 
-  <main>
-    <section>
-      <h2>О проекте</h2>
-      <p>Это мой первый сайт, выложенный в интернет.</p>
-    </section>
+    <div class="hero container">
+        <h1>Иван Кулинич</h1>
+        <p>Frontend разработчик (HTML / CSS)</p>
+        <a href="#portfolio" class="btn">Смотреть проекты</a>
+    </div>
+</header>
 
-    <section>
-      <h2>Контент</h2>
-      <article>
-        <h3>Первая статья</h3>
-        <p>Я учу HTML и CSS шаг за шагом.</p>
-      </article>
-    </section>
-  </main>
+<section id="about" class="section">
+    <div class="container">
+        <h2>Обо мне</h2>
+        <p class="section-text">
+            Я начинающий frontend-разработчик. Создаю адаптивные сайты,
+            изучаю современные технологии и постоянно совершенствую навыки.
+        </p>
+    </div>
+</section>
 
-  <footer>
-    <p>© 2026</p>
-  </footer>
+<section id="portfolio" class="section light">
+    <div class="container">
+        <h2>Портфолио</h2>
+
+        <div class="portfolio-grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="">
+                <h3>Landing Page</h3>
+                <p>Одностраничный сайт для бизнеса</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="">
+                <h3>Сайт-портфолио</h3>
+                <p>Персональный сайт разработчика</p>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="">
+                <h3>Интернет-магазин</h3>
+                <p>Верстка каталога товаров</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacts" class="section">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Email: example@mail.com</p>
+        <p>Telegram: @username</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Иван Кулинич</p>
+</footer>
 
 </body>
 </html>
