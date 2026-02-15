@@ -1,141 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>Для моей любимой ❤️</title>
-<style>
-body { margin:0; overflow:hidden; background:black; font-family:Arial, sans-serif; color:white;}
-#overlay{position:absolute;width:100%;height:100%;display:flex;align-items:center;justify-content:center;z-index:10;cursor:pointer;}
-#startText{font-size:32px;opacity:0.8;}
-#finalMessage{position:absolute;width:100%;text-align:center;top:40%;font-size:48px;opacity:0;z-index:20;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Довгинка Михайло — Портфолио</title>
+    <style>
+    /* Вставь сюда весь CSS, который ты написал */
+    .btnh {
+      width: 60px;
+      height: 60px;
+      background-color: black;
+      position: fixed;
+      z-index: 100;
+      cursor: pointer;
+      top: 70px;
+      left: 20px; 
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btnh div {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px 0;
+      transition: 0.3s ease;
+    }
+
+    .btnh::before,
+    .btnh::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border-style: solid;
+      border-color: white;
+      transition: opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
+    }
+
+    .btnh::before {
+      bottom: 0;
+      left: 0;
+      border-left-width: 1px;
+      border-top-width: 1px;
+    }
+
+    .btnh::after {
+      top: 0;
+      right: 0;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+    }
+
+    .btnh:hover::before,
+    .btnh:hover::after {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+  </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="overlay">
-  <div id="startText">Нажми на подарок 🎁</div>
-</div>
+<header class="header">
+    <div class="container nav-container">
+        <div class="logo">N+M</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
 
-<div id="finalMessage">
-  Я люблю тебя, моя милая…<br>
-  С тобой — навсегда ❤️
-</div>
+    <div class="hero container">
+        <h1>Довгинка Михайло</h1>
+        <p>Frontend разработчик (HTML / CSS)</p>
+        <a href="#portfolio" class="btn">Смотреть проекты</a>
+    </div>
+</header>
 
-<audio id="music1" src="1.mp3"></audio>
-<audio id="music2" src="2.mp3"></audio>
+<section id="about" class="section">
+    <div class="container">
+        <h2>Обо мне</h2>
+        <p class="section-text">
+            Я начинающий frontend-разработчик. Создаю адаптивные сайты,
+            изучаю современные технологии и постоянно совершенствую навыки.
+        </p>
+    </div>
+</section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<section id="portfolio" class="section light">
+    <div class="container">
+        <h2>Портфолио</h2>
 
-<script>
-let scene, camera, renderer;
-let gift, stars;
-let stage = 1;
-let clock = new THREE.Clock();
-let photoMeshes = [];
-let photoCount = 30;
+        <div class="portfolio-grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="">
+                <h3>Landing Page</h3>
+                <p>Одностраничный сайт для бизнеса</p>
+            </div>
 
-init();
-animate();
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="">
+                <h3>Сайт-портфолио</h3>
+                <p>Персональный сайт разработчика</p>
+            </div>
 
-function init() {
-  scene = new THREE.Scene();
-  camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 1000);
-  camera.position.z = 10;
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="">
+                <h3>Интернет-магазин</h3>
+                <p>Верстка каталога товаров</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-  renderer = new THREE.WebGLRenderer({ antialias:true });
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  document.body.appendChild(renderer.domElement);
+<section id="contacts" class="section">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>
+  <a href="mailto:natalia.perec21@gmail.com">
+    Gmail: natalia.perec21@gmail.com
+  </a>
+</p>
+<p>
+  <a href="mailto:natalia.perec21@gmail.com">
+    Telegram: natalia.perec21@gmail.com
+  </a>
+</p>
+    </div>
+</section>
 
-  createStars();
-  createGift();
-}
-
-function createStars(){
-  let geo = new THREE.BufferGeometry();
-  let verts = [];
-  for(let i=0;i<4000;i++){
-    verts.push((Math.random()-0.5)*400,(Math.random()-0.5)*400,(Math.random()-0.5)*400);
-  }
-  geo.setAttribute("position", new THREE.Float32BufferAttribute(verts,3));
-  let mat = new THREE.PointsMaterial({color:0xffffff,size:0.8,transparent:true});
-  stars = new THREE.Points(geo,mat);
-  scene.add(stars);
-}
-
-function createGift(){
-  let geo = new THREE.BoxGeometry(3,3,3);
-  let mat = new THREE.MeshStandardMaterial({color:0xff0040});
-  gift = new THREE.Mesh(geo,mat);
-  scene.add(gift);
-}
-
-document.getElementById("overlay").addEventListener("click",explodeGift);
-
-function explodeGift(){
-  document.getElementById("overlay").style.display="none";
-  document.getElementById("music1").play();
-
-  gsap.to(gift.scale,{x:6,y:6,z:6,duration:0.6});
-  gsap.to(gift.material,{opacity:0,duration:0.6,onComplete:()=>{
-    scene.remove(gift);
-    showMoonScene();
-    showPhotos();
-  }});
-}
-
-function showMoonScene(){
-  document.getElementById("music1").pause();
-  document.getElementById("music2").play();
-
-  scene.background = new THREE.Color(0x000011);
-
-  let moonGeo = new THREE.SphereGeometry(1.5,32,32);
-  let moonMat = new THREE.MeshBasicMaterial({color:0xffffcc});
-  let moon = new THREE.Mesh(moonGeo,moonMat);
-  moon.position.set(4,3,-3);
-  scene.add(moon);
-
-  gsap.to("#finalMessage",{opacity:1,duration:4});
-}
-
-function showPhotos(){
-  const loader = new THREE.TextureLoader();
-  for(let i=1;i<=photoCount;i++){
-    loader.load(`photos/${i}.jpg`,texture=>{
-      let geo = new THREE.PlaneGeometry(3,2);
-      let mat = new THREE.MeshBasicMaterial({map:texture,transparent:true,opacity:0});
-      let mesh = new THREE.Mesh(geo,mat);
-
-      mesh.position.set(
-        (Math.random()-0.5)*10,
-        (Math.random()-0.5)*5,
-        -Math.random()*5
-      );
-
-      scene.add(mesh);
-      photoMeshes.push(mesh);
-
-      // Появление как воспоминания
-      gsap.to(mesh.material,{opacity:1,duration:2,delay:i*0.5});
-      gsap.to(mesh.position,{y:mesh.position.y+2,duration:2,delay:i*0.5});
-      gsap.to(mesh.material,{opacity:0,duration:2,delay:i*0.5+3,onComplete:()=>scene.remove(mesh)});
-    });
-  }
-}
-
-function animate(){
-  requestAnimationFrame(animate);
-
-  if(gift){gift.rotation.x+=0.01; gift.rotation.y+=0.01;}
-
-  stars.material.opacity = 0.7 + Math.sin(clock.getElapsedTime()*2)*0.3;
-  camera.position.x = Math.sin(clock.getElapsedTime()*0.2)*1.5;
-  camera.lookAt(scene.position);
-
-  renderer.render(scene,camera);
-}
-</script>
-
+<footer>
+    <p>© 2026 Довгинка Михайло</p>
+</footer>
+<div class="btnh">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </body>
 </html>
