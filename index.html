@@ -3,154 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Довгинка Михайло — Портфолио</title>
-    <style>
-    /* Вставь сюда весь CSS, который ты написал */
-    .btnh {
-      width: 60px;
-      height: 60px;
-      background-color: black;
-      position: fixed;
-      z-index: 100;
-      cursor: pointer;
-      top: 70px;
-      left: 20px; 
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .btnh div {
-      display: block;
-      width: 30px;
-      height: 3px;
-      background: white;
-      margin: 5px 0;
-      transition: 0.3s ease;
-    }
-
-    .btnh::before,
-    .btnh::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      box-sizing: border-box;
-      border-radius: 4px;
-      border-style: solid;
-      border-color: white;
-      transition: opacity 0.2s ease, width 0.2s ease, height 0.2s ease;
-    }
-
-    .btnh::before {
-      bottom: 0;
-      left: 0;
-      border-left-width: 1px;
-      border-top-width: 1px;
-    }
-
-    .btnh::after {
-      top: 0;
-      right: 0;
-      border-right-width: 1px;
-      border-bottom-width: 1px;
-    }
-
-    .btnh:hover::before,
-    .btnh:hover::after {
-      width: 100%;
-      height: 100%;
-      opacity: 1;
-    }
-  </style>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+     <title>Мини-сайт</title>
 </head>
 <body>
 
-<header class="header">
-    <div class="container nav-container">
-        <div class="logo">N+M</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
+    <center>
+        <br><br>
+        <!-- Таблица заменяет нам контейнер/карточку -->
+        <table border="1" width="400" cellpadding="20" bgcolor="#ffffff">
+            <tr>
+                <td>
 
-    <div class="hero container">
-        <h1>Довгинка Михайло</h1>
-        <p>Frontend разработчик (HTML / CSS)</p>
-        <a href="#portfolio" class="btn">Смотреть проекты</a>
-    </div>
-</header>
+                    <!-- 1. ШАПКА: Кто я? -->
+                    <header>
+                        <center>
+                            <h1>Бенза Сур</h1>
+                            <p><b>WEB-разработчик</b></p>
+                        </center>
+                        <hr> <!-- Линия-разделитель -->
+                    </header>
+					
+					<!-- 2. ГЛАВНЫЙ КОНТЕНТ -->
+<main>
+    <!-- Секция с ФОТО -->
+    <section>
+        <center>
+            <!-- src - путь к картинке, width - ширина в пикселях, alt - текст если фото не грузится -->
+            <img src="https://via.placeholder.com" width="150" alt="красотка" border="1">
+        </center>
+        <br>
+    </section>
 
-<section id="about" class="section">
-    <div class="container">
-        <h2>Обо мне</h2>
-        <p class="section-text">
-            Я начинающий frontend-разработчик. Создаю адаптивные сайты,
-            изучаю современные технологии и постоянно совершенствую навыки.
-        </p>
-    </div>
-</section>
+    <!-- Секция с описанием -->
+    <section>
+        <h3>Учусь создавать сайты</h3>
+        <p>Создаю сайты на чистом HTML. Люблю минимализм и понятный код.</p>
+    </section>
 
-<section id="portfolio" class="section light">
-    <div class="container">
-        <h2>Портфолио</h2>
+    <!-- Секция с навыками -->
+    <section>
+        <h3>Мои навыки</h3>
+        <ul>
+            <li>Верстка (HTML)</li>
+            <li>Работа с текстом</li>
+        </ul>
+    </section>
 
-        <div class="portfolio-grid">
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="">
-                <h3>Landing Page</h3>
-                <p>Одностраничный сайт для бизнеса</p>
-            </div>
-
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="">
-                <h3>Сайт-портфолио</h3>
-                <p>Персональный сайт разработчика</p>
-            </div>
-
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200" alt="">
-                <h3>Интернет-магазин</h3>
-                <p>Верстка каталога товаров</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contacts" class="section">
-    <div class="container">
-        <h2>Контакты</h2>
+    <!-- Секция со ссылками -->
+    <section>
+        <h3>Связаться со мной</h3>
         <p>
-  <a href="mailto:natalia.perec21@gmail.com">
-    Gmail: natalia.perec21@gmail.com
-  </a>
-</p>
-<p>
-  <a href="mailto:natalia.perec21@gmail.com">
-    Telegram: natalia.perec21@gmail.com
-  </a>
-</p>
-    </div>
-</section>
+            <a href="https://t.me">Написать в Telegram</a>
+        </p>
+    </section>
+</main>
 
-<footer>
-    <p>© 2026 Довгинка Михайло</p>
-</footer>
-<div class="btnh">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+                    <!-- 3. ПОДВАЛ: Служебная информация -->
+                    <footer>
+                        <hr>
+                        <center>
+                            <p><small>2024 Визитка</small></p>
+                        </center>
+                    </footer>
+
+                </td>
+            </tr>
+        </table>
+    </center>
+
 </body>
 </html>
