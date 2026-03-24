@@ -1,7 +1,7 @@
 /* 1. Базовые настройки страницы */
 body {
-    background-color: #0f172a             /* Темный фон всей страницы */
-    color #f8fafcfd;                           /* белый цвет текста */
+    background-color: #0f172a;             /* Темный фон всей страницы */
+    color: #f8fafcfd;                           /* белый цвет текста */
     font-family: 'Segoe UI', sans-serif;    /*Современный шрифт*/
     display: flex;                           /*Режим контейнера*/
     justify-content: center;                 /*Центрируем по горизонтали*/
