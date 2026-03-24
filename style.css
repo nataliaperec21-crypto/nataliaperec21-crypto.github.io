@@ -1,19 +1,19 @@
 /* 1. Базовые настройки страницы */
 body {
-    background-color: #0f172a; /* Темный фон всей страницы */
-    color: #f8fafc;           /* Светлый цвет текста */
-    font-family: 'Segoe UI', sans-serif; /* Современный шрифт */
-    display: flex;            /* Включаем режим гибкого контейнера */
-    justify-content: center;  /* Центрируем содержимое по горизонтали */
-    align-items: center;      /* Центрируем по вертикали */
-    min-height: 100vh;        /* Высота во весь экран */
-    margin: 0;                /* Убираем лишние отступы браузера */
-}
+    background-color: #0f172a             /* Темный фон всей страницы */
+    color #f8fafcfd;                           /* белый цвет текста */
+    font-family: 'Segoe UI', sans-serif;    /*Современный шрифт*/
+    display: flex;                           /*Режим контейнера*/
+    justify-content: center;                 /*Центрируем по горизонтали*/
+    align-items: center;                       /*Центрируем по вертикали*/
+    min-height: 100vh;                        /*Высота во весь екран*/
+    margin: 0;                               /*Уберает отступы*/
+}     
 
-/* 2. Стили для карточки сайта */
-/* Мы добавим класс .card в HTML, чтобы создать белый/темный блок */
+/*стиль для визитки*/
+/*все работает через клас сard*/
 .card {
-    background-color: #1e293b; /* Фон самого блока (чуть светлее страницы) */
+    background-color: #1e293b; /* Фон */
     padding: 30px;             /* Внутренние отступы от края */
     border-radius: 20px;       /* Закругленные углы */
     max-width: 450px;          /* Ограничиваем ширину */
@@ -21,37 +21,37 @@ body {
     border: 1px solid #334155; /* Тонкая рамка вокруг карточки */
 }
 
-/* 3. Стили для списка (навыки) */
+/*стили для списка*/
 ul {
-    list-style-type: none;     /* Убираем стандартные точки (маркеры) */
-    padding: 0;                /* Убираем отступы слева */
+    list-style-type: none;      /*убираем точки*/
+    padding: 0;                 /*убираем одступы*/
 }
 
 li {
-    background: #334155;       /* Делаем навыки похожими на теги */
-    margin: 5px auto;          /* Отступы между ними */
-    padding: 5px 15px;         /* Простор внутри тега */
-    border-radius: 50px;       /* Овальная форма */
-    display: inline-block;     /* Чтобы они шли в ряд или аккуратно друг под другом */
+    background: #334155;        /*красивые навыки*/
+    margin: 5px auto;              /*отступы линий*/
+    padding: 5px 15px;              /*отступы в списке*/
+    border-radius: 50px;            /* округление*/
+    display: inline-block;          /* порядок*/
 }
 
-/* 4. Стили для формы и кнопок */
+/*стили для формы и кнопок*/
 input {
-    width: 80%;                /* Ширина полей ввода */
-    padding: 10px;             /* Высота полей */
-    border-radius: 8px;        /* Скругляем углы полей */
-    border: 1px solid #334155; /* Рамка */
-    background: #0f172a;       /* Темный фон полей */
-    color: white;              /* Белый текст при вводе */
-    margin-bottom: 10px;
+    width: 80%;                         /*ширена*/
+    padding: 10px;                      /*высота*/
+    border-radius: 8px;                 /*округление*/
+    border: 1px solid #334155;         /*рамка*/
+    background: #0f172a;                /*фон поля*/
+    color: white;                       /*цвет текста*/
+    margin-bottom: 10px; 
 }
 
 button {
-    background-color: #38bdf8; /* Голубой цвет кнопки */
-    color: #0f172a;            /* Темный текст на кнопке */
-    border: none;              /* Убираем стандартную рамку */
+    background-color: #38bdf8; /* кнопка */
+    color: #0f172a;            /* текст на кнопке */
+    border: none;              /* без рамки*/
     padding: 12px 25px;        /* Размер кнопки */
-    border-radius: 8px;        /* Скругляем */
+    border-radius: 8px;        /* Скругление*/
     font-weight: bold;         /* Жирный текст */
     cursor: pointer;          /* Меняем курсор на "палец" */
     transition: 0.3s;          /* Плавность при наведении */
@@ -59,5 +59,5 @@ button {
 
 button:hover {
     background-color: #0ea5e9; /* Темнеет при наведении */
-    transform: scale(1.05);    /* Слегка увеличивается */
+    transform: scale(1.05);   /* Слегка увеличивается */
 }
