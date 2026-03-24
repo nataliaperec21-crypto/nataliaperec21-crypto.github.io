@@ -13,6 +13,7 @@ body {
 /*стиль для визитки*/
 /*все работает через клас сard*/
 .card {
+    text-align: center;
     background-color: #1e293b; /* Фон */
     padding: 30px;             /* Внутренние отступы от края */
     border-radius: 20px;       /* Закругленные углы */
