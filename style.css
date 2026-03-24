@@ -2,7 +2,7 @@
 body {
     background-color: #0f172a; /* Темный фон всей страницы */
     color: #f8fafc;           /* Светлый цвет текста */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+    font-family: 'Segoe UI', sans-serif; /* Современный шрифт */
     display: flex;            /* Включаем режим гибкого контейнера */
     justify-content: center;  /* Центрируем содержимое по горизонтали */
     align-items: center;      /* Центрируем по вертикали */
@@ -16,7 +16,7 @@ body {
     background-color: #1e293b; /* Фон самого блока (чуть светлее страницы) */
     padding: 30px;             /* Внутренние отступы от края */
     border-radius: 20px;       /* Закругленные углы */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Мягкая тень для объема */
+    
     max-width: 450px;          /* Ограничиваем ширину */
     width: 90%;                /* Чтобы на телефонах не вылезало за края */
     border: 1px solid #334155; /* Тонкая рамка вокруг карточки */
