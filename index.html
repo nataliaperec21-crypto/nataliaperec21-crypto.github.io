@@ -3,78 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Мини-сайт</title>
-     <link rel="stylesheet" href="style.css">
+    <title>Проект 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
 
-                    <!-- 1. ШАПКА: Кто я? -->
-                    <header>
-                            <h1>Бенза Сур</h1>
-                            <p><b>WEB-разработчик</b></p>
-                        <hr> <!-- Линия-разделитель -->
-                    </header>
-					
-					<!-- 2. ГЛАВНЫЙ КОНТЕНТ -->
-<main>
-    <!-- Секция с ФОТО -->
-    <section>
-            <!-- src - путь к картинке, width - ширина в пикселях, alt - текст если фото не грузится -->
-            <img src="aa4.jpg" width="150" alt="ууссс" style="border: 2px solid #545533; border-radius: 10px;">
-    </section>
+    <!-- 1. ШАПКА -->
+    <header>
+        <h1>Утренние счастье</h1>
+    </header>
 
-    <!-- Секция с описанием -->
-    <section style="text-align: center;">
-      <h3>Учусь создавать сайты</h3>
-        <p>Создаю сайты на чистом HTML.</p>
-        <p>Люблю минимализм и понятный код.</p>
-        <p>(потому что еще ничего не умею хихихи)</p>
-    </section>
-
-    <!-- Секция с навыками -->
-    <section style="text-align: center;">
-        <h3>Мои навыки</h3>
-        <ul>
-            <li>Верстка (HTML)</li>
-            <li>Работа с текстом</li>
-        </ul>
-    </section>
-
-   <!-- Секция с формой обратной связи -->
-<section style="text-align: center;">
-    <h3>Связаться со мной</h3>
-    
-    <!-- action="ссылка_от_сервиса" — сюда придет письмо -->
-    <form action="https://formspree.io/f/xlgpqaap" method="POST">
+    <!-- Обертка для колонок (понадобится для CSS) -->
+    <div class="container">
         
-        <p>
-            Ваше имя:<br>
-            <input type="text" name="name" placeholder="Иван" required>
-        </p>
+        <!-- 2. ГЛАВНЫЙ КОНТЕНТ (Левая колонка) -->
+        <main>
+            <h2>Добро пожаловать в мир начала</h2>
+            <p>
+                Каждый начинает свой путь с жизни, но все ли готовы вней дышать или все хотят слышать только добро пожаловать.
+            </p>
+            <p>
+                Сейчас правильнее задать вопрос есть ли ктото кто может дать дыхание жизни или ситуация безнадежна.
+            </p>
+            <p>
+                Впереди много практики и если нет понимание то нужно больше времени и главное сил.
+			</p>
+			<p>Чтобы этот сайт стал не просто набором букв,
+				а современным ресурсом нужно желание жизни.
+            </p>
+        </main>
 
-        <p>
-            Номер телефона:<br>
-            <input type="tel" name="phone" placeholder="+380__________" required>
-        </p>
+        <!-- 3. БОКОВАЯ ПАНЕЛЬ (Правая колонка) -->
+        <aside>
+            <h3>Длинный путь:</h3>
+            <ul>
+                <li>Шаг первый</li>
+                <li>Затем второй</li>
+                <li>Затем истощение</li>
+            </ul>
+        </aside>
 
-        <p>
-            <!-- Кнопка отправки -->
-            <button type="submit">Отправить данные</button>
-        </p>
+    </div>
 
-    </form>
+    <!-- 4. ПОДВАЛ -->
+    <footer>
+        <p>© 2026 Сделано с энтузиазмом</p>
+    </footer>
 
-    <p>
-        Или напишите сразу: <a href="https://t.me">Telegram</a>
-    </p>
-</section>
-
-                    <!-- 3. ПОДВАЛ: Служебная информация -->
-                    <footer style="text-align: center;">
-                        <hr>
-                            <p><small>2026 Мой первый сайт</small></p>
-                    </footer>
-</div>
 </body>
 </html>

@@ -1,69 +1,62 @@
-/* 1. Базовые настройки страницы */
-body {
-    background-color: #0f172a;             /* Темный фон всей страницы */
-    color: #f8fafcfd;                           /* белый цвет текста */
-    font-family: 'Segoe UI', sans-serif;    /*Современный шрифт*/
-    display: flex;                           /*Режим контейнера*/
-    justify-content: center;                 /*Центрируем по горизонтали*/
-    align-items: center;                       /*Центрируем по вертикали*/
-    min-height: 100vh;                        /*Высота во весь екран*/
-    margin: 0;                               /*Уберает отступы*/
-    font-size: 16px;
-}     
+/* Настройки для всей страницы */
+bodi {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    width: 90%;
+}
 
-/*стиль для визитки*/
-/*все работает через клас сard*/
-.card {
+header, footer {
+    width: 100%;
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 20px;      /*внутренний отступ текста от чтенок*/
     text-align: center;
-    background-color: #1e293b; /* Фон */
-    padding: 30px;             /* Внутренние отступы от края */
-    border-radius: 20px;       /* Закругленные углы */
-    max-width: 450px;          /* Ограничиваем ширину */
-    width: 90%;                /* Чтобы на телефонах не вылезало за края */
-    border: 1px solid #334155; /* Тонкая рамка вокруг карточки */
+    box-sizing: border-box; /*держать все в рамках*/
 }
 
-section {
-    margin-bottom: 20px;
+/*обертка*/
+.container {
+    display: flex;
+    background-color: #d2d2d2;
 }
 
-/*стили для списка*/
-ul {
-    list-style-type: none;      /*убираем точки*/
-    padding: 0;                 /*убираем одступы*/
+/*левая колонка*/
+main {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
-li {
-    background: #334155;        /*красивые навыки*/
-    margin: 5px auto;              /*отступы линий*/
-    padding: 5px 15px;              /*отступы в списке*/
-    border-radius: 50px;            /* округление*/
-    display: inline-block;          /* порядок*/
+/*правая колонка*/
+aside {
+    width: 20%;
+    background-color: #e2e8f0;
+    padding: 20px;
+    margin: 10px 10px 10px 0px;
+    box-sizing: border-box;
 }
 
-/*стили для формы и кнопок*/
-input {
-    width: 80%;                         /*ширена*/
-    padding: 10px;                      /*высота*/
-    border-radius: 8px;                 /*округление*/
-    border: 1px solid #334155;         /*рамка*/
-    background: #0f172a;                /*фон поля*/
-    color: white;                       /*цвет текста*/
-    margin-bottom: 10px; 
+aside ul {
+    padding-left: 20px;
 }
 
-button {
-    background-color: #38bdf8; /* кнопка */
-    color: #0f172a;            /* текст на кнопке */
-    border: none;              /* без рамки*/
-    padding: 12px 25px;        /* Размер кнопки */
-    border-radius: 8px;        /* Скругление*/
-    font-weight: bold;         /* Жирный текст */
-    cursor: pointer;          /* Меняем курсор на "палец" */
-    transition: 0.3s;          /* Плавность при наведении */
+aside li {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: #0ea5e9; /* Темнеет при наведении */
-    transform: scale(1.05);   /* Слегка увеличивается */
+footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+aside ul li {
+    background: #e2e8f0;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none; /* Убираем точки */
 }
