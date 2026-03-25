@@ -17,6 +17,7 @@ header, footer {
 
 /*обертка*/
 .container {
+    width: 100%;
     display: flex;
     background-color: #d2d2d2;
 }
