@@ -23,7 +23,6 @@ header, footer {
     display: flex;
     flex-direction: 1;
     flex-grow: 1;       
-    background-color: transparent;
     background-color: #d2d2d2;
 }
 
