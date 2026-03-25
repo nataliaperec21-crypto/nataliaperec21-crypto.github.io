@@ -1,9 +1,8 @@
 /* Настройки для всей страницы */
-bodi {
+body {
     margin: 0;
     font-family: sans-serif;
     background-color: #f0f2f5;
-    width: 90%;
 }
 
 header, footer {
@@ -34,7 +33,7 @@ main {
 /*правая колонка*/
 aside {
     width: 20%;
-    background-color: #e2e8f0;
+    background-color: #e0ecfa;
     padding: 20px;
     margin: 10px 10px 10px 0px;
     box-sizing: border-box;
