@@ -1,68 +1,60 @@
-/* Настройки для всей страницы */
+/* Базовые настройки страницы */
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #f0f2f5;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #f8fafc;
 }
 
 header, footer {
-    width: 100%;
-    background-color: #1e293b;
-    color: #ffffff;
-    padding: 20px;      /*внутренний отступ текста от чтенок*/
     text-align: center;
-    box-sizing: border-box; /*держать все в рамках*/
-}
-
-/*обертка*/
-.container {
-    display: flex;
-    flex-grow: 1;       
-    background-color: #d2d2d2;
-}
-
-/*левая колонка*/
-main {
-    flex: 4;
-    background-color: #ffffff;
     padding: 30px;
-    margin: 10px;
-    box-sizing: border-box;
+    background-color: #1e293b;
+    color: white;
 }
 
-/*правая колонка*/
-aside {
-    flex: 1;
-    background-color: #e0ecfa;
+/* 1. Включаем Grid и 2. Делаем сетку */
+.gallery {
+    display: grid; /* Включаем режим сетки */
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+    gap: 20px; /* Расстояние между карточками */
     padding: 20px;
-    margin: 10px 10px 10px 0px;
-    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto; /* Центрируем всю галерею */
 }
 
-aside ul {
-    padding-left: 20px;
+/* 3. Настройки картинок */
+img {
+    width: 100%; /* Картинка всегда занимает всю ширину колонки */
+	aspect-ratio: 1 / 1; /* МАГИЯ: Соотношение сторон 1 к 1 (Квадрат) */
+    object-fit: cover; /* Картинка не сплющится, а обрежется по краям */
+    display: block;
+    transition: 0.3s; /* Плавность для 4-го пункта */
 }
 
-aside li:hover {
-    background: #6e7dad;
+/* 4. HOVER ЭФФЕКТ (Увеличение) */
+.item:hover img {
+    transform: scale(1.1); /* Увеличиваем на 10% */
+}
+
+/* 4. Настройки контейнера для Hover эффекта */
+.item {
+    overflow: hidden; /* Скрывает всё, что выходит за границы при увеличении */
+    border-radius: 10px; /* Скруглим углы для красоты */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     cursor: pointer;
-    margin-bottom: 10px;
-    font-weight: bold;
-    transition: 0,3s;
 }
 
-footer {
-    width: 100%;
-    margin-top: auto;
+/* 5. АДАПТИВ (ВАЖНО) */
+/* Если экран меньше 900px — делаем 2 колонки */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-aside ul li {
-    background: #328a6d;
-    margin-bottom: 8px;
-    padding: 0;
-    border-radius: 5px;
-    list-style-type: none; /* Убираем точки */
+/* Если экран меньше 500px — 1 колонка */
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
