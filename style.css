@@ -12,11 +12,6 @@ header, footer {
     color: white;
 }
 
-header h1 {
-    color: #ffffff;
-    margin: 0;
-}
-
 /* 1. Включаем Grid и 2. Делаем сетку */
 .gallery {
     display: grid; /* Включаем режим сетки */
