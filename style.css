@@ -39,8 +39,8 @@ img {
 /* 4. Настройки контейнера для Hover эффекта */
 .item {
     overflow: hidden; /* Скрывает всё, что выходит за границы при увеличении */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     border-radius: 10px; /* Скруглим углы для красоты */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 
