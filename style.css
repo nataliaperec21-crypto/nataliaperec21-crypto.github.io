@@ -14,17 +14,17 @@ header, footer {
 
 /* Центрирование: используем Flexbox для nav */
 nav {
-  display: flex;
   justify-content: center; /* Твоё условие: по центру */
 }
 
 /* Убираем точки  Делаем в ряд */
 ul {
+  display: flex;
   list-style: none; /* Убираем маркеры */
   padding: 0;
   margin: 0;
   display: flex;    /* Ставим элементы li в ряд */
-  gap: 20px;        /* Расстояние между пунктами */
+  gap: 40px;        /* Расстояние между пунктами */
 }
 
 /*  Убираем подчёркивание ссылок */
