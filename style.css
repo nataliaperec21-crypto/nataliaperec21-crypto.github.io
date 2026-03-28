@@ -8,10 +8,10 @@ body {
     min-height: 100vh;
 }
 
-header {
+header footer {
     text-align: center;
     padding: 20px;
-    background-color: #ffd000fa;
+    background-color: #212120fa;
     color: white;
 }
 
@@ -19,14 +19,6 @@ main {
     text-align: center;
     flex-grow: 1;
 }
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #100d1ffa;
-    color: white;
-}
-
 
 /* Центрирование: используем Flexbox для nav */
 nav {
@@ -36,7 +28,6 @@ nav {
 
 /* Убираем точки  Делаем в ряд */
 .nav-links {
-    display: flex;
     list-style: none; /* Убираем маркеры */
     padding: 0;
     margin: 0;
@@ -57,45 +48,62 @@ nav {
     color: red;       /*  при наведении красный */
 }
 
-/* Делаем карточки в ряд */
+
+/* 3. КАРТОЧКИ (Центральная часть) */
 .cards {
     display: flex;
-    justify-content: center; /* Центрируем группу карточек */
-    gap: 20px;               /* Расстояние между ними */
-    padding: 40px 20px;
-    flex-wrap: wrap;         /* Чтобы на телефонах они прыгали друг под друга */
+    justify-content: center;
+    align-items: flex-start; /* Чтобы карточки не растягивались по высоте */
+    gap: 25px;
+    padding: 50px 20px;
+    flex-wrap: wrap; /* Адаптив: перенос на новую строку */
+    flex-grow: 1;    /* Растягиваем main, чтобы вытолкнуть футер */
 }
 
-/* Оформляем саму карточку */
 .card {
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     width: 300px;
-    text-align: center;
+    background: white;
     padding: 20px;
-    transition: 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s ease;
+    box-sizing: border-box;
 }
 
-/* Эффект при наведении на всю карточку */
 .card:hover {
-    transform: translateY(-10px); /* Карточка плавно приподнимается */
+    transform: translateY(-10px); /* Приподнимаем при наведении */
 }
 
-/* Картинка (икона) */
-.item img {
-    width: 100px; /* Если это иконы, лучше сделать их поменьше */
-    height: 100px;
-    object-fit: contain; /* Чтобы икона не обрезалась, а вписывалась */
+/* 4. КАРТИНКИ ВНУТРИ КАРТОЧЕК */
+.item {
+    border-radius: 10px;
+    overflow: hidden;
     margin-bottom: 15px;
 }
 
-/* Кнопка */
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+/* 5. КНОПКИ */
 button {
-    background-color: #ffd000; /* В цвет твоего желтого хедера */
+    width: 100%;
+    padding: 12px;
     border: none;
-    padding: 10px 15px;
     border-radius: 8px;
-    cursor: pointer;
+    background-color: #1e293b; /* Темная кнопка */
+    color: white;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffd000;
+    color: #1e293b; /* Меняем цвета местами при наведении */
 }
