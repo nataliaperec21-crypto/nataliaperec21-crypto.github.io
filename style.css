@@ -8,6 +8,13 @@ body {
     background-color: #f8fafc;
 }
 
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd000fa;
+    color: white;
+}
+
 main {
     flex-grow: 1;
 }
@@ -19,12 +26,6 @@ footer {
     color: white;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffd000fa;
-    color: white;
-}
 
 /* Центрирование: используем Flexbox для nav */
 nav {
