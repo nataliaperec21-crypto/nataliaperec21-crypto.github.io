@@ -12,39 +12,35 @@ header, footer {
     color: white;
 }
 
-/* 1. Включаем Grid и 2. Делаем сетку */
-.gallery {
-    display: grid; /* Включаем режим сетки */
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
-    gap: 20px; /* Расстояние между фото*/
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto; /* Центрируем галерею */
+/* Центрирование: используем Flexbox для nav */
+nav {
+  display: flex;
+  justify-content: center; /* Твоё условие: по центру */
 }
 
-/* 3. Настройки картинок */
-img {
-    width: 100%; /* Картинка всегда занимает всю ширину колонки */
-	aspect-ratio: 1 / 1; /* Соотношение сторон 1 к 1 */
-    object-fit: cover; /* Картинка не сплющится, а обрежется по краям */
-    display: block;
-    transition: 0.3s; /* Плавность для 4-го пункта */
+/* Убираем точки  Делаем в ряд */
+ul {
+  list-style: none; /* Убираем маркеры */
+  padding: 0;
+  margin: 0;
+  display: flex;    /* Ставим элементы li в ряд */
+  gap: 20px;        /* Расстояние между пунктами */
 }
 
-/* 4. HOVER ЭФФЕКТ (Увеличение) */
-.item:hover img {
-    transform: scale(1.1); /* Увеличиваем на 10% */
+/*  Убираем подчёркивание ссылок */
+a {
+  text-decoration: none;
+  color: white;     /* Чтобы текст был виден на темном фоне */
+  font-weight: bold;
+  transition: 0.3s; /* Плавность для ховера */
 }
 
-/* 4. Настройки контейнера для Hover эффекта */
-.item {
-    overflow: hidden; /* Скрывает всё, что выходит за границы при увеличении */
-    border-radius: 15px; /* Скруглим углы для красоты */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    cursor: pointer;
+/*  Hover эффект */
+a:hover {
+  color: red;       /*  при наведении красный */
 }
 
-/* 5. АДАПТИВ (ВАЖНО) */
+/*  АДАПТИВ (ВАЖНО) */
 /* Если экран меньше 900px — делаем 2 колонки */
 @media (max-width: 900px) {
     .gallery {
