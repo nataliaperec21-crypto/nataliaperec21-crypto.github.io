@@ -16,6 +16,7 @@ header {
 }
 
 main {
+    text-align: center;
     flex-grow: 1;
 }
 
@@ -29,30 +30,31 @@ footer {
 
 /* Центрирование: используем Flexbox для nav */
 nav {
-  justify-content: center; /* Твоё условие: по центру */
+    display: flex;
+    justify-content: center; /* Твоё условие: по центру */
 }
 
 /* Убираем точки  Делаем в ряд */
 ul {
-  display: flex;
-  list-style: none; /* Убираем маркеры */
-  padding: 0;
-  margin: 0;
-  display: flex;    /* Ставим элементы li в ряд */
-  gap: 40px;        /* Расстояние между пунктами */
+    display: flex;
+    list-style: none; /* Убираем маркеры */
+    padding: 0;
+    margin: 0;
+    display: flex;    /* Ставим элементы li в ряд */
+    gap: 40px;        /* Расстояние между пунктами */
 }
 
 /*  Убираем подчёркивание ссылок */
 a {
-  text-decoration: none;
-  color: white;     /* Чтобы текст был виден на темном фоне */
-  font-weight: bold;
-  transition: 0.3s; /* Плавность для ховера */
+    text-decoration: none;
+    color: white;     /* Чтобы текст был виден на темном фоне */
+    font-weight: bold;
+    transition: 0.3s; /* Плавность для ховера */
 }
 
 /*  Hover эффект */
 a:hover {
-  color: red;       /*  при наведении красный */
+    color: red;       /*  при наведении красный */
 }
 
 /*  АДАПТИВ (ВАЖНО) */
