@@ -35,7 +35,7 @@ nav {
 }
 
 /* Убираем точки  Делаем в ряд */
-ul {
+.nav-links {
     display: flex;
     list-style: none; /* Убираем маркеры */
     padding: 0;
@@ -45,7 +45,7 @@ ul {
 }
 
 /*  Убираем подчёркивание ссылок */
-a {
+.nav-links a {
     text-decoration: none;
     color: white;     /* Чтобы текст был виден на темном фоне */
     font-weight: bold;
@@ -53,21 +53,49 @@ a {
 }
 
 /*  Hover эффект */
-a:hover {
+.nav-links a:hover {
     color: red;       /*  при наведении красный */
 }
 
-/*  АДАПТИВ (ВАЖНО) */
-/* Если экран меньше 900px — делаем 2 колонки */
-@media (max-width: 900px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Делаем карточки в ряд */
+.cards {
+    display: flex;
+    justify-content: center; /* Центрируем группу карточек */
+    gap: 20px;               /* Расстояние между ними */
+    padding: 40px 20px;
+    flex-wrap: wrap;         /* Чтобы на телефонах они прыгали друг под друга */
 }
 
-/* Если экран меньше 500px — 1 колонка */
-@media (max-width: 500px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
+/* Оформляем саму карточку */
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* Эффект при наведении на всю карточку */
+.card:hover {
+    transform: translateY(-10px); /* Карточка плавно приподнимается */
+}
+
+/* Картинка (икона) */
+.item img {
+    width: 100px; /* Если это иконы, лучше сделать их поменьше */
+    height: 100px;
+    object-fit: contain; /* Чтобы икона не обрезалась, а вписывалась */
+    margin-bottom: 15px;
+}
+
+/* Кнопка */
+button {
+    background-color: #ffd000; /* В цвет твоего желтого хедера */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
