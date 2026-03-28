@@ -5,7 +5,7 @@ body {
     flex-direction: column; /* Выстраиваем всё (header, main, footer) в столбик */
     font-family: sans-serif;
     background-color: #f8fafc;
-    min-width: 100vh;
+    min-height: 100vh;
 }
 
 header {
