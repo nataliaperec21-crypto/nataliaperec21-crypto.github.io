@@ -1,5 +1,8 @@
 /* Базовые настройки страницы */
 body {
+    display: flex;
+    flex-direction: column; /* Выстраиваем всё (header, main, footer) в столбик */
+    min-width: 100vh;
     margin: 0;
     font-family: sans-serif;
     background-color: #f8fafc;
