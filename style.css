@@ -8,6 +8,10 @@ body {
     background-color: #f8fafc;
 }
 
+main {
+    flex-grow: 1;
+}
+
 footer {
     text-align: center;
     padding: 20px;
