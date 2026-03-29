@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
 }
 
-header footer {
+header, footer {
     text-align: center;
     padding: 20px;
     background-color: #212120fa;
@@ -56,7 +56,6 @@ nav {
     gap: 25px;
     padding: 50px 20px;
     flex-wrap: wrap; /* Адаптив: перенос на новую строку */
-    flex-grow: 1;    /* Растягиваем main, чтобы вытолкнуть футер */
 }
 
 .card {
