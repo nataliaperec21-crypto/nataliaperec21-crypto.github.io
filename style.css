@@ -1,107 +1,176 @@
-/* Базовые настройки страницы. */
+/* 1. ПЕРЕМЕННЫЕ И СБРОС СТИЛЕЙ */
+:root {
+  --primary: #ffd000;         /* Твой желтый */
+  --secondary: #100d1f;       /* Твой темно-синий из футера */
+  --bg-light: #f8fafc;        /* Светло-серый фон */
+  --text-main: #334155;       /* Цвет текста */
+  --white: #ffffff;
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Плавная прокрутка к секциям */
+}
+
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Выстраиваем всё (header, main, footer) в столбик */
-    font-family: sans-serif;
-    background-color: #f8fafc;
-    min-height: 100vh;
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #212120fa;
-    color: white;
+/* 2. НАВИГАЦИЯ */
+header {
+  background-color: var(--primary);
+  padding: 20px;
+  position: sticky; /* Липкое меню */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-main {
-    text-align: center;
-    flex-grow: 1;
-}
-
-/* Центрирование: используем Flexbox для nav */
-nav {
-    display: flex;
-    justify-content: center; /* Твоё условие: по центру */
-}
-
-/* Убираем точки  Делаем в ряд */
 .nav-links {
-    list-style: none; /* Убираем маркеры */
-    padding: 0;
-    margin: 0;
-    display: flex;    /* Ставим элементы li в ряд */
-    gap: 40px;        /* Расстояние между пунктами */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
 }
 
-/*  Убираем подчёркивание ссылок */
 .nav-links a {
-    text-decoration: none;
-    color: white;     /* Чтобы текст был виден на темном фоне */
-    font-weight: bold;
-    transition: 0.3s; /* Плавность для ховера */
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: bold;
+  transition: color var(--transition);
 }
 
-/*  Hover эффект */
 .nav-links a:hover {
-    color: red;       /*  при наведении красный */
+  color: #ff0000;
 }
 
-/* 3. КАРТОЧКИ (Центральная часть) */
+/* 3. ГЛАВНЫЙ ЭКРАН (HERO) */
+.hero {
+  background-color: var(--secondary);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+
+.btn-main {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform var(--transition);
+}
+
+.btn-main:hover { transform: scale(1.05); }
+
+/* 4. КАРТОЧКИ УСЛУГ */
+.services { padding: 60px 20px; text-align: center; }
+
 .cards {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Чтобы карточки не растягивались по высоте */
-    gap: 25px;
-    padding: 50px 20px;
-    flex-wrap: wrap; /* Адаптив: перенос на новую строку */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .card {
-    width: 300px;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: 0.3s ease;
-    box-sizing: border-box;
+  background: var(--white);
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform var(--transition);
 }
 
-.card:hover {
-    transform: translateY(-10px); /* Приподнимаем при наведении */
+.card:hover { transform: translateY(-10px); }
+
+.card-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/* 4. КАРТИНКИ ВНУТРИ КАРТОЧЕК */
-.item {
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 15px;
+.btn-card {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: var(--secondary);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
+/* 5. СЕКЦИЯ ОБО МНЕ */
+.about {
+  background: var(--white);
+  padding: 80px 20px;
+  text-align: center;
 }
 
-/* 5. КНОПКИ */
-button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background-color: #1e293b; /* Темная кнопка */
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
+.about .container { max-width: 800px; margin: 0 auto; }
+
+/* 6. КОНТАКТЫ И ФОРМА */
+.contact { padding: 80px 20px; }
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  gap: 50px;
 }
 
-button:hover {
-    background-color: #ffd000;
-    color: #1e293b; /* Меняем цвета местами при наведении */
+.contact-info, .contact-form { flex: 1; min-width: 300px; }
+
+.form-group { margin-bottom: 20px; text-align: left; }
+
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn-submit:hover { background: var(--primary); color: var(--secondary); }
+
+/* 7. ФУТЕР */
+footer {
+  background: var(--secondary);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: auto;
 }
