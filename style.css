@@ -158,7 +158,7 @@ nav {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  transition: background var(--transition);
+  transition: var(--transition);
 }
 
 .btn-card:hover {
