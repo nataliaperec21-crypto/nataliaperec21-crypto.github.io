@@ -182,10 +182,25 @@ nav {
     background-color: var(--bg-light);
 }
 
-.contact-info, .contact-form, .section-title {
+/*  Главный контейнер контактов делаем столбиком */
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Магия: всё встает друг под друга */
+    align-items: center;    /* Центрируем и текст, и форму по горизонтали */
+    gap: 30px;              /* Расстояние между текстом и началом формы */
+    max-width: 600px;       /* Ограничим ширину, чтобы форма не растянулась на весь экран */
+    margin: 0 auto;         /* Центрируем весь блок на странице */
+}
+
+/*  Текст делаем по центру */
+.contact-info {
     text-align: center;
-    flex: 1; 
-    min-width: 300px; 
+    width: 100%;
+}
+
+/* Форму тоже на всю доступную ширину контейнера */
+.contact-form {
+    width: 100%;
 }
 
 .contact-container {
