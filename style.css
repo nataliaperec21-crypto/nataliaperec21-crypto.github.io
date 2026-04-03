@@ -1,280 +1,310 @@
 /* 1. ПЕРЕМЕННЫЕ И СБРОС СТИЛЕЙ */
-:root {
-  --primary: #ffd000;         /* Желтый */
-  --secondary: #100d1f;       /* Темно-синий */
-  --bg-light: #f8fafc;        /* Светлый фон */
-  --text-main: #334155;       
-  --white: #ffffff;
-  --transition: 0.3s ease;
+:root {                     /* пульт управления */
+  --primary: #ffd000;     /* кнопоки, иконоки, навигация (хедера) и выделения активных ссылок */
+  --secondary: #100d1f;   /* футер, секции Hero и на обычных кнопках */
+  --bg-light: #f8fafc;    /* Светлый фон */
+  --text-main: #334155;   /* текст меню */
+  --white: #ffffff;       /* текст */
+  --transition: 0.3s ease;  /* время анимацыи */
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Чтобы отступы не раздували блоки */
+* {                         /* зброс настроек для всех браузеров */
+  margin: 0;                /* отступы */
+  padding: 0;               /* отступы */
+  box-sizing: border-box; /* Чтобы отступы не раздували блоки а были посчитаны со всеми елементами 
+                            тоесь таблицы и тд */
 }
 
-html {
-  scroll-behavior: smooth;
+html {                      /* html скрол */
+  scroll-behavior: smooth;  /* чтобы прокрутка при нажатии шла медленно */
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: var(--bg-light);
-  color: var(--text-main);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Футер всегда внизу */
+body {                      /* для всего боди */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* шрифт */
+  line-height: 1.6;         /* расстояние между строками текста */
+  background-color: var(--bg-light);   /* : Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */ 
+  color: var(--text-main);  /* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */
+  display: flex;            /* Ставим элементы в ряд Внегласный включатель */
+  flex-direction: column;   /* елементы друг под другом */
+  min-height: 100vh;        /* Футер всегда внизу */
 }
 
 /* 2. НАВИГАЦИЯ */
-header {
-  background-color: var(--primary);
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+header {                    /* шапка */
+  background-color: var(--primary);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */  
+  padding: 15px 0;          /* внутренний отступ */
+  position: sticky;         /* елемент который приклеевает
+   меню и при скроллинге меню спускается вместе с зрителем */
+  top: 0;                   /* напарник position: sticky и служит точкой
+   фиксации чтобы меню не улитело вверх */
+  z-index: 1000;            /* ставит меню на самый верхний слой */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);/* 0: Тень не смещается влево или вправо.
+2px: Тень падает чуть-чуть вниз под меню.
+10px: Тень мягко размывается.
+rgba(..., 0.1): Очень слабая прозрачность (10%). */
 }
 
-nav {
-  display: flex;
-  justify-content: center;
+nav {                        /* навигация шапки */
+  display: flex;             /* Ставим элементы в ряд Внегласный включатель */
+  justify-content: center;   /* ставим блок в центр */
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
+.nav-links {                 /* навигация шапки */
+  display: flex;             /* Ставим элементы в ряд Внегласный включатель */
+  list-style: none;          /* убираем точки */   
+  gap: 30px;                 /* одступы между текстом */
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: var(--secondary);
-  font-weight: bold;
-  transition: color var(--transition);
+.nav-links a {                /* навигация шапки по ссылкам */
+  text-decoration: none;      /* убирает подчеркивание */
+  color: var(--secondary);    /* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */   
+  font-weight: bold;          /* жирность текста */  
+  transition: color var(--transition);  /* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста при привращении */    
 }
 
-.nav-links a:hover {
-  color: #ff0000;
-}
+.nav-links a:hover {          /* говорит при наведении сменить цвет */
+  color: #ff0000;           /* сам цвет */
+}   
 
 /* 3. ГЛАВНЫЙ ЭКРАН (HERO) */
-.hero {
-  background-color: var(--secondary);
-  color: var(--white);
-  text-align: center;
-  padding: 120px 20px;
+.hero {                       /* меню */
+  background-color: var(--secondary);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */
+  color: var(--white);        /* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */
+  text-align: center;        /* текст по центру */
+  padding: 120px 20px;       /* внутренний отступ со всех сторон */
 }
 
-.hero h1 { 
+.hero h1 {                    /* заголовок в меню */
     font-size: clamp(2rem, 5vw, 3.5rem); /* Адаптивный размер шрифта */
-    margin-bottom: 20px; 
+    margin-bottom: 20px;      /* внешний отступ с низу */
 }
 
-.btn-main {
-  display: inline-block;
-  background-color: var(--primary);
-  color: var(--secondary);
-  padding: 15px 35px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: transform var(--transition), background-color var(--transition);
+.btn-main {                   /* отсилка к контактам в меню */
+  display: inline-block;      /*  кнопка стала ровно такой ширины, сколько занимает текст но при этом
+   она позволила нам задать ей четкие размеры и отступы сверху/снизу. */
+  background-color: var(--primary);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */
+  color: var(--secondary);    /* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */
+  padding: 15px 35px;         /* внутренний отступ со всех сторон */
+  text-decoration: none;      /* убирает подчеркивание */
+  border-radius: 8px;         /* округление краев */
+  font-weight: bold;          /* жирность текста */
+  transition: transform var(--transition), background-color var(--transition);/* Инструкция заглянуть
+   в начало CSS-файла и взять значение, которое записано в рут и сделать его цветом 
+   фона при привращении */
 }
 
-.btn-main:hover { 
-    transform: scale(1.05);
-    background-color: #e6bc00;
+.btn-main:hover {            /* говорит при наведении увеличется и сменить цвет */
+    transform: scale(1.05);  /* увеличение */
+    background-color: #e6bc00;/* цвет фона */
 }
 
 /* 4. КАРТОЧКИ УСЛУГ */
-.services { 
-    padding: 80px 20px; 
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center; 
+.services {                 /* услуги */
+    padding: 80px 20px;     /* внутренний отступ со всех сторон */
+    max-width: 1200px;      /* ограничения ширины */
+    margin: 0 auto;         /* розделения пространства екрана сверху и снизу 0
+     а по бокам автоматически розделение по полам */
+    text-align: center;     /* центрирование текста */
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.cards {                    /* коробка для карточек */
+  display: flex;            /* Ставим элементы в ряд Внегласный включатель */
+  flex-wrap: wrap;          /* адаптирует карточки к телефону или планшету и 
+  превращает жесткую шеренгу элементов в гибкий поток. */
+  justify-content: center;  /* ставим блок в центр */
   align-items: stretch; /* Карточки будут одной высоты */
-  gap: 30px;
-  margin-top: 50px;
+  gap: 30px;                /* одступы между текстом */
+  margin-top: 50px;         /* создает внешний отступ сверху от элемента */
 }
 
-.card {
-  background: var(--white);
-  width: 320px;
+.card {                     /* карточка */
+  background: var(--white); /* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */
+  width: 320px;             /* ширина карточки не больше */
   padding: 0; /* Убираем падинг, чтобы картинка была в край */
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  display: flex;
+  border-radius: 15px;      /* округление */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);/* 0: Тень не смещается влево или вправо.
+10px: Тень падает чуть-чуть вниз под меню.
+30px: Тень мягко размывается.
+rgba(..., 0.1): Очень слабая прозрачность (10%). */
+  display: flex;            /* Ставим элементы в ряд Внегласный включатель */
   flex-direction: column; /* Контент внутри в столбик */
-  overflow: hidden;
-  transition: transform var(--transition);
+  overflow: hidden;         /* вырезает выходящее за край */
+  transition: transform var(--transition);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста при привращении */
 }
 
-.card:hover { 
-    transform: translateY(-10px); 
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+.card:hover {               /* говорит при наведении двинутса вверх */
+    transform: translateY(-10px); /* движение вверх */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);/* 0: Тень не смещается влево или вправо.
+15px: Тень падает чуть-чуть вниз под меню.
+40px: Тень мягко размывается.
+rgba(..., 0.1): Очень слабая прозрачность (10%). */
 }
 
-/* ОГРАНИЧЕНИЕ КАРТИНКИ (Чтобы не было "сосисок") */
-.card-img {
-    width: 100%;
-    height: 200px; /* Фиксированная высота фото */
-    overflow: hidden;
+/* ОГРАНИЧЕНИЕ КАРТИНКИ для одинакового розмира */
+.card-img {                 /* отвечает за коробку для картинки */
+    width: 100%;            /* рамка должна зайнять все 100% своей коробки */
+    height: 200px; /* высота фото  не более */
+    overflow: hidden;       /* вырезает выходящее за край */
 }
 
-.card-img img {
-  width: 100%;
-  height: 100%;
+.card-img img {             /* отвечает за картинку */
+  width: 100%;              /* картинка должна зайнять все 100% своей ширины в коробки */
+  height: 100%;             /* картинка должна зайнять все 100% своей высоты в коробки */
   object-fit: cover; /* Заполняет блок без искажений */
-  display: block;
+  display: block;           /* превращает в блок чтобы отступ убрался ведь по умолчанию img строчный
+   елемент а значит будет небольшая щель снизу а блок ее уберет */
 }
 
-.card h3 {
-    padding: 20px 15px 10px;
-    color: var(--secondary);
+.card h3 {                  /* отвечает за заголовок */
+    padding: 20px 15px 10px;/* отступ со всех сторо. верх, право, низ, лево-от-право */
+    color: var(--secondary);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */
 }
 
-.card p {
-    padding: 0 20px 20px;
+.card p {                   /* отвечает за абзац */
+    padding: 0 20px 20px;   /* отступ со всех сторо. верх, право, низ, лево-от-право */
     flex-grow: 1; /* Выталкивает кнопку всегда в самый низ */
-    font-size: 0.95rem;
-    color: var(--text-light);
+    font-size: 0.95rem;     /* Адаптивный размер шрифта */
+    color: var(--text-light);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */
 }
 
-.btn-card {
-  margin: 0 20px 25px;
-  padding: 12px;
-  border: none;
-  background: var(--secondary);
-  color: var(--white);
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: var(--transition);
+.btn-card {                 /* отвечает за кнопку */
+  margin: 0 20px 25px;      /* отступ со всех сторо. верх, право, низ, лево-от-право */
+  padding: 12px;            /* отступ со всех сторо. верх, право, низ, лево-от-право */
+  border: none;             /* убрать рамки */
+  background: var(--secondary);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */
+  color: var(--white);      /* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */
+  border-radius: 8px;       /* округление */
+  font-weight: bold;        /* жирный текст */
+  cursor: pointer;          /*  превращение в руку указатель */
+  transition: var(--transition);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста при привращении */
 }
 
-.btn-card:hover {
-    background: var(--primary);
-    color: var(--secondary);
+.btn-card:hover {           /* говорит при наведении сменить цвет */    
+    background: var(--primary);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */
+    color: var(--secondary);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом текста */ 
 }
 
 /* 5. СЕКЦИЯ ОБО МНЕ */
-.about {
-  background: var(--white);
-  padding: 100px 20px;
-  text-align: center;
+.about {                    /* общий блок Обо мне */
+  background: var(--white);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */
+  padding: 100px 20px;     /* отступы внутренние */ 
+  text-align: center;      /* текст по центру */ 
 }
 
-.about h2 { margin-bottom: 30px; font-size: 2.5rem; }
-.about .container { max-width: 800px; margin: 0 auto; }
+.about .container { max-width: 800px; margin: 0 auto; }/* контейнер для заголовка и абзаца */
+.about h2 { margin-bottom: 30px; font-size: 2.5rem; }/* заголовок, внешний отступ с низу, адаптив */
 
 /* 6. КОНТАКТЫ И ФОРМА */
-.contact { 
-    padding: 100px 20px; 
-    background-color: var(--bg-light);
+.contact {                 /* общий блок контакты */     
+    padding: 100px 20px;    /* отступы */      
+    background-color: var(--bg-light);/* Инструкция заглянуть в начало CSS-файла и взять значение,
+   которое записано в рут и сделать его цветом фона */
 }
 
 /*  Главный контейнер контактов делаем столбиком */
-.contact-container {
-    display: flex;
-    flex-direction: column; /* Магия: всё встает друг под друга */
+.contact-container {        /* блок контакты */
+    display: flex;          /* Ставим элементы в ряд Внегласный включатель */
+    flex-direction: column; /* всё встает друг под друга */
     align-items: center;    /* Центрируем и текст, и форму по горизонтали */
-    gap: 30px;              /* Расстояние между текстом и началом формы */
-    max-width: 600px;       /* Ограничим ширину, чтобы форма не растянулась на весь экран */
-    margin: 0 auto;         /* Центрируем весь блок на странице */
+    gap: 40px;              /* Расстояние между текстом и началом формы */
+    max-width: 800px;       /* Ограничим ширину, чтобы форма не растянулась на весь экран */
+    margin: 50px auto 0;    /* Центрируем весь блок на странице */
 }
 
 /*  Текст делаем по центру */
-.contact-info {
-    text-align: center;
-    width: 100%;
+.contact-info {             /* контейнер для контакта телеги */
+    text-align: center;     /* текст по центру */
+    width: 100%;            /* фон должен зайнять все 100% своей ширины в коробки или родителе */
 }
 
 /* Форму тоже на всю доступную ширину контейнера */
-.contact-form {
-    width: 100%;
+.contact-form {             /* контейнер для отправки данных */
+    width: 100%;            /* фон должен зайнять все 100% своей ширины в коробки или родителе */
 }
 
-.section-title {
-    text-align: center;
+.section-title {            /* для текста */
+    text-align: center;     /* по центру */
 }
 
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 50px auto 0;
-  gap: 60px;
+.form-group { margin-bottom: 25px; text-align: left; }/*  */
+
+.form-group label {         /*  */
+    display: block;         /*  */
+    margin-bottom: 10px;     /*  */   
+    font-weight: bold;      /*  */
+    color: var(--secondary);/*  */    
 }
 
-.form-group { margin-bottom: 25px; text-align: left; }
-
-.form-group label { 
-    display: block; 
-    margin-bottom: 10px; 
-    font-weight: bold; 
-    color: var(--secondary);
+.form-group input, .form-group textarea {/*  */
+  width: 100%;             /*  */ 
+  padding: 15px;           /*  */     
+  border: 1px solid #cbd5e1;/*  */
+  border-radius: 10px;     /*  */     
+  font-family: inherit;     /*  */
+  font-size: 1rem;          /*  */
 }
 
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  font-family: inherit;
-  font-size: 1rem;
+.form-group input:focus, .form-group textarea:focus {/*  */
+    outline: none;          /*  */    
+    border-color: var(--primary);/*  */
 }
 
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary);
+.btn-submit {               /*  */
+  width: 100%;              /*  */    
+  padding: 18px;            /*  */    
+  background: var(--secondary);/*  */
+  color: var(--white);      /*  */    
+  border: none;             /*  */
+  border-radius: 10px;      /*  */
+  font-weight: bold;        /*  */    
+  font-size: 1rem;          /*  */    
+  cursor: pointer;          /*  */    
+  transition: all var(--transition);/*  */
 }
 
-.btn-submit {
-  width: 100%;
-  padding: 18px;
-  background: var(--secondary);
-  color: var(--white);
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all var(--transition);
-}
-
-.btn-submit:hover { 
-    background: var(--primary); 
-    color: var(--secondary); 
-    transform: translateY(-2px);
+.btn-submit:hover {          /*  */   
+    background: var(--primary);/*  */     
+    color: var(--secondary); /*  */       
+    transform: translateY(-2px);/*  */    
 }
 
 /* 7. ФУТЕР */
-footer {
-  background: var(--secondary);
-  color: var(--white);
-  text-align: center;
-  padding: 50px 20px;
+footer {                    /*  */    
+  background: var(--secondary);/*  */
+  color: var(--white);      /*  */    
+  text-align: center;       /*  */    
+  padding: 50px 20px;       /*  */    
   margin-top: auto; /* Прижимает к низу */
 }
 
-footer small {
-    display: block;
-    margin-top: 15px;
-    opacity: 0.7;
+footer small {              /*  */
+    display: block;          /*  */   
+    margin-top: 15px;        /*  */   
+    opacity: 0.7;            /*  */   
 }
 
 /* АДАПТИВНОСТЬ */
-@media (max-width: 768px) {
-    .nav-links { gap: 20px; }
-    .hero h1 { font-size: 2.5rem; }
-    .contact-container { gap: 30px; }
+@media (max-width: 768px) { /*  */    
+    .nav-links { gap: 20px; }/*  */       
+    .hero h1 { font-size: 2.5rem; } /*  */
+    .contact-container { gap: 30px; }/*  */
 }
