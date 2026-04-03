@@ -3,110 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проект 6</title>
+    <title>Проект 7</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
-    <nav>
-        <!-- Ссылки-якоря -->
-        <ul class="nav-links">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
+  <h1>Мой сайт</h1>
 </header>
-
-<main>
-    <!--  "Главная" -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Создаю современные сайты</h1>
-            <p>Чистый HTML и профессиональный CSS для вашего бизнеса</p>
-            <a href="#contact" class="btn-main">Связаться со мной</a>
-        </div>
-    </section>
-
-    <!-- "Услуги" -->
-    <section class="services" id="services">
-        <h2 class="section-title">Мои услуги</h2>
-        <div class="cards">
-            <article class="card">
-                <div class="card-img"><img src="foto/img1.jpg" alt="Верстка"></div>
-                <h3>HTML5 Верстка</h3>
-                <p>Создаю чистый код, который легко поддерживать.</p>
-                <button class="btn-card">Подробнее</button>
-            </article>
-
-            <article class="card">
-                <div class="card-img"><img src="foto/img2.jpg" alt="Достижения"></div>
-                <h3>Адаптивный дизайн</h3>
-                <p>Ваш сайт будет идеально выглядеть на смартфонах, планшетах и ПК.</p>
-                <button class="btn-card">Достижения</button>
-            </article>
-
-            <article class="card">
-                <div class="card-img"><img src="foto/img3.jpg" alt="Галерея"></div>
-                <h3>Галерея проектов</h3>
-                <p>Посмотрите примеры моих работ и оцените качество исполнения.</p>
-                <button class="btn-card">Смотреть работы</button>
-            </article>
-        </div>
-    </section>
-
-    <!-- "Обо мне" -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>Обо мне</h2>
-            <p>Я — начинающий веб-разработчик с глубоким интересом к созданию интерфейсов.
-                 Постоянно обучаюсь новым технологиям, чтобы делать сайты быстрее, удобнее и красивее.</p>
-            <p>Моя цель — превращать идеи в работающие веб-решения.</p>
-        </div>
-    </section>
-
-    <!-- "Контакты" -->
-    <section class="contact" id="contact">
-    <h2 class="section-title">Связаться со мной</h2>
-    
-    <div class="contact-container">
-        
-        <div class="contact-info">
-            <p>Если у вас есть вопросы, я с радостью отвечу на них!</p>
-            <p><strong>Telegram:</strong> <a href="https://t.me">@Еще нет</a></p>
-        </div>
-
-        
-        <form action="https://formspree.io/f/xlgpqaap" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" placeholder="Иван" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Ваш Email:</label>
-                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Сообщение:</label>
-                <textarea name="message" id="message" rows="5" placeholder="Введите ваш вопрос..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Отправить сообщение</button>
-        </form>
-    </div>
-    </section>
-</main>
-
+<div class="layout">
+  <aside class="sidebar">
+    <h3>Меню</h3>
+    <ul>
+      <li>Пункт 1</li>
+      <li>Пункт 2</li>
+      <li>Пункт 3</li>
+    </ul>
+  </aside>
+  <main class="content">
+    <h2>Контент</h2>
+    <p>Здесь основной текст сайта</p>
+  </main>
+</div>
 <footer>
-    <div class="footer-content">
-        <p>© 2026 • Все права защищены</p>
-        <p><small>Господи Иисусе Христе, Помилуй нас.</small></p>
-    </div>
+  <p>© 2026</p>
 </footer>
-
 </body>
 </html>
