@@ -93,7 +93,7 @@ nav {                        /* навигация шапки */
    которое записано в рут и сделать его цветом фона */
   color: var(--secondary);    /* Инструкция заглянуть в начало CSS-файла и взять значение,
    которое записано в рут и сделать его цветом текста */
-  padding: 35px 35px 15px;    /* внутренний отступ со всех сторон */
+  padding: 15px 35px;    /* внутренний отступ со всех сторон */
   text-decoration: none;      /* убирает подчеркивание */
   border-radius: 8px;         /* округление краев */
   font-weight: bold;          /* жирность текста */
@@ -245,66 +245,68 @@ rgba(..., 0.1): Очень слабая прозрачность (10%). */
     text-align: center;     /* по центру */
 }
 
-.form-group { margin-bottom: 25px; text-align: left; }/*  */
+.form-group { margin-bottom: 25px; text-align: left; }/* контейнер для поля, отступ, центр текста */
 
-.form-group label {         /*  */
-    display: block;         /*  */
-    margin-bottom: 10px;     /*  */   
-    font-weight: bold;      /*  */
-    color: var(--secondary);/*  */    
+.form-group label {         /* подпись (название) для поля ввода */
+    display: block;         /* строку в блок */
+    margin-bottom: 10px;     /* отступ снизу */   
+    font-weight: bold;      /* жирность... */
+    color: var(--secondary);/* инструкция... */    
 }
 
-.form-group input, .form-group textarea {/*  */
-  width: 100%;             /*  */ 
-  padding: 15px;           /*  */     
-  border: 1px solid #cbd5e1;/*  */
-  border-radius: 10px;     /*  */     
-  font-family: inherit;     /*  */
-  font-size: 1rem;          /*  */
+.form-group input, .form-group textarea {/* Обращение к однострочным полям (input) 
+  и многострочным (textarea) */
+  width: 100%;             /* ширина на весь блок */ 
+  padding: 15px;           /* отступы */     
+  border: 1px solid #cbd5e1;/* рамка */
+  border-radius: 10px;     /*округление  */     
+  font-family: inherit;     /* розмер шрифта при наборе */
+  font-size: 1rem;          /* адаптивность */
 }
 
-.form-group input:focus, .form-group textarea:focus {/*  */
-    outline: none;          /*  */    
-    border-color: var(--primary);/*  */
+.form-group input:focus, .form-group textarea:focus {/*  состояния фокуса, которая срабатывает
+   при нажатии на поле */
+    outline: none;          /* Убираем стандартную синюю обводку браузера */    
+    border-color: var(--primary);/* кольор рамки */
 }
 
-.btn-submit {               /*  */
-  width: 100%;              /*  */    
-  padding: 18px;            /*  */    
-  background: var(--secondary);/*  */
-  color: var(--white);      /*  */    
-  border: none;             /*  */
-  border-radius: 10px;      /*  */
-  font-weight: bold;        /*  */    
-  font-size: 1rem;          /*  */    
-  cursor: pointer;          /*  */    
+.btn-submit {               /* отправка сообшение */
+  width: 100%;              /* ширина на весь блок */    
+  padding: 18px;            /* отступы внутри */    
+  background: var(--secondary);/* кольор фона */
+  color: var(--white);      /* кольор текста */    
+  border: none;             /* убираем рамку */
+  border-radius: 10px;      /* округление */
+  font-weight: bold;        /* жирность текста */    
+  font-size: 1rem;          /* адаптивность */    
+  cursor: pointer;          /*  превращение в руку указатель */    
   transition: all var(--transition);/*  */
 }
 
-.btn-submit:hover {          /*  */   
-    background: var(--primary);/*  */     
-    color: var(--secondary); /*  */       
-    transform: translateY(-2px);/*  */    
+.btn-submit:hover {          /* активация */   
+    background: var(--primary);/* кольор фона */     
+    color: var(--secondary); /* колир текста */       
+    transform: translateY(-2px);/* плавное превращение */    
 }
 
 /* 7. ФУТЕР */
-footer {                    /*  */    
-  background: var(--secondary);/*  */
-  color: var(--white);      /*  */    
-  text-align: center;       /*  */    
-  padding: 50px 20px;       /*  */    
-  margin-top: auto; /* Прижимает к низу */
+footer {                    /* футер */    
+  background: var(--secondary);/* кольор фона */
+  color: var(--white);      /* кольор текста */    
+  text-align: center;       /* центр текста */    
+  padding: 50px 20px;       /* отступы внутри */    
+  margin-top: auto;         /* Прижимает к низу */
 }
 
-footer small {              /*  */
-    display: block;          /*  */   
-    margin-top: 15px;        /*  */   
-    opacity: 0.7;            /*  */   
+footer small {              /* текст футера */
+    display: block;         /* строки в блок */   
+    margin-top: 15px;       /* внешний отступ сверху */   
+    opacity: 0.7;           /* прозрачность  */   
 }
 
 /* АДАПТИВНОСТЬ */
-@media (max-width: 768px) { /*  */    
-    .nav-links { gap: 20px; }/*  */       
-    .hero h1 { font-size: 2.5rem; } /*  */
-    .contact-container { gap: 30px; }/*  */
+@media (max-width: 768px) { /* адаптивность */    
+    .nav-links { gap: 20px; }       
+    .hero h1 { font-size: 2.5rem; } 
+    .contact-container { gap: 30px; }
 }
