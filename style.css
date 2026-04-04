@@ -8,7 +8,7 @@
 body {
     font-family: sans-serif;
     line-height: 1.6;
-    background-color: #f1f5f9;
+    background-color: #baddff;
 }
 
 /* 🔥 1. ГЛАВНЫЙ LAYOUT (Сетка Grid) */
@@ -51,7 +51,7 @@ body {
 header, footer {
     text-align: center;      /* Текст по центру */
     padding: 20px;           /* Высота блоков */
-    background: #1e293b;     /* Темно-синий фон */
+    background: #d4c83f;     /* Темно-синий фон */
     color: white;            /* Белый текст */
 }
 
