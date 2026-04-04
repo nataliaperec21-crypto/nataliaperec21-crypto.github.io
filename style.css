@@ -11,7 +11,7 @@ body {
     background-color: #baddff;
 }
 
-/* 🔥 1. ГЛАВНЫЙ LAYOUT (Сетка Grid) */
+/*  1. ГЛАВНЫЙ LAYOUT (Сетка Grid) */
 .layout {
     display: grid;           /* Включатель сетки */
     /* Рисуем колонки: первая 250px (сайдбар), вторая 1fr (весь остаток контенту) */
@@ -22,7 +22,7 @@ body {
     margin: 0 auto;          /* Центрируем всю сетку на странице */
 }
 
-/* 🔥 2. SIDEBAR (Слева) */
+/*  2. SIDEBAR (Слева) */
 .sidebar {
     background: #e2e8f0;     /* Светло-серый фон */
     padding: 20px;           /* Воздух внутри */
@@ -39,7 +39,7 @@ body {
     border-bottom: 1px solid #cbd5e1; /* Разделительные линии в меню */
 }
 
-/* 🔥 3. MAIN (Справа) */
+/*  3. MAIN (Справа) */
 .content {
     background: #ffffff;     /* Белый фон для текста */
     padding: 20px;           /* Воздух внутри */
@@ -47,15 +47,15 @@ body {
     min-height: 400px;       /* Чтобы контент не был слишком коротким */
 }
 
-/* 🔥 4. HEADER / FOOTER */
+/*  4. HEADER / FOOTER */
 header, footer {
     text-align: center;      /* Текст по центру */
     padding: 20px;           /* Высота блоков */
-    background: #d4c83f;     /* Темно-синий фон */
+    background: #42372d;     /* Темно-синий фон */
     color: white;            /* Белый текст */
 }
 
-/* 👉 АДАПТИВНОСТЬ: на телефоне sidebar уходит вверх */
+/*  АДАПТИВНОСТЬ: на телефоне sidebar уходит вверх */
 @media (max-width: 768px) {
     .layout {
         /* На маленьком экране отменяем две колонки и делаем одну */
