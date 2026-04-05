@@ -9,6 +9,9 @@ body {
     font-family: sans-serif;
     line-height: 1.6;    /* отступы в шрифте */
     background-color: #baddff;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Вертикальная структура */
+    min-height: 100vh;                 /* Растягиваем на весь экран */
 }
 
 /*  1. ГЛАВНЫЙ LAYOUT (Сетка Grid) */
@@ -40,7 +43,7 @@ body {
     border-bottom: 1px solid #cbd5e1; /* Разделительные линии в меню */
 }
 
-/*  3. MAIN (Справа) */
+/*  3. (Справа) */
 .content {
     background: #ffffff;     /* Белый фон для текста */
     padding: 20px;           /* Воздух внутри */
