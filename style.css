@@ -7,15 +7,15 @@
 
 body {
     font-family: sans-serif;
-    line-height: 1.6;
+    line-height: 1.6;    /* отступы в шрифте */
     background-color: #baddff;
 }
 
 /*  1. ГЛАВНЫЙ LAYOUT (Сетка Grid) */
 .layout {
     display: grid;           /* Включатель сетки */
-    /* Рисуем колонки: первая 250px (сайдбар), вторая 1fr (весь остаток контенту) */
-    grid-template-columns: 250px 1fr; 
+    grid-template-columns: 250px 1fr; /* Рисуем колонки: первая 250px (сайдбар),
+     вторая 1fr (весь остаток контенту) */
     gap: 20px;               /* Расстояние между колонками */
     padding: 20px;           /* Внутренний отступ от краев экрана */
     max-width: 1200px;       /* Ограничитель ширины по центру */
@@ -24,7 +24,8 @@ body {
 
 /*  2. SIDEBAR (Слева) */
 .sidebar {
-    background: #e2e8f0;     /* Светло-серый фон */
+    box-shadow: 0 5px 15px rgba(228, 223, 223, 0.1);
+    /*background: #e2e8f0;     /* Светло-серый фон */
     padding: 20px;           /* Воздух внутри */
     border-radius: 8px;      /* Скругление */
 }
