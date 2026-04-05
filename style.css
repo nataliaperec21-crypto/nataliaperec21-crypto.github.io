@@ -24,7 +24,7 @@ body {
 
 /*  2. SIDEBAR (Слева) */
 .sidebar {
-    box-shadow: 0 5px 15px rgba(228, 223, 223, 0.1);
+    box-shadow: 0 5px 15px rgba(244, 239, 120, 0.1);
     /*background: #e2e8f0;     /* Светло-серый фон */
     padding: 20px;           /* Воздух внутри */
     border-radius: 8px;      /* Скругление */
