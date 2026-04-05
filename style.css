@@ -7,63 +7,63 @@
 
 body {
     font-family: sans-serif;
-    line-height: 1.6;    /* отступы в шрифте */
-    background-color: #baddff;
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Вертикальная структура */
-    min-height: 100vh;                 /* Растягиваем на весь экран */
+    line-height: 1.6;    /* межстрочный интервал (воздух внутри текста) */
+    background-color: #baddff; /* светло-голубой фон всей страницы */
+    display: grid;       /* Включатель сетки для всей страницы */
+    grid-template-rows: auto 1fr auto; /* auto(Шапка) | 1fr(Центр-пружина) | auto(Футер) */
+    min-height: 100vh;   /* Растягиваем body на всю высоту окна, чтобы прижать футер */
 }
 
-/*  1. ГЛАВНЫЙ LAYOUT (Сетка Grid) */
+/* 1. ГЛАВНЫЙ LAYOUT (Сетка внутри контента) */
 .layout {
-    display: grid;           /* Включатель сетки */
-    grid-template-columns: 250px 1fr; /* Рисуем колонки: первая 250px (сайдбар),
-     вторая 1fr (весь остаток контенту) */
-    gap: 20px;               /* Расстояние между колонками */
-    padding: 20px;           /* Внутренний отступ от краев экрана */
-    max-width: 1200px;       /* Ограничитель ширины по центру */
-    margin: 0 auto;          /* Центрируем всю сетку на странице */
+    display: grid;           /* Включатель сетки для Сайдбара и Контента */
+    grid-template-columns: 250px 1fr; /* Первая колонка 250px, вторая забирает всё остальное (1fr) */
+    gap: 20px;               /* Ровное расстояние между колонками */
+    padding: 20px;           /* Отступ от краев экрана и между блоками Шапка/Футер */
+    max-width: 1200px;       /* Ограничитель ширины макета */
+    margin: 0 auto;          /* Центрируем всю сетку на больших мониторах */
+    width: 100%;             /* Чтобы блок занимал всю ширину до предела в 1200px */
 }
 
-/*  2. SIDEBAR (Слева) */
+/* 2. SIDEBAR (Слева) */
 .sidebar {
-    box-shadow: 0 5px 15px rgba(244, 239, 120, 0.1);
-    /*background: #e2e8f0;     /* Светло-серый фон */
-    padding: 20px;           /* Воздух внутри */
-    border-radius: 8px;      /* Скругление */
+    box-shadow: 0 5px 15px rgba(244, 239, 120, 0.2); 
+      /* тень: 0(центр), 5px(вниз), 15px(размытие), желтоватый оттенок */
+    background: #ffffff;     /* Добавил белый фон, чтобы тень была видна */
+    padding: 20px;           
+    border-radius: 8px;      
 }
 
 .sidebar ul {
-    list-style: none;        /* Убираем точки у меню */
+    list-style: none;        /* Убрать стандартные черные точки */
     margin-top: 10px;
 }
 
 .sidebar li {
     padding: 5px 0;
-    border-bottom: 1px solid #cbd5e1; /* Разделительные линии в меню */
+    border-bottom: 1px solid #cbd5e1; /* Разделительные линии между пунктами меню */
 }
 
-/*  3. (Справа) */
+/* 3. CONTENT (Справа) */
 .content {
-    background: #ffffff;     /* Белый фон для текста */
-    padding: 20px;           /* Воздух внутри */
-    border-radius: 8px;      /* Скругление */
-    min-height: 400px;       /* Чтобы контент не был слишком коротким */
+    background: #ffffff;     /* Белый фон для основного текста */
+    padding: 20px;           
+    border-radius: 8px;      
+    min-height: 400px;       /* Чтобы блок не схлопывался, если текста мало */
 }
 
-/*  4. HEADER / FOOTER */
+/* 4. HEADER / FOOTER */
 header, footer {
-    text-align: center;      /* Текст по центру */
-    padding: 20px;           /* Высота блоков */
-    background: #42372d;     /* Темно-синий фон */
-    color: white;            /* Белый текст */
+    text-align: center;      
+    padding: 20px;           
+    background: #42372d;     /* Тёмно-коричневый фон */
+    color: white;            
 }
 
-/*  АДАПТИВНОСТЬ: на телефоне sidebar уходит вверх */
+/* АДАПТИВНОСТЬ: на телефоне sidebar уходит вверх */
 @media (max-width: 768px) {
     .layout {
-        /* На маленьком экране отменяем две колонки и делаем одну */
-        /* Элементы встанут друг под другом: сначала сайдбар, потом контент */
+        /* На маленьком экране отменяем колонки и делаем одну общую полосу */
         grid-template-columns: 1fr; 
     }
 }
