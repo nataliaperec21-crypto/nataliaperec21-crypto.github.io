@@ -27,6 +27,12 @@ body {
     min-height: 100vh;   /* Растягиваем body на всю высоту окна, чтобы прижать футер */
 }
 
+.header {
+    text-align: center;
+    background-color: var(--bg-light);
+    
+}
+
 .hero {                       /* главный блок (приветствие) */
   background-color: var(--secondary); /* берем темно-синий из пульта управления (рут) */
   color: var(--white);        /* берем белый из пульта управления (рут) */
@@ -61,7 +67,7 @@ body {
 
 .header, footer {
   background-color: var(--primary)
-  text-align: center;
+  
 }
 
 /* АДАПТИВНОСТЬ: на телефоне sidebar уходит вверх */
