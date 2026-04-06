@@ -1,3 +1,11 @@
+:root {
+    --primary: #ffd000;
+    --secondary: #100d1f;
+    --text-maim: #334155;
+    --white: #ffffff;
+    --transition: 0.3s ease;
+}
+
 /* ОБЩИЕ НАСТРОЙКИ */
 * {
     margin: 0;
@@ -5,59 +13,55 @@
     box-sizing: border-box; /* Чтобы отступы не раздували блоки */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
     line-height: 1.6;    /* межстрочный интервал (воздух внутри текста) */
-    background-color: #baddff; /* светло-голубой фон всей страницы */
     display: grid;       /* Включатель сетки для всей страницы */
     grid-template-rows: auto 1fr auto; /* auto(Шапка) | 1fr(Центр-пружина) | auto(Футер) */
     min-height: 100vh;   /* Растягиваем body на всю высоту окна, чтобы прижать футер */
 }
 
-/* 1. ГЛАВНЫЙ LAYOUT (Сетка внутри контента) */
+.hero {                       /* главный блок (приветствие) */
+  background-color: var(--secondary); /* берем темно-синий из пульта управления (рут) */
+  color: var(--white);        /* берем белый из пульта управления (рут) */
+  text-align: center;         /* центрируем весь контент (заголовок, текст, кнопку) */
+}
+
+.hero h1 {                    /* главный заголовок */
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.btn-main {                   /* кнопка "Связаться со мной" */
+  display: inline-block;      /* "Маленький кирпич": позволяет задать размеры, но не на всю ширину */
+  background-color: var(--primary); /* желтый из пульта управления (рут) */
+  color: var(--secondary);    /* темно-синий текст из пульта управления (рут) */
+  text-decoration: none;      /* убираем стандартное подчеркивание ссылки */
+  border-radius: 8px;         /* скругление углов кнопки */
+  font-weight: bold;          /* жирный текст, чтобы кнопка была заметной */
+  /* transition - это "спидометр" для плавной смены размера и цвета */
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.btn-main:hover {            /* эффект при наведении курсора */
+    transform: scale(1.05);  /* кнопка плавно увеличивается на 5% */
+    background-color: #e6bc00; /* цвет фона становится чуть темнее */
+}
+
+/*2. LAYOUT (Grid)*/
 .layout {
-    display: grid;           /* Включатель сетки для Сайдбара и Контента */
-    grid-template-columns: 250px 1fr; /* Первая колонка 250px, вторая забирает всё остальное (1fr) */
-    gap: 20px;               /* Ровное расстояние между колонками */
-    padding: 20px;           /* Отступ от краев экрана и между блоками Шапка/Футер */
-    max-width: 1200px;       /* Ограничитель ширины макета */
-    margin: 0 auto;          /* Центрируем всю сетку на больших мониторах */
-    width: 100%;             /* Чтобы блок занимал всю ширину до предела в 1200px */
+  display: grid;
+  grid-template-columns: 250px 1fr;
 }
 
-/* 2. SIDEBAR (Слева) */
-.sidebar {
-    box-shadow: 0 5px 15px rgba(244, 239, 120, 0.2); 
-      /* тень: 0(центр), 5px(вниз), 15px(размытие), желтоватый оттенок */
-    background: #ffffff;     /* Добавил белый фон, чтобы тень была видна */
-    padding: 20px;           
-    border-radius: 8px;      
-}
-
-.sidebar ul {
-    list-style: none;        /* Убрать стандартные черные точки */
-    margin-top: 10px;
-}
-
-.sidebar li {
-    padding: 5px 0;
-    border-bottom: 1px solid #cbd5e1; /* Разделительные линии между пунктами меню */
-}
-
-/* 3. CONTENT (Справа) */
-.content {
-    background: #ffffff;     /* Белый фон для основного текста */
-    padding: 20px;           
-    border-radius: 8px;      
-    min-height: 400px;       /* Чтобы блок не схлопывался, если текста мало */
-}
-
-/* 4. HEADER / FOOTER */
-header, footer {
-    text-align: center;      
-    padding: 20px;           
-    background: #42372d;     /* Тёмно-коричневый фон */
-    color: white;            
+.header, footer {
+  background-color: var(--primary)
+  text-align: center;
 }
 
 /* АДАПТИВНОСТЬ: на телефоне sidebar уходит вверх */
@@ -67,3 +71,9 @@ header, footer {
         grid-template-columns: 1fr; 
     }
 }
+
+/*3. КАРТОЧКИ (Flex или Grid)*/
+
+/*4. ВНУТРИ CONTENT*/
+
+/* 4. HEADER / FOOTER */

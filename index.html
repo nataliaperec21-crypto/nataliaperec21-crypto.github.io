@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проект 8 - Grid Layout</title>
+    <title>Проект 8</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,26 +12,90 @@
     <h1>Мой сайт</h1>
 </header>
 
-    <!-- Главный контейнер-сетка -->
-<main class="layout">
+<section class="hero">
+    <div class="hero-content">
+        <h1>Создаю современные сайты</h1>
+        <p>Чистый HTML и профессиональный CSS для вашего бизнеса</p>
+        <a href="#contact" class="bth-main">Связаться со мной</a>
+    </div>
+</section>
 
-    <!-- 2. SIDEBAR (Слева) -->
+<main class="layout">
     <aside class="sidebar">
-        <h3>Меню</h3>
-        <ul>
-            <li>Пункт 1</li>
-            <li>Пункт 2</li>
-            <li>Пункт 3</li>
-        </ul>
+        <h3>меню</h3>
+            <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+            </ul>
     </aside>
 
-    <!-- 3. CONTENT (Справа) -->
     <section class="content">
-        <h2>Контент</h2>
-        <p>Здесь основной текст сайта. Благодаря Grid мы разделили экран на две части.</p>
-    </section>
+            <h3>контент</h3>
+            <p>Здесь основной текст сайта</p>
 
+        <div class="text-block">
+            <h2>первая тема</h2>
+            <p>текст первой темы</p>
+        </div>
+
+        <div class="text-block">
+            <h2>вторая тема</h2>
+            <p>текст второй темы</p>
+        </div>
+
+        <div class="cards">
+            <article class="card">
+                <div class="card-img"><img src="foto/img1.jpg" alt="foto"></div>
+                    <h3>HTML5 Верстка</h3>
+                    <p>Создаю чистый код, который легко поддерживать.</p>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="foto/img2.jpg" alt="foto"></div>
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Ваш сайт будет идеально выглядеть на смартфонах, планшетах и ПК.</p>
+            </article>
+            <article class="card">
+                <div class="card-img"><img src="foto/img3.jpg" alt="foto"></div>
+                <h3>Галерея проектов</h3>
+                    <p>Посмотрите примеры моих работ и оцените качество исполнения.</p>
+            </article>
+        </div>
+    </section>
 </main>
+
+<!-- "Контакты" -->
+    <section class="contact" id="contact">
+    <h2 class="section-title">Связаться со мной</h2>
+    
+    <div class="contact-container">
+        
+        <div class="contact-info">
+            <p>Если у вас есть вопросы, я с радостью отвечу на них!</p>
+            <p><strong>Telegram:</strong> <a href="https://t.me">@Еще нет</a></p>
+        </div>
+
+        
+        <form action="https://formspree.io/f/xlgpqaap" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" placeholder="Иван" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea name="message" id="message" rows="5" placeholder="Введите ваш вопрос..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Отправить сообщение</button>
+        </form>
+    </div>
+    </section>
 <footer>
     <p>© 2026</p>
 </footer>
