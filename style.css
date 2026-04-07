@@ -27,7 +27,7 @@ body {
     min-height: 100vh;   /* Растягиваем body на всю высоту окна, чтобы прижать футер */
 }
 
-.header h1 {
+header h1 {
     text-align: center;
     background-color: var(--bg-light);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* тень под меню: 0(центр), 2px(вниз), 10px(размытие) */
