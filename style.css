@@ -47,9 +47,9 @@ header {
   display: inline-block;      /* "Маленький кирпич": позволяет задать размеры, но не на всю ширину */
   background-color: var(--primary); /* желтый из пульта управления (рут) */
   color: var(--secondary);    /* темно-синий текст из пульта управления (рут) */
-  text-decoration: none;
+  text-decoration: none;/* убираем стандартное подчеркивание ссылки */
   padding: 15px 30px;
-  margin-top: 20px;      /* убираем стандартное подчеркивание ссылки */
+  margin-top: 20px;      
   border-radius: 8px;         /* скругление углов кнопки */
   font-weight: bold;          /* жирный текст, чтобы кнопка была заметной */
   /* transition - это "спидометр" для плавной смены размера и цвета */
@@ -59,6 +59,7 @@ header {
 .btn-main:hover {            /* эффект при наведении курсора */
     transform: scale(1.05);  /* кнопка плавно увеличивается на 5% */
     background-color: #e6bc00; /* цвет фона становится чуть темнее */
+    text-decoration: none;
 }
 
 /*2. LAYOUT (Grid)*/
