@@ -37,9 +37,11 @@ header {
   background-color: var(--secondary); /* берем темно-синий из пульта управления (рут) */
   color: var(--white);        /* берем белый из пульта управления (рут) */
   text-align: center;         /* центрируем весь контент (заголовок, текст, кнопку) */
+  padding: 40px 20px;
 }
 
 .hero h1 {                    /* главный заголовок */
+    margin-bottom: 20px;
     font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
@@ -56,7 +58,8 @@ header {
   transition: transform var(--transition), background-color var(--transition);
 }
 
-.btn-main:hover {            /* эффект при наведении курсора */
+.btn-main:hover {    
+    color: var(--secondary);        /* эффект при наведении курсора */
     transform: scale(1.05);  /* кнопка плавно увеличивается на 5% */
     background-color: #e6bc00; /* цвет фона становится чуть темнее */
     text-decoration: none;
@@ -69,8 +72,11 @@ header {
 }
 
 footer {
-  background-color: var(--primary)
-  color: var(--text-main);
+  background: var(--secondary);/* кольор фона */
+  color: var(--white);      /* кольор текста */    
+  text-align: center;       /* центр текста */    
+  padding: 50px 20px;       /* отступы внутри */    
+  margin-top: auto;         /* Прижимает к низу */
 }
 
 /* АДАПТИВНОСТЬ: на телефоне sidebar уходит вверх */
