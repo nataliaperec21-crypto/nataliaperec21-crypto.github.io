@@ -94,7 +94,7 @@ header {
 }
 
 .cards {
-    d
+    display: flex;
 }
 
 footer {
