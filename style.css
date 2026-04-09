@@ -1,7 +1,7 @@
 :root {
-    --primary: #ffd000;
+    --primary: #ffffff;
     --secondary: #100d1f;
-    --text-maim: #334155;
+    --text-maim: #3cad53;
     --white: #ffffff;
     --transition: 0.3s ease;
 }
@@ -20,7 +20,7 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary);
-    color: var(--text-main);
+    color: var(--secondary);
     line-height: 1.6;    /* межстрочный интервал (воздух внутри текста) */
     display: grid;       /* Включатель сетки для всей страницы */
     grid-template-rows: auto 1fr auto; /* auto(Шапка) | 1fr(Центр-пружина) | auto(Футер) */
@@ -29,12 +29,12 @@ body {
 
 header {
     text-align: center;
-    background-color: var(--primary);
+    background-color: var(--text-maim);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* тень под меню: 0(центр), 2px(вниз), 10px(размытие) */
 }
 
 .hero {                       /* главный блок (приветствие) */
-  background-color: var(--primary); /* берем темно-синий из пульта управления (рут) */
+  background-color: var(--text-maim); /* берем темно-синий из пульта управления (рут) */
   color: var(--white);        /* берем белый из пульта управления (рут) */
   text-align: center;         /* центрируем весь контент (заголовок, текст, кнопку) */
   padding: 40px 20px;
@@ -47,7 +47,7 @@ header {
 
 .btn-main {                   /* кнопка "Связаться со мной" */
   display: inline-block;      /* "Маленький кирпич": позволяет задать размеры, но не на всю ширину */
-  background-color: var(--primary); /* желтый из пульта управления (рут) */
+  background-color: var(--text-maim); /* желтый из пульта управления (рут) */
   color: var(--secondary);    /* темно-синий текст из пульта управления (рут) */
   text-decoration: none;/* убираем стандартное подчеркивание ссылки */
   padding: 15px 30px;
@@ -89,10 +89,16 @@ header {
     padding: 20px;
     border-radius: 10px;
     background-color: var(--primary);
+    text-align: center;
+    margin: 0 20px;
+}
+
+.cards {
+    d
 }
 
 footer {
-  background: var(--secondary);/* кольор фона */
+  background: var(--text-maim);/* кольор фона */
   color: var(--white);      /* кольор текста */    
   text-align: center;       /* центр текста */    
   padding: 50px 20px;       /* отступы внутри */    
