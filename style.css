@@ -21,7 +21,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--primary);
     color: var(--secondary);
-    line-height: 1.6;    /* межстрочный интервал (воздух внутри текста) */
+    line-height: 1.6;    
     display: grid;       /* Включатель сетки для всей страницы */
     grid-template-rows: auto 1fr auto; /* auto(Шапка) | 1fr(Центр-пружина) | auto(Футер) */
     min-height: 100vh;   /* Растягиваем body на всю высоту окна, чтобы прижать футер */
@@ -95,6 +95,11 @@ header {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: stretch;
+    gap: 30px;
 }
 
 footer {
