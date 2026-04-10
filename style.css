@@ -103,6 +103,11 @@ header {
     gap: 30px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
   background: var(--text-maim);/* кольор фона */
   color: var(--white);      /* кольор текста */    
