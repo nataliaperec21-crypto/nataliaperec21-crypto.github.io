@@ -108,6 +108,14 @@ header {
     flex-direction: column;
 }
 
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+     
+}
+
 footer {
   background: var(--text-maim);/* кольор фона */
   color: var(--white);      /* кольор текста */    
