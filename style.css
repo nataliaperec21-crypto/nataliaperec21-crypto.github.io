@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    padding: 30px;
+    padding: 30px auto 20px;
     text-align: center;
     background-color: var(--text-maim);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* тень под меню: 0(центр), 2px(вниз), 10px(размытие) */
