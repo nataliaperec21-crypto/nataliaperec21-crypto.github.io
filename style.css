@@ -25,7 +25,7 @@ body {
 header {
   background-color: var(--white);
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-  padding: 20;
+  padding: 30;
 }
 
 header h1 {
