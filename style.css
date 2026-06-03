@@ -101,6 +101,35 @@ header {
 .block {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.block-1 {
+  background-color: var(--primary);
+  display: flex;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.block-2 {
+  background-color: var(--primary);
+  display: flex;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.block-3 {
+  background-color: var(--primary);
+  display: flex;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.block-4 {
+  background-color: var(--primary);
+  display: flex;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 .content {
