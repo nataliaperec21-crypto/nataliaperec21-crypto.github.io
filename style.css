@@ -34,9 +34,7 @@ header {
   display: flex;
   justify-content: center;
   list-style: none;
-  text-decoration: none;
   gap: 30px;
-  color: var(--secondary);
 }
 
 .nav-links a:hover {
