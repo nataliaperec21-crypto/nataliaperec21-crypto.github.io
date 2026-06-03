@@ -29,12 +29,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 20px;
 }
 
 .nav-links {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+
+.nav-links a {
   list-style: none;
   text-decoration: none;
 }
