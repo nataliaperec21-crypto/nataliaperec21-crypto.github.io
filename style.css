@@ -2,7 +2,7 @@
   --primary: #f1c40f;
   --secondary: #1a252f;
   --bg-light: #f8f9fa;
-  --white: #fff700;
+  --white: #ffffff;
   --transition: 0.3s ease;
 }
 
@@ -25,26 +25,22 @@ body {
 header {
   background-color: var(--white);
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-links {
   display: flex;
   justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   list-style: none;
   text-decoration: none;
   gap: 30px;
+  color: var(--secondary);
 }
 
 .nav-links a:hover {
-  color: var(--white);
-}
-
-header h1 {
-  text-align: center;
-  font-size: 1.8rem;
+  color: var(--primary);
 }
 
 .hero {
