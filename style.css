@@ -70,7 +70,7 @@ header {
   opacity: 0.9;
 }
 
-.bth-main {
+.btn-main {
   display: inline-block;
   background-color: var(--white);
   color: var(--secondary);
@@ -81,7 +81,7 @@ header {
   transition: transform var(--transition), background-color var(--transition);
 }
 
-.bth-main:hover {
+.btn-main:hover {
   transform: scale(1.05);
   background-color: #f1c40f;
   color: var(--primary);
