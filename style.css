@@ -98,6 +98,10 @@ header {
   flex-grow: 1;
 }
 
+.block {
+  grid-template-columns: 50% 1fr;
+}
+
 .content {
   display: flex;
   flex-direction: column;
