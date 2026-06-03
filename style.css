@@ -110,32 +110,32 @@ header {
 .block-1 {
   background-color: rgb(255, 0, 0);
   display: flex;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 40px 40px;
   border-radius: 15px;
 }
 
 .block-2 {
   background-color: rgb(0, 200, 255);
   display: flex;
-  margin: 40px auto;
-  padding: 40px;
+  margin: 20px auto;
+  padding: 40px 50px;
   border-radius: 15px;
 }
 
 .block-3 {
   background-color: rgb(0, 255, 0);
   display: flex;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 40px 60px;
   border-radius: 15px;
 }
 
 .block-4 {
   background-color: blueviolet;
   display: flex;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 40px 70px;
   border-radius: 15px;
 }
 
