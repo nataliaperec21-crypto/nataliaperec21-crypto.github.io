@@ -197,6 +197,7 @@ header {
 
 .contact {
   display: flex;
+  flex-direction: column;
 }
 
 .section-title {
