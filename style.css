@@ -108,17 +108,19 @@ header {
 }
 
 .block-1 {
-  background-color: crimson;
+  background-color: rgb(255, 0, 0);
   display: flex;
   margin: 40px auto;
   padding: 20px;
+  border-radius: 15px;
 }
 
 .block-2 {
   background-color: rgb(0, 200, 255);
   display: flex;
   margin: 40px auto;
-  padding: 20px;
+  padding: 40px;
+  border-radius: 15px;
 }
 
 .block-3 {
@@ -126,6 +128,7 @@ header {
   display: flex;
   margin: 40px auto;
   padding: 20px;
+  border-radius: 15px;
 }
 
 .block-4 {
@@ -133,6 +136,7 @@ header {
   display: flex;
   margin: 40px auto;
   padding: 20px;
+  border-radius: 15px;
 }
 
 .content {
