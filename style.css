@@ -36,10 +36,11 @@ header {
   display: flex;
   justify-content: center;
   gap: 30px;
+  list-style: none;
 }
 
 .nav-links a {
-  list-style: none;
+  
   text-decoration: none;
 }
 
