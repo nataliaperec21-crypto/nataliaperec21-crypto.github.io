@@ -30,12 +30,12 @@ header {
 .nav-links {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
   list-style: none;
   text-decoration: none;
+  gap: 30px;
 }
 
 .nav-links a:hover {
