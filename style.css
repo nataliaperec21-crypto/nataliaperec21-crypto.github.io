@@ -106,40 +106,30 @@ header {
   justify-content: center;
 }
 
-.block > div {
-  text-align: center;
+.block-1, .block-2, .block-3, .block-4 {
+  background-color: var(--secondary);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  border-radius: 15px;
 }
 
 .block-1 {
-  background-color: var(--secondary);
-  color: var(--white);
-  display: flex;
-  padding: 20px 40px;
-  border-radius: 15px;
+  width: 130px;
 }
 
 .block-2 {
-  background-color: var(--secondary);
-  color: var(--white);
-  display: flex;
-  padding: 40px 50px;
-  border-radius: 15px;
+  width: 160px;
 }
 
 .block-3 {
-  background-color: var(--secondary);
-  color: var(--white);
-  display: flex;
-  padding: 40px 60px;
-  border-radius: 15px;
+  width: 190px;
 }
 
 .block-4 {
-  background-color: var(--secondary);
-  color: var(--white);
-  display: flex;
-  padding: 40px 70px;
-  border-radius: 15px;
+  width: 220px;
 }
 
 .content {
