@@ -218,6 +218,9 @@ header {
 
 .contact-links {
   display: inline-block;
+}
+
+.contact-links a {
   text-decoration: none !important;
 }
 
