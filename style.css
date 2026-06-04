@@ -198,22 +198,10 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  outline: none;
-}
-
-.section-title {
-}
-
-.contact-container {
-}
-
-.contact-info {
-}
-
-.contact-links {
 }
 
 .contact-links a {
+  outline: none;
   text-decoration: none !important;
 }
 
