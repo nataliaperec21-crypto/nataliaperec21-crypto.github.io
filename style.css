@@ -187,8 +187,8 @@ header {
 }
 
 .contact {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: rgb(186, 186, 186);
+  color: var(--secondary);
   display:flex;
   min-width: 400px;
   margin: 30px auto;
