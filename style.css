@@ -144,15 +144,13 @@ header {
 }
 
 .content {
-  background-color: var(--secondary);
-  color: var(--white);
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
 .text-block {
-  background-color: var(--white);
+  background-color: var(--secondary);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
@@ -217,6 +215,7 @@ header {
 }
 
 .contact-links {
+  background-color: var(--secondary);
   display: inline-block;
 }
 
