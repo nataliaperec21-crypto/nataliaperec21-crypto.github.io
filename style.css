@@ -144,6 +144,8 @@ header {
 }
 
 .content {
+  background-color: var(--secondary);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -196,6 +198,7 @@ header {
 }
 
 .contact {
+  background-color: var(--secondary);
   display: flex;
   flex-direction: column;
 }
