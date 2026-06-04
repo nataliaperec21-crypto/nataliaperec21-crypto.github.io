@@ -196,6 +196,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  outline: none;
 }
 
 .section-title {
