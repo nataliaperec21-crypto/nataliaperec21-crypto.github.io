@@ -202,20 +202,15 @@ header {
 }
 
 .section-title {
-  text-align: center;
 }
 
 .contact-container {
-  flex-direction: column;
-  justify-content: center; 
 }
 
 .contact-info {
-  text-align: center;
 }
 
 .contact-links {
-  display: inline-block;
 }
 
 .contact-links a {
