@@ -179,6 +179,7 @@ header {
 
 .card-info {
   padding: 20px;
+  color: var(--secondary)
 }
 
 .card-info h3 {
