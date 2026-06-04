@@ -110,7 +110,7 @@ header {
   color: var(--white);
   display: flex;
   margin: 20px auto;
-  padding: 40px 40px;
+  padding: 20px 40px;
   border-radius: 15px;
   justify-content: center;
   text-align: center;
