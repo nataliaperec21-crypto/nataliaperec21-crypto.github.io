@@ -189,7 +189,7 @@ header {
 .contact {
   background-color: var(--primary);
   color: var(--white);
-  display: inline-block;
+  display: block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
