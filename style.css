@@ -250,9 +250,6 @@ header {
   padding: 0 20px;
 }
 
-.port-folio {
-}
-
 /* Базовый контейнер секции */
 .comments-section {
   display: flex;
@@ -263,6 +260,10 @@ header {
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-left: -25px;
+  margin-top: -20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .comments-section h2 {
