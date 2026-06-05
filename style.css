@@ -103,8 +103,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: -80px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -120,18 +119,22 @@ header {
 
 .block-1 {
   width: 130px;
+  margin-left: -80px;
 }
 
 .block-2 {
   width: 160px;
+  margin-left: -100px;
 }
 
 .block-3 {
   width: 190px;
+  margin-left: -120px;
 }
 
 .block-4 {
   width: 220px;
+  margin-left: -140px;
 }
 
 .content {
