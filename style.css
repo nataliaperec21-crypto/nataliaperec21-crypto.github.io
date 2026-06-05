@@ -250,6 +250,18 @@ header {
   padding: 0 20px;
 }
 
+.text-blocki {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.text-block h2 {
+  margin-bottom: 10px;
+}
+
 /* Базовый контейнер секции */
 .comments-section {
   display: flex;
@@ -262,8 +274,6 @@ header {
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   margin-left: -25px;
   margin-top: -20px;
-  align-items: center;
-  justify-content: center;
 }
 
 .comments-section h2 {
