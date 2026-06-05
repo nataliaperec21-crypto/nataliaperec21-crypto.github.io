@@ -191,19 +191,6 @@ header {
   font-size: 1.3rem;
 }
 
-.full-screen-line {
-  width: 100vw;               /* Магия! 100vw — это ровно 100% всей видимой ширины экрана */
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); /* Эти 3 строчки заставят линию идеально отцентрироваться по экрану */
-  margin: 50px auto;
-  border: none;               /* Сбрасываем стандартную некрасивую рамку браузера */
-  height: 7px;                /* Толщина твоей линии (можешь поставить больше, если нужна толстая) */
-  background-color: var(--secondary); /* Цвет линии (например, твой темно-синий или желтый) */
-  
-  margin: 50px 0;             /* Отступы: 50px сверху и снизу от других блоков сайта */
-}
-
 .contact {
   background-color: rgb(186, 186, 186);
   color: var(--secondary);
@@ -234,6 +221,20 @@ header {
   outline: none;
   text-decoration: none !important;
   color: rgb(255, 159, 159);
+}
+
+.full-screen-line {
+  width: 100vw;               /* Магия! 100vw — это ровно 100% всей видимой ширины экрана */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Эти 3 строчки заставят линию идеально отцентрироваться по экрану */
+  margin: 50px auto;
+  border: none;               /* Сбрасываем стандартную некрасивую рамку браузера */
+  height: 7px;                /* Толщина твоей линии (можешь поставить больше, если нужна толстая) */
+  background-color: var(--secondary); /* Цвет линии (например, твой темно-синий или желтый) */
+  border-radius: 30px;
+  margin: 50px 0;             /* Отступы: 50px сверху и снизу от других блоков сайта */
+  padding: 10px;
 }
 
 
