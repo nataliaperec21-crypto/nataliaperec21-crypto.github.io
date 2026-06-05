@@ -103,7 +103,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -115,26 +115,6 @@ header {
   align-items: center;
   padding: 15px 10px;
   border-radius: 15px;
-}
-
-.block-1 {
-  width: 130px;
-  margin-left: -80px;
-}
-
-.block-2 {
-  width: 160px;
-  margin-left: -95px;
-}
-
-.block-3 {
-  width: 190px;
-  margin-left: -110px;
-}
-
-.block-4 {
-  width: 220px;
-  margin-left: -125px;
 }
 
 .content {
