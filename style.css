@@ -256,8 +256,8 @@ header {
   flex-direction: column;
   max-width: 800px;
 
-  width: 130px;
-  margin-left: -80px;
+  width: 60px;
+  margin-left: -40px;
   padding: 20px;
   background-color: var(--white);
   border-radius: 15px;
