@@ -362,7 +362,7 @@ footer {
   margin-top: auto;
 }
 
-.footer-socials a {
+.footer-socials li a {
   outline: none;
   color: rgb(255, 159, 159);
   list-style: none;
