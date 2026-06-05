@@ -220,7 +220,7 @@ header {
 .contact-info a {
   outline: none;
   text-decoration: none !important;
-  color: var(--secondary);
+  color: rgb(134, 118, 118);
 }
 
 footer {
