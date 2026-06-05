@@ -78,7 +78,52 @@
 
     <hr class="full-screen-line">
 
-    <section class="port-folio">
+    <!-- [ СЕКЦИЯ КОММЕНТАРИЕВ ] -->
+ <section class="cspf">
+ <div class="comments-section">
+    <h2>Отзывы и комментарии</h2>
+
+    <!-- Форма для отправки нового комментария -->
+    <!-- (Здесь используется Formspree, чтобы уведомления о новых комментариях прилетали тебе на почту) -->
+    <form action="https://formspree.io" method="POST" class="comment-form">
+        <div class="form-group">
+            <label for="comment-name">Ваше имя:</label>
+            <input type="text" id="comment-name" name="name" placeholder="Имя или никнейм" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="comment-text">Ваш комментарий:</label>
+            <textarea id="comment-text" name="message" rows="4" placeholder="Напишите, что вы думаете о сайте..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-comment">Опубликовать</button>
+    </form>
+
+    <!-- Блок, где отображаются уже оставленные комментарии (примеры) -->
+    <div class="comments-list">
+        
+        <!-- Первый комментарий -->
+        <article class="comment-item">
+            <div class="comment-avatar">И</div>
+            <div class="comment-content">
+                <h4>Иван Иванов</h4>
+                <p>Отличный сайт! Мне очень понравилась пирамида преимуществ слева, смотрится очень необычно и стильно.</p>
+            </div>
+        </article>
+
+        <!-- Второй комментарий -->
+        <article class="comment-item">
+            <div class="comment-avatar">M</div>
+            <div class="comment-content">
+                <h4>Мария Петрова</h4>
+                <p>Подскажите, а карточки услуг сделаны через Flexbox или Grid? Выглядит очень адаптивно на моем телефоне!</p>
+            </div>
+        </article>
+    </div>
+    </div>
+
+    <!-- [ карточки ] -->
+    <div class="port-folio">
     <div class="cards">
     <article class="card">
       <div class="card-img">
@@ -135,7 +180,9 @@
       </div>
     </article>
     </div>
-    </section>
+    </div>
+	</section>
+
 
     <hr class="full-screen-line">
 

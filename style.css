@@ -236,6 +236,130 @@ header {
   color: rgb(255, 159, 159);
 }
 
+
+
+
+/* Базовый контейнер секции */
+.comments-section {
+  max-width: 800px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.comments-section h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Стили формы */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--bg-light); /* Разделительная линия */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group input, .form-group textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Кнопка отправки */
+.btn-comment {
+  align-self: flex-start; /* Кнопка не на всю ширину */
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.btn-comment:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Список комментариев */
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Карточка одного комментария */
+.comment-item {
+  display: flex;
+  gap: 15px;
+  background-color: var(--bg-light);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Круглая аватарка пользователя */
+.comment-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 50%; /* Делает квадрат круглым */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0; /* Аватарка не сожмется при длинном тексте */
+}
+
+.comment-content h4 {
+  margin-bottom: 5px;
+  color: var(--secondary);
+}
+
+.comment-content p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+
+.cspf {
+  display: grid;
+  grid-template-columns: 300px 1fr !important;
+  gap: 30px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
 footer {
   background-color: var(--secondary);
   color: var(--white);
