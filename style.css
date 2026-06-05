@@ -362,12 +362,15 @@ footer {
   margin-top: auto;
 }
 
-.footer-socials ul a {
+.footer-socials a {
   outline: none;
   color: rgb(255, 159, 159);
-  list-style: none;
   text-decoration: none;
   padding: 0;
+}
+
+.footer-socials ul {
+  list-style: none;
 }
 
 @media (max-width: 768px) {
