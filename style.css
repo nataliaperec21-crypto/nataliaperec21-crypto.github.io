@@ -255,7 +255,7 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  margin: 45px;
+  margin: 25px 20px;
   padding: 20px;
   background-color: var(--white);
   border-radius: 15px;
@@ -364,7 +364,8 @@ footer {
 
 .footer-socials a {
   outline: none;
-  color: var(--white);
+  color: rgb(255, 159, 159);
+  list-style: none;
 }
 
 @media (max-width: 768px) {
