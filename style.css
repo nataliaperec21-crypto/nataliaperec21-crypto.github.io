@@ -217,6 +217,12 @@ header {
   color: var(--secondary);
 }
 
+.contact-info a {
+  outline: none;
+  text-decoration: none !important;
+  color: var(--secondary);
+}
+
 footer {
   background-color: var(--secondary);
   color: var(--white);
