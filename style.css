@@ -260,10 +260,9 @@ header {
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  align-items: flex-start;
-  justify-content: flex-start;
+
+  margin-top: -15px;
   margin-left: -25px;
-  margin-top: -20px;
 }
 
 .comments-section h2 {
