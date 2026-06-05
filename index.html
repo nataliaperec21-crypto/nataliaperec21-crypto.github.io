@@ -13,7 +13,8 @@
         <ul class="nav-links">
             <li><a href="#home">Главная</a></li>
             <li><a href="#services">Услуги</a></li>
-            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#about">Портфолио</a></li>
+            <li><a href="#contact">Отзывы</a></li>
             <li><a href="#contact">Контакты</a></li>
         </ul>
       </nav>
@@ -75,18 +76,37 @@
         </section>
     </main>
 
+    <!-- "Контакты" -->
     <section class="contact" id="contact">
-      <h2 class="section-title">Связаться со мной</h2>
-      <div class="contact-container">
+    <h2 class="section-title">Связаться со мной</h2>
+    
+    <div class="contact-container">
+        
         <div class="contact-info">
-        <p>Если у вас есть вопросы, я с радостью отвечу на них!</p>
-          <div class="contact-links">
-            <p><strong>Email:</strong> <a href="mailto:exam.com">example@mail.com</a></p>
-            <p><strong>Телефон:</strong> <a href="tel:+00000000">+0000000000</a></p>
-            <p><strong>Telegram:</strong> <a href="https://t.me" target="_blank">@your_username</a></p>
-          </div>
+            <p>Если у вас есть вопросы, я с радостью отвечу на них!</p>
+            <p><strong>Telegram:</strong> <a href="https://t.me">@Еще нет</a></p>
         </div>
-      </div>
+
+        
+        <form action="https://formspree.io/f/xlgpqaap" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" placeholder="Иван" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea name="message" id="message" rows="5" placeholder="Введите ваш вопрос..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Отправить сообщение</button>
+        </form>
+    </div>
     </section>
 
     <!-- [ FOOTER ] -->
