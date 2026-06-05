@@ -231,6 +231,11 @@ footer {
   margin-top: auto;
 }
 
+.footer-socials a {
+  outline: none;
+  color: var(--white);
+}
+
 @media (max-width: 768px) {
   .layout {
     grid-template-columns: 1fr; 
