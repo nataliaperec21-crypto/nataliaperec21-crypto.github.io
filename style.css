@@ -239,10 +239,27 @@ header {
 
 
 
+
+.cspf {
+  display: grid;
+  grid-template-columns: 300px 1fr !important;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.port-folio {
+  width: 70%;
+}
+
 /* Базовый контейнер секции */
 .comments-section {
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
-  width: 100%;
+  width: 30%;
   margin: 50px auto;
   padding: 20px;
   background-color: var(--white);
@@ -336,24 +353,6 @@ header {
 .comment-content p {
   font-size: 0.95rem;
   color: #555;
-}
-
-
-
-.cspf {
-  display: grid;
-  grid-template-columns: 300px 1fr !important;
-  gap: 30px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.comments-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 
