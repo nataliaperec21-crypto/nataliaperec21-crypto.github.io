@@ -111,31 +111,18 @@ header {
   background-color: var(--secondary);
   color: var(--white);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 15px 10px;
   border-radius: 15px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.block-1 {
-  width: 130px;
-  margin-left: -80px;
-}
-
-.block-2 {
-  width: 160px;
-  margin-left: -95px;
-}
-
-.block-3 {
-  width: 190px;
-  margin-left: -110px;
-}
-
-.block-4 {
-  width: 220px;
-  margin-left: -125px;
-}
+.block-1 { width: 130px; }
+.block-2 { width: 160px; }
+.block-3 { width: 190px; }
+.block-4 { width: 220px; }
 
 .content {
   display: flex;
@@ -191,77 +178,43 @@ header {
   font-size: 1.3rem;
 }
 
-.contact {
-  background-color: rgb(186, 186, 186);
-  color: var(--secondary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  
-  width: 100%;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 40px 60px;
-  border-radius: 15px;
-  
-  clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      90% 100%,
-      10% 100%
-  );
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  max-width: 450px;
-  margin-top: 20px;
-}
-
-.contact-links a {
-  outline: none;
-  text-decoration: none !important;
-  color: var(--secondary);
-  font-weight: bold;
-}
-
-.contact-info a {
-  outline: none;
-  text-decoration: none !important;
-  color: rgb(214, 85, 85);
-  font-weight: bold;
-}
-
-.full-screen-line {
-  width: 90vw;               /* Магия! 100vw — это ровно 100% всей видимой ширины экрана */
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); /* Эти 3 строчки заставят линию идеально отцентрироваться по экрану */
-  margin: 50px auto;
-  border: none;               /* Сбрасываем стандартную некрасивую рамку браузера */
-  height: 7px;                /* Толщина твоей линии (можешь поставить больше, если нужна толстая) */
-  background-color: var(--secondary); /* Цвет линии (например, твой темно-синий или желтый) */
-  border-radius: 30px;
-  margin: 50px 0;             /* Отступы: 50px сверху и снизу от других блоков сайта */
-}
 
 
 
 
 
-.cspf {
+
+.layout1 {
   display: grid;
   grid-template-columns: 300px 1fr !important;
   gap: 30px;
   max-width: 1200px;
   width: 100%;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 0 20px;
+}
+
+.content1 {
+  background-color: var(--secondary);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cards1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card1 {
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 /* Базовый контейнер секции */
@@ -361,6 +314,69 @@ header {
 
 
 
+
+
+
+
+.full-screen-line {
+  width: 90vw;               /* Магия! 100vw — это ровно 100% всей видимой ширины экрана */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Эти 3 строчки заставят линию идеально отцентрироваться по экрану */
+  margin: 50px auto;
+  border: none;               /* Сбрасываем стандартную некрасивую рамку браузера */
+  height: 7px;                /* Толщина твоей линии (можешь поставить больше, если нужна толстая) */
+  background-color: var(--secondary); /* Цвет линии (например, твой темно-синий или желтый) */
+  border-radius: 30px;
+  margin: 50px 0;             /* Отступы: 50px сверху и снизу от других блоков сайта */
+}
+
+.contact {
+  background-color: rgb(186, 186, 186);
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 60px;
+  border-radius: 15px;
+  
+  clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      90% 100%,
+      10% 100%
+  );
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 450px;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  outline: none;
+  text-decoration: none !important;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.contact-info a {
+  outline: none;
+  text-decoration: none !important;
+  color: rgb(214, 85, 85);
+  font-weight: bold;
+}
+
 footer {
   background-color: var(--secondary);
   color: var(--white);
@@ -403,8 +419,23 @@ footer {
 
 @media (max-width: 768px) {
   .layout {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr !important; 
     gap: 20px;
     margin: 20px auto;
+  }
+  
+  .block-1, .block-2, .block-3, .block-4 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-socials ul {
+    gap: 10px;
   }
 }
