@@ -157,14 +157,13 @@ header {
 
 .cspf {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 300px 1fr !important;
   gap: 30px;
   max-width: 1200px;
   width: 100%;
   margin: 40px auto;
   padding: 0 20px;
 }
-
 
 
 
