@@ -152,7 +152,7 @@ header {
   height: 7px;                
   background-color: var(--secondary); 
   border-radius: 30px;
-  margin: 50px 0;
+  margin: 50px 20px 0 20px;
 }
 
 .cspf {
