@@ -157,7 +157,7 @@ header {
 
 .cspf {
   display: grid;
-  grid-template-columns: 300px 1fr !important;
+  grid-template-columns: 300px 1fr;
   gap: 30px;
   max-width: 1200px;
   width: 100%;
@@ -165,16 +165,7 @@ header {
   padding: 0 20px;
 }
 
-.port-folio {
-  display: grid;
-  grid-template-columns: 300px 1fr !important;
-  gap: 30px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 40px auto;
-  margin-left: 30px;
-  padding: 0 20px;
-}
+
 
 
 .cards {
