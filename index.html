@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проект 9 — Полный сайт</title>
+    <title>Проект 10 — Полный сайт</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- [ HEADER ] -->
     <header>
       <nav>
         <ul class="nav-links">
@@ -20,15 +21,18 @@
       </nav>
     </header>
 
+    <!-- [ HERO ] -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Создаю современные сайты</h1>
-            <p>html end css  для всей симье</p>
+            <p>HTML и CSS для всей семьи</p>
             <a href="#contact" class="btn-main">связь со мной</a>
         </div>
     </section>
 
+    <!-- [ ЭТАЖ 1: ПРЕИМУЩЕСТВА СЛЕВА, УСЛУГИ СПРАВА ] -->
     <main class="layout">
+      <!-- Левая колонка: Пирамида преимуществ -->
       <div class="block">
         <div class="block-1">Быстро</div>
         <div class="block-2">Красиво</div>
@@ -36,192 +40,162 @@
         <div class="block-4">Современно</div>
       </div>
 
-        <section class="content" id="services">
-            <div class="text-block">
-                <h2>О моих ус.</h2>
-                <p>Здесь вы ознакомитись с моими роботами</p>
-            </div>
+      <!-- Правая колонка: Блок 3 услуг -->
+      <section class="content" id="services">
+          <div class="text-block">
+              <h2>О моих услугах</h2>
+              <p>Здесь вы ознакомитесь с моими услугами</p>
+          </div>
 			
-    <!-- [ карточки ] -->
-	<div class="cards">
-    <article class="card">
-      <div class="card-img">
-        <img src="foto/img1.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info первой карточки</h3>
-        <p>какоето интересное описание</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card-img">
-        <img src="foto/img2.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info  второй карточки</h3>
-        <p>какоето не интересное описание</p>
-      </div>
-    </article>
-        <article class="card">
-      <div class="card-img">
-        <img src="foto/img3.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info третей карточки</h3>
-        <p>какоето непонятное описание хахаха</p>
-      </div>
-    </article>
-  </div>
-			
-        </section>
+          <div class="cards">
+              <article class="card">
+                <div class="card-img"><img src="foto/img1.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>HTML5 Услуга 1</h3>
+                  <p>какоето интересное описание</p>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img"><img src="foto/img2.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>HTML5 Услуга 2</h3>
+                  <p>какоето не интересное описание</p>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img"><img src="foto/img3.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>HTML5 Услуга 3</h3>
+                  <p>какоето непонятное описание хахаха</p>
+                </div>
+              </article>
+          </div>
+      </section>
     </main>
 
+    <!-- Разделительная линия на весь экран -->
     <hr class="full-screen-line">
 
-    <!-- [ СЕКЦИЯ КОММЕНТАРИЕВ ] -->
-<section class="layout1">
-<div class="comments-section" id="muv">
-    <h2>Отзывы и комментарии</h2>
+    <!-- [ ЭТАЖ 2: ОТЗЫВЫ СЛЕВА, ПОРТФОЛИО С ПРАВА ] -->
+    <section class="portfolio-comments-layout">
 
-    <!-- Форма для отправки нового комментария -->
-    <!-- (Здесь используется Formspree, чтобы уведомления о новых комментариях прилетали тебе на почту) -->
-    <form action="https://formspree.io" method="POST" class="comment-form">
-        <div class="form-group">
-            <label for="comment-name">Ваше имя:</label>
-            <input type="text" id="comment-name" name="name" placeholder="Имя или никнейм" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="comment-text">Ваш комментарий:</label>
-            <textarea id="comment-text" name="message" rows="4" placeholder="Напишите, что вы думаете о сайте..." required></textarea>
-        </div>
+        <!-- Левая колонка: Отзывы и комментарии -->
+        <div class="comments-section" id="muv">
+            <h2>Отзывы и комментарии</h2>
 
-        <button type="submit" class="btn-comment">Опубликовать</button>
-    </form>
+            <!-- Форма для отправки нового комментария -->
+            <form action="https://formspree.io" method="POST" class="comment-form">
+                <div class="form-group">
+                    <label for="comment-name">Ваше имя:</label>
+                    <input type="text" id="comment-name" name="name" placeholder="Имя или никнейм" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Ваш комментарий:</label>
+                    <textarea id="comment-text" name="message" rows="4" placeholder="Напишите, что вы думаете..." required></textarea>
+                </div>
+                <button type="submit" class="btn-comment">Опубликовать</button>
+            </form>
 
-    <!-- Блок, где отображаются уже оставленные комментарии (примеры) -->
-    <div class="comments-list">
-        
-        <!-- Первый комментарий -->
-        <article class="comment-item">
-            <div class="comment-avatar">И</div>
-            <div class="comment-content">
-                <h4>Иван Иванов</h4>
-                <p>Отличный сайт! Мне очень понравилась пирамида преимуществ слева, смотрится очень необычно и стильно.</p>
+            <!-- Блок сохраненных комментариев -->
+            <div class="comments-list">
+                <article class="comment-item">
+                    <div class="comment-avatar">И</div>
+                    <div class="comment-content">
+                        <h4>Иван Иванов</h4>
+                        <p>Отличный сайт! Пирамида преимуществ смотрится очень необычно.</p>
+                    </div>
+                </article>
+                <article class="comment-item">
+                    <div class="comment-avatar">M</div>
+                    <div class="comment-content">
+                        <h4>Мария Петрова</h4>
+                        <p>Подскажите, а карточки услуг сделаны через Grid?</p>
+                    </div>
+                </article>
             </div>
-        </article>
-
-        <!-- Второй комментарий -->
-        <article class="comment-item">
-            <div class="comment-avatar">M</div>
-            <div class="comment-content">
-                <h4>Мария Петрова</h4>
-                <p>Подскажите, а карточки услуг сделаны через Flexbox или Grid? Выглядит очень адаптивно на моем телефоне!</p>
-            </div>
-        </article>
-    </div>
-</div>
-
-    <!-- [ карточки ] -->
-    <div class="content1" id="about">
-            <div class="text-block">
-                <h2>О моих услугах</h2>
-                <p>Здесь вы ознакомитесь с моими услугами</p>
-            </div>
-    <div class="cards1">
-    <article class="card1">
-      <div class="card-img">
-        <img src="foto/img4.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info первой карточки</h3>
-        <p>какоето интересное описание</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card-img">
-        <img src="foto/img5.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info  второй карточки</h3>
-        <p>какоето не интересное описание</p>
-      </div>
-    </article>
-        <article class="card">
-      <div class="card-img">
-        <img src="foto/img6.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info третей карточки</h3>
-        <p>какоето непонятное описание хахаха</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card-img">
-        <img src="foto/img7.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info  второй карточки</h3>
-        <p>какоето не интересное описание</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card-img">
-        <img src="foto/img8.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info  второй карточки</h3>
-        <p>какоето не интересное описание</p>
-      </div>
-    </article>
-    <article class="card">
-      <div class="card-img">
-        <img src="foto/img9.jpg" alt="html5 verctka">
-      </div>
-      <div class="card-info">
-        <h3>html5 info  второй карточки</h3>
-        <p>какоето не интересное описание</p>
-      </div>
-    </article>
-    </div>
-    </div>
-
-
-    <hr class="full-screen-line">
-
-
-    <!-- "Контакты" -->
-<section class="contact" id="contact">
-    <h2 class="section-title">Связаться со мной</h2>
-    
-    <div class="contact-container">
-        
-        <div class="contact-info">
-            <p>Если у вас есть вопросы, я с радостью отвечу на них!</p>
-            <p><strong>Telegram:</strong> <a href="https://t.me">@Еще нет</a></p>
         </div>
 
-        
-        <form action="https://formspree.io/f/xlgpqaap" method="POST" class="contact-form">
-            <div class="form-group">
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" placeholder="Иван" required>
+        <!-- Правая колонка: Моё портфолио из 6 карточек -->
+        <div class="port-folio" id="about">
+            <div class="text-block" style="margin-bottom: 30px;">
+                <h2>Моё портфолио</h2>
+                <p>Здесь вы ознакомитесь с моими работами</p>
+            </div>
+            
+            <div class="cards">
+                <article class="card">
+                  <div class="card-img"><img src="foto/img4.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>html5 info первой карточки</h3>
+                    <p>какоето интересное описание</p>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img5.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>html5 info второй карточки</h3>
+                    <p>какоето не интересное описание</p>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img6.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>html5 info третей карточки</h3>
+                    <p>какоето непонятное описание хахаха</p>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img7.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>html5 info четвертой карточки</h3>
+                    <p>какоето не интересное описание</p>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img8.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>html5 info пятой карточки</h3>
+                    <p>какоето не интересное описание</p>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img9.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>html5 info шестой карточки</h3>
+                    <p>какоето не интересное описание</p>
+                  </div>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- [ СЕКЦИЯ КОНТАКТОВ С ТРАПЕЦИЕЙ ] -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Связаться со мной</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Если у вас есть вопросы, я с радостью отвечу на них!</p>
+                <p><strong>Telegram:</strong> <a href="https://t.me">@Еще нет</a></p>
             </div>
 
-            <div class="form-group">
-                <label for="email">Ваш Email:</label>
-                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Сообщение:</label>
-                <textarea name="message" id="message" rows="5" placeholder="Введите ваш вопрос..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Отправить сообщение</button>
-        </form>
-    </div>
-</section>
+            <form action="https://formspree.io" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="name" id="name" placeholder="Иван" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Введите ваш вопрос..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Отправить сообщение</button>
+            </form> 
+        </div>
+    </section>
 
     <!-- [ FOOTER ] -->
     <footer>
