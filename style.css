@@ -190,7 +190,7 @@ header {
 
 .faq-section {
   display: grid;
-  grid-template-columns: 335px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 30px;
   max-width: 1200px;
   width: 100%;
