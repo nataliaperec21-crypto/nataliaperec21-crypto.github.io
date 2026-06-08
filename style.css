@@ -176,6 +176,10 @@ header {
   font-size: 1.3rem;
 }
 
+.card-p {
+  text-align: left;
+}
+
 .full-screen-line {
   width: 90vw;               
   position: relative;
