@@ -188,7 +188,7 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
-.portfolio-comments-layout {
+.faq-section {
   display: grid;
   grid-template-columns: 335px 1fr;
   gap: 30px;
@@ -198,10 +198,10 @@ header {
   padding: 0 20px;
 }
 
-.faq-section {
+.faq-container {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  gap: 30px;
   width: 100%;
   padding: 25px;
   background-color: var(--white);
@@ -213,12 +213,6 @@ header {
 
 .faq-section {
   text-align: center;
-}
-
-.faq-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .faq-item {
