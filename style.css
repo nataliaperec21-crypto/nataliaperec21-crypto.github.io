@@ -198,9 +198,10 @@ header {
   padding: 0 20px;
 }
 
-.comments-section {
+.faq-section {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
   width: 100%;
   padding: 25px;
   background-color: var(--white);
@@ -208,90 +209,67 @@ header {
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   height: max-content;
   transform: translateX(-140px);
-
 }
 
-.comments-section h2 {
-  margin-bottom: 25px;
+.faq-section {
   text-align: center;
 }
 
-.comment-form {
+.faq-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 40px;
-  padding-bottom: 30px;
-  border-bottom: 2px solid var(--bg-light); 
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.faq-item {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  overflow: hidden;
+  transition: all var(--transition);
 }
 
-.form-group input, .form-group textarea {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-family: inherit;
-  font-size: 1rem;
-}
-
-.btn-comment {
-  align-self: flex-start; 
-  background-color: var(--secondary);
-  color: var(--white);
-  border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
+.faq-question {
+  padding: 20px;
   font-weight: bold;
+  font-size: 1,1rem;
   cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transition: background-color var(--transition);
 }
 
-.btn-comment:hover {
-  background-color: var(--primary);
-  color: var(--secondary);
-}
-
-.comments-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.comment-item {
-  display: flex;
-  gap: 15px;
-  background-color: var(--bg-light);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.comment-avatar {
-  width: 45px;
-  height: 45px;
-  background-color: var(--secondary);
-  color: var(--white);
-  border-radius: 50%; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.faq-question::after {
+  content: '+';
+  font-size: 1,5rem;
+  color: var(--primary);
   font-weight: bold;
-  font-size: 1.2rem;
-  flex-shrink: 0; 
+  transition: transform var(--transition);
 }
 
-.comment-content h4 {
-  margin-bottom: 5px;
+.faq-question:hover {
+  background-color: var(--white);
+}
+
+.faq-item[open] .faq-question {
+  transform: rotate(45deg);
+  color: var(--primary);
+}
+
+.faq-answer {
+  padding: 20px;
+  background-color: var(--white);
+  border-top: 1px solid var(--white);
   color: var(--secondary);
+  font-size: 0.95rem;
 }
 
-.comment-content p {
-  font-size: 0.95rem;
-  color: #555;
+/* Плавное проявление букв */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .port-folio .cards {
