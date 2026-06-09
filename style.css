@@ -218,6 +218,10 @@ header {
   padding: 0 20px;
 }
 
+.port-folio h2 p {
+  text-align: center;
+}
+
 .cards1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
