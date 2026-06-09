@@ -203,6 +203,7 @@ header {
 
 .stat {
   background-color: var(--secondary);
+  width: 50px auto;
 }
 
 .full-screen-line {
