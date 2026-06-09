@@ -194,7 +194,7 @@ header {
   flex-direction: column;
   gap: 30px;
   max-width: 1200px;
-  width: 100%;
+  width: 80%;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -377,7 +377,7 @@ footer {
     max-width: 100%;
   }
 
-  .portfolio-comments-layout {
+  .port-folio {
     grid-template-columns: 1fr;
     gap: 40px;
   }
