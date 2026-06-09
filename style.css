@@ -409,29 +409,6 @@ footer {
   margin: 0 auto;
 }
 
-.footer-socials {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.footer-socials ul {
-  list-style: none !important; 
-  display: flex;              
-  gap: 15px;
-}
-
-.footer-socials a {
-  color: rgb(255, 159, 159);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color var(--transition);
-}
-
-.footer-socials a:hover {
-  color: var(--primary);
-}
-
 @media (max-width: 768px) {
 
   .stats {
