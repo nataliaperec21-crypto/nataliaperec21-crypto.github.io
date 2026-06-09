@@ -280,9 +280,8 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 20px auto;
   padding: 40px 60px;
   border-radius: 15px;
