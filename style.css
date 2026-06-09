@@ -224,6 +224,7 @@ header {
 
 .stat p {
   color: var(--white);
+  font-family: fantasy;
 }
 
 .full-screen-line {
