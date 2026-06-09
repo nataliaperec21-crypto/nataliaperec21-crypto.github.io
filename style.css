@@ -199,11 +199,12 @@ header {
   display: flex;
   justify-content: space-around;
   gap: 30;
+  width: 15% auto;
 }
 
 .stat {
   background-color: var(--secondary);
-  width: 15% auto;
+  
   margin: 10px auto;
 }
 
