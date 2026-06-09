@@ -203,7 +203,8 @@ header {
 
 .stat {
   background-color: rgb(47, 47, 92);
-  width: 50px auto;
+  width: 80px auto;
+  margin: 10px auto;
 }
 
 .stat h2 {
