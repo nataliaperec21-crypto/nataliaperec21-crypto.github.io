@@ -189,7 +189,7 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
-.portfolio-comments-layout {
+.port-folio {
   display: flex;
   flex-direction: column;
   gap: 30px;
