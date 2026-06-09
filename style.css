@@ -202,8 +202,14 @@ header {
 }
 
 .stat {
-  background-color: var(--secondary);
+  background-color: rgb(47, 47, 92);
   width: 50px auto;
+}
+
+.stat h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 20px;
 }
 
 .full-screen-line {
