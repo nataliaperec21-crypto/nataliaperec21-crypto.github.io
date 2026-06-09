@@ -198,13 +198,14 @@ header {
 .stats {
   display: flex;
   justify-content: space-around;
-  gap: 30;
+  gap: 30px;
   width: 25%;
   margin: 30px auto;
 }
 
 .stat {
   background-color: var(--secondary);
+  margin: 30px auto;
 }
 
 .stat h2 {
