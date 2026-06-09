@@ -218,6 +218,12 @@ header {
   padding: 0 20px;
 }
 
+.cards1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
 .card1 {
   background-color: var(--white);
   border-radius: 10px;
