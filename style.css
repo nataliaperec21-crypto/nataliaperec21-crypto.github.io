@@ -202,8 +202,8 @@ header {
 }
 
 .stat {
-  background-color: rgb(47, 47, 92);
-  width: 80px auto;
+  background-color: var(--secondary);
+  width: 10% auto;
   margin: 10px auto;
 }
 
