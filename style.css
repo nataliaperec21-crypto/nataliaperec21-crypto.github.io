@@ -218,10 +218,14 @@ header {
   padding: 0 20px;
 }
 
-.cards1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+.card1 {
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transform: translateY(-15px);
 }
 
 .faq-section {
