@@ -189,19 +189,17 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
-
+.faq-section {
+  max-width: 800px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
 .faq-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 100%;
-  max-width: 400px;
-  padding: 25px;
-  background-color: var(--white);
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  height: max-content;
+  gap: 15px;
 }
 
 .faq-section {
@@ -259,15 +257,6 @@ header {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.faq-section {
-display: flex;
-flex-direction: column;
-  gap: 30px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-}
 
 .contact {
   background-color: rgb(186, 186, 186);
