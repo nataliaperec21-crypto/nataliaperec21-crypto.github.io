@@ -137,6 +137,123 @@ header {
   margin-bottom: 10px;
 }
 
+.comments-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  height: max-content;
+  margin-left: -140px !important;
+}
+
+.comments-section h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--bg-light); 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group input, .form-group textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.btn-comment {
+  align-self: flex-start; 
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.btn-comment:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-item {
+  display: flex;
+  gap: 15px;
+  background-color: var(--bg-light);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.comment-avatar {
+  width: 45px;
+  height: 45px;
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0; 
+}
+
+.comment-content h4 {
+  margin-bottom: 5px;
+  color: var(--secondary);
+}
+
+.comment-content p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+.portfolio-comments-layout {
+  display: grid;
+  grid-template-columns: 335px 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.port-folio .cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -179,20 +296,6 @@ header {
 
 .premium-card {
   position: relative;
-}
-
-.badge {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  z-index: 10;
-  background-color: var(--primary);
-  color: var(--secondary);
-  padding: 5px 12px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .stats {
@@ -265,6 +368,15 @@ header {
   transform: translateY(-15px);
   border: 3px solid gold;
 }
+
+
+
+
+
+
+
+
+
 
 .faq-section {
   max-width: 800px;
