@@ -256,6 +256,12 @@ header {
   padding: 0 20px;
 }
 
+.text-block {
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+}
+
 .featured {
   background-color: var(--white);
   border-radius: 10px;
