@@ -173,10 +173,6 @@ header {
   font-size: 1.3rem;
 }
 
-.card-p {
-  text-align: left;
-}
-
 .premium-card {
   position: relative;
 }
@@ -239,6 +235,11 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
+
+
+
+
+
 .port-folio {
   display: flex;
   flex-direction: column;
@@ -254,6 +255,10 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+
+
+
+
 
 .featured {
   background-color: var(--white);

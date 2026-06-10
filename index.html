@@ -3,57 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проект 12 — Лендинг IT-компании</title>
+    <title>Проект 13 — Ресторан</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero" id="home">
+    <header class="hero">
         <div class="hero-content">
-            <h1>IT Company</h1>
-            <p>Создаём современные сайты для бизнеса</p>
-            <a href="#contact" class="btn-main">Заказать сайт</a>
+            <h1>Ресторан Italiano</h1>
+            <p>Настоящая итальянская кухня</p>
+            <a href="#contact" class="btn-main">Забронировать столик</a>
         </div>
     </header>
 
     <main class="layout">
 
       <div class="block">
-        <div class="block-1">Качественно</div>
+        <div class="block-1">Вкусно</div>
         <div class="block-2">Красиво</div>
         <div class="block-3">Дешево</div>
-        <div class="block-4">Современно</div>
+        <div class="block-4">Идеально</div>
       </div>
 
-      <section class="content" id="services">
+      <section class="content">
           <div class="text-block">
-              <h2>Наши услуги</h2>
-              <p>Здесь вы ознакомитесь с моими сайтами</p>
+              <h2>Наше меню</h2>
+              <p>Здесь вы ознакомитесь с нашими пицами</p>
           </div>
 			
           <div class="cards">
               <article class="card">
                 <div class="card-img"><img src="foto/img1.jpg" alt="html5 verctka"></div>
                 <div class="card-info">
-                  <h3>Веб-разработка</h3>
-                  <p>Создание сайтов</p>
+                  <h3>Пицца</h3>
+                  <p>Тонкое тесто и свежие ингредиенты</p>
                 </div>
               </article>
               <article class="card">
                 <div class="card-img"><img src="foto/img2.jpg" alt="html5 verctka"></div>
                 <div class="card-info">
-                  <h3>Дизайн</h3>
-                  <p>Современный UI/UX</p>
+                  <h3>Паста</h3>
+                  <p>Домашняя паста по традиционным рецептам</p>
                 </div>
               </article>
               <article class="card">
                 <div class="card-img"><img src="foto/img3.jpg" alt="html5 verctka"></div>
                 <div class="card-info">
-                  <h3>Поддержка</h3>
-                  <p>Обновление проектов</p>
+                  <h3>Салаты</h3>
+                  <p>Свежие овощи и фирменные соусы</p>
                 </div>
               </article>
           </div>
+
+          <hr class="full-screen-line">
+
           <section class="stats">
             <div class="stat">
                 <h2>120+</h2>
@@ -73,40 +76,146 @@
 
     <hr class="full-screen-line">
 
+<section class="portfolio-comments-layout">
 
-        <div class="port-folio" id="about">
+        <div class="comments-section">
+            <h2>Отзывы</h2>
+
+            <form action="https://formspree.io" method="POST" class="comment-form">
+                <div class="form-group">
+                    <label for="comment-name">Ваше имя:</label>
+                    <input type="text" id="comment-name" name="name" placeholder="Имя или никнейм" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Ваш комментарий:</label>
+                    <textarea id="comment-text" name="message" rows="4" placeholder="Напишите, что вы думаете..." required></textarea>
+                </div>
+                <button type="submit" class="btn-comment">Опубликовать</button>
+            </form>
+
+            <div class="comments-list">
+                <article class="comment-item">
+                    <div class="comment-avatar">И</div>
+                    <div class="comment-content">
+                        <h4>Иван Иванов</h4>
+                        <p>★★★★★ Очень вкусно!</p>
+                    </div>
+                </article>
+                <article class="comment-item">
+                    <div class="comment-avatar">M</div>
+                    <div class="comment-content">
+                        <h4>Мария Петрова</h4>
+                        <p>★★★★★ Лучший ресторан в городе!</p>
+                    </div>
+                </article>
+                <article class="comment-item">
+                    <div class="comment-avatar">M</div>
+                    <div class="comment-content">
+                        <h4>Мария Петрова</h4>
+                        <p>★★★★★ Вернемся снова!</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="port-folio">
             <div class="text-block" style="margin-bottom: 30px;">
-                <h2>Мои товары</h2>
-                <p>Здесь вы ознакомитесь с моими товарами</p>
+                <h2>Популярные блюда</h2>
+                <p>Здесь вы ознакомитесь с лутшими пицами мира</p>
             </div>
             
             <div class="cards1">
                 <article class="card">
                   <div class="card-img"><img src="foto/img4.jpg" alt="html5 verctka"></div>
                   <div class="card-info">
-                    <h3>Базовый</h3>
-                    <p class="card-p">100$</p>
+                    <h3>Маргарита</h3>
+                    <p class="card-p">100грн</p>
                     <a href="#contact" class="btn-buy">Купить</a>
                   </div>
                 </article>
                 <article class="card featured">
                   <div class="card-img"><img src="foto/img5.jpg" alt="html5 verctka"></div>
                   <div class="card-info">
-                    <h3>Стандарт</h3>
-                    <p class="card-p">250$</p>
+                    <h3>Пепперони</h3>
+                    <p class="card-p">250грн</p>
                     <a href="#contact" class="btn-buy">Купить</a>
                   </div>
                 </article>
                 <article class="card">
                   <div class="card-img"><img src="foto/img6.jpg" alt="html5 verctka"></div>
                   <div class="card-info">
-                    <h3>Премиум</h3>
-                    <p class="card-p">500$</p>
+                    <h3>Карбонара</h3>
+                    <p class="card-p">500грн</p>
+                    <a href="#contact" class="btn-buy">Купить</a>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img7.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Лазанья</h3>
+                    <p class="card-p">100грн</p>
+                    <a href="#contact" class="btn-buy">Купить</a>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img8.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Цезарь</h3>
+                    <p class="card-p">100грн</p>
+                    <a href="#contact" class="btn-buy">Купить</a>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img9.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Тирамису</h3>
+                    <p class="card-p">100грн</p>
                     <a href="#contact" class="btn-buy">Купить</a>
                   </div>
                 </article>
             </div>
         </div>
+</section>
+        <hr class="full-screen-line">
+
+    <section class="about content">
+        <div class="text-block">
+            <h2>О нас</h2>
+            <h3>О нашем ресторане</h3>
+            <p>Мы готовим блюда по традиционным
+итальянским рецептам уже более 10 лет.</p>
+        </div>
+            <div class="cards">
+              <article class="card">
+                <div class="card-img"><img src="foto/img10.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>Пицца</h3>
+                  <p>Тонкое тесто и свежие ингредиенты</p>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img"><img src="foto/img11.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>Паста</h3>
+                  <p>Домашняя паста по традиционным рецептам</p>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img"><img src="foto/img12.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>Салаты</h3>
+                  <p>Свежие овощи и фирменные соусы</p>
+                </div>
+                </article>
+                </div>
+                <article class="card">
+                <div class="card-img"><img src="foto/img13.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>Салаты</h3>
+                  <p>Свежие овощи и фирменные соусы</p>
+                </div>
+                </article>
+    </section>
 
         <hr class="full-screen-line">
 
@@ -116,23 +225,23 @@
         <div class="faq-container">
         
             <details class="faq-item">
-                <summary class="faq-question">Какой материал у ткани?</summary>
+                <summary class="faq-question">Какую пицу вы делаете?</summary>
                 <div class="faq-answer">
-                    <p>Ткани которые трудно стирать нужно выбрасывать или я писать незнаю что и нехочу тратить на это время.</p>
+                    <p>Пицы которые трудно есть нужно выбрасывать или я писать незнаю что и нехочу тратить на это время.</p>
                 </div>
             </details>
 
             <details class="faq-item">
-                <summary class="faq-question">Какой материал у ткани?</summary>
+                <summary class="faq-question">Какую пицу вы делаете?</summary>
                 <div class="faq-answer">
-                    <p>Ткани которые трудно стирать нужно выбрасывать или я писать незнаю что и нехочу тратить на это время.</p>
+                    <p>Пицы которые трудно есть нужно выбрасывать или я писать незнаю что и нехочу тратить на это время.</p>
                 </div>
             </details>
 
             <details class="faq-item">
-                <summary class="faq-question">Какой материал у ткани?</summary>
+                <summary class="faq-question">Какую пицу вы делаете?</summary>
                 <div class="faq-answer">
-                    <p>Ткани которые трудно стирать нужно выбрасывать или я писать незнаю что и нехочу тратить на это время.</p>
+                    <p>Пицы которые трудно есть нужно выбрасывать или я писать незнаю что и нехочу тратить на это время.</p>
                 </div>
             </details>
                 
@@ -141,8 +250,12 @@
 
         <hr class="full-screen-line">
 
-    <section class="contact" id="contact">
+    <section class="contact">
         <h2 class="section-title">Связаться со мной</h2>
+        <div class="contact-links">
+            <p><strong>Email:</strong> <a href="mailto:exam.com">example@mail.com</a></p>
+            <p><strong>Телефон:</strong> <a href="tel:+00000000">+0000000000</a></p>
+        </div>
         <div class="contact-container">
             <div class="contact-info">
                 <p>Если у вас есть вопросы, я с радостью отвечу на них!</p>
@@ -171,14 +284,6 @@
         <div class="footer-container">
             <div class="footer-copyright">
                 <p>© 2026 IT Company</p>
-            </div>
-            <div class="footer-socials">
-                <p>Мы в соцсетях:</p>
-                <ul>
-                    <li><a href="https://vk.com" target="_blank">ВКонтакте</a></li>
-                    <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
-                </ul>
             </div>
         </div>
     </footer>
