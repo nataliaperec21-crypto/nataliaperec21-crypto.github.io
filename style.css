@@ -256,16 +256,7 @@ header {
   padding: 0 20px;
 }
 
-.text-block1 {
-  background-color: var(--secondary);
-  color: var(--white);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 800px;
-  justify-items: center;
-}
+
 
 .featured {
   background-color: var(--white);
