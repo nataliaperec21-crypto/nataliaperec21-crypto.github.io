@@ -259,7 +259,7 @@ header {
 .text-block {
   width: 100%;
   max-width: 800px;
-  align-items: center;
+  justify-items: center;
 }
 
 .featured {
