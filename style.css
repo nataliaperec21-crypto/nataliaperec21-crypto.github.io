@@ -220,16 +220,19 @@ header {
 
 
 
-.cards-about {
+.about content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 20px auto;
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.about content {
+.cards-about {
   display: grid; 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
