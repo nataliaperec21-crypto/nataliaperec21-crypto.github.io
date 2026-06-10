@@ -217,8 +217,11 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
-
-
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
 
 
@@ -240,11 +243,15 @@ header {
   gap: 20px;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
+
+
+
+
+
+
+
+
+
 
 .featured {
   background-color: var(--white);
@@ -256,13 +263,6 @@ header {
   transform: translateY(-15px);
   border: 3px solid gold;
 }
-
-
-
-
-
-
-
 
 .comments-section {
   display: flex;
