@@ -214,7 +214,7 @@ header {
   height: 7px;                
   background-color: var(--secondary); 
   border-radius: 30px;
-  margin: 20px 20px 0 20px; 
+  margin: 20px 15px 20px 15px; 
 }
 
 .portfolio-comments-layout {
