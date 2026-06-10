@@ -217,6 +217,12 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
+.about content {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
 
 .portfolio-comments-layout {
   
@@ -225,8 +231,6 @@ header {
   margin: 40px auto;
   padding: 0 20px;
 }
-
-
 
 
 
