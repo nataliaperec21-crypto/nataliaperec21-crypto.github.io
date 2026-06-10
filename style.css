@@ -227,7 +227,10 @@ header {
   padding: 0 20px;
 }
 
-
+.port-folio .cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
 
 
 
