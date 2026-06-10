@@ -220,13 +220,14 @@ header {
 
 
 
-.about content {
+.cards-about {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 20px auto;
 }
 
-.cards-about {
+.about content {
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
