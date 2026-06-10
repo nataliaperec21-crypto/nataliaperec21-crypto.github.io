@@ -258,16 +258,6 @@ header {
   padding: 0 20px;
 }
 
-.text-block1 {
-  background-color: var(--secondary);
-  color: var(--white);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  margin: 20px;
-  max-width: 120px;
-}
-
 .featured {
   background-color: var(--white);
   border-radius: 10px;
