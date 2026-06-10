@@ -239,7 +239,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  max-width: 1000px;
+  max-width: 600px;
   width: 100%;
   margin: 40px auto;
   padding: 0 20px;
@@ -249,7 +249,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  max-width: 1000px;
+  max-width: 600px;
   width: 100%;
   margin: 40px auto;
   padding: 0 20px;
