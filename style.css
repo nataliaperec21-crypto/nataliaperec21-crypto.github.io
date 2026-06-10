@@ -120,8 +120,8 @@ header {
 .block-4 { width: 220px; }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
   gap: 30px;
 }
 
@@ -217,21 +217,9 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-
-
-
-
 
 .portfolio-comments-layout {
-  display: grid;
-  grid-template-columns: 335px 1fr;
-  gap: 30px;
+  
   max-width: 1200px;
   width: 100%;
   margin: 40px auto;
