@@ -217,6 +217,18 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
+.portfolio-comments-layout {
+  display: grid;
+  grid-template-columns: 335px 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+
 
 
 
