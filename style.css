@@ -227,10 +227,6 @@ header {
   padding: 0 20px;
 }
 
-
-
-
-
 .port-folio .cards {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
@@ -240,8 +236,8 @@ header {
 
 
 .about content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1000px;
   width: 100%;
@@ -251,13 +247,9 @@ header {
 
 .cardss {
   display: grid; 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
-
-
-
-
 
 
 
@@ -282,7 +274,7 @@ header {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   height: max-content;
-  
+  margin-left: -140px !important;
 }
 
 .comments-section h2 {
