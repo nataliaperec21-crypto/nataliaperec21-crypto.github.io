@@ -89,7 +89,7 @@ header {
   display: grid;
   grid-template-columns: 300px 1fr !important; 
   gap: 30px;
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 40px auto;
   padding: 0 20px;
@@ -242,7 +242,6 @@ header {
   background-color: var(--white);
   border-radius: 10px;
   display: flex;
-  max-width: 800px;
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
