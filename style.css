@@ -232,28 +232,6 @@ header {
   color: #555;
 }
 
-
-
-
-
-
-
-
-.portfolio-comments-layout {
-  display: grid;
-  grid-template-columns: 335px 1fr;
-  gap: 30px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.port-folio .cards {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -264,6 +242,7 @@ header {
   background-color: var(--white);
   border-radius: 10px;
   display: flex;
+  max-width: 800px;
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -296,6 +275,27 @@ header {
 
 .premium-card {
   position: relative;
+}
+
+
+
+
+
+
+
+.portfolio-comments-layout {
+  display: grid;
+  grid-template-columns: 335px 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.port-folio .cards {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .stats {
@@ -342,7 +342,11 @@ header {
   margin: 20px 20px 0 20px; 
 }
 
-
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
 
 .featured {
   background-color: var(--white);
