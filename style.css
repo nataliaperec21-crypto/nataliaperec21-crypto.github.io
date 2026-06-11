@@ -240,15 +240,6 @@ header {
   gap: 20px;
 }
 
-.about.content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 800px;
-  width: 100%;
-  align-items: center;
-}
-
 .cardss {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -259,13 +250,22 @@ header {
   padding: 0 20px;
 }
 
+.about.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+  align-items: center;
+}
+
 .text-blockk {
   background-color: var(--secondary);
   color: var(--white);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  max-width: 800px;
+  max-width: 1000px;
   justify-content: center;
 }
 
