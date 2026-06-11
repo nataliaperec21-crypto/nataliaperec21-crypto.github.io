@@ -257,7 +257,7 @@ header {
   max-width: 1200px;
   width: 100%;
   margin: 40px auto;
-  padding: 0 15px;
+  padding: 0 10px;
   align-items: center;
   justify-content: center;
 }
@@ -267,7 +267,7 @@ header {
   color: var(--white);
   width: 100%;
   max-width: 800px;
-  padding: 20px 40px; 
+  padding: 20px 20px; 
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   text-align: center;
@@ -394,10 +394,9 @@ header {
 .faq-container {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Зазоры между плашками вопросов */
+  gap: 15px;
 }
 
-/* Сама раскрывающаяся плашка */
 .faq-item {
   background-color: var(--white);
   border-radius: 10px;
@@ -406,20 +405,18 @@ header {
   transition: all var(--transition);
 }
 
-/* Стиль строчки с ВОПРОСОМ (summary) */
 .faq-question {
   padding: 20px;
   font-weight: bold;
   font-size: 1.1rem;
   cursor: pointer;
-  list-style: none; /* Убираем стандартный серый треугольник браузера */
+  list-style: none; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: background-color var(--transition);
 }
 
-/* Добавляем свой красивый плюсик в конце вопроса */
 .faq-question::after {
   content: '+';
   font-size: 1.5rem;
@@ -429,33 +426,28 @@ header {
 }
 
 .faq-question:hover {
-  background-color: #f1f2f6; /* Подсветка вопроса при наведении */
+  background-color: #f1f2f6; 
 }
 
-/* Магия CSS: когда плашка ОТКРЫТА (тег details получает атрибут [open]) */
 .faq-item[open] .faq-question {
   background-color: var(--secondary);
   color: var(--white);
 }
 
-/* Поворачиваем плюсик, превращая его в крестик при открытии */
 .faq-item[open] .faq-question::after {
   transform: rotate(45deg);
   color: var(--primary);
 }
 
-/* Блок с ОТВЕТОМ */
 .faq-answer {
   padding: 20px;
   background-color: var(--white);
   border-top: 1px solid #eee;
   color: #555;
   font-size: 0.95rem;
-  /* Анимация появления текста */
   animation: fadeIn 0.4s ease-out;
 }
 
-/* Плавное проявление букв */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
