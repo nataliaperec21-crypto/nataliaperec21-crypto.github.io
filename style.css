@@ -101,7 +101,6 @@ header {
   gap: 20px;
   align-items: center; 
   justify-content: flex-start;
-  margin-left: -140px !important;
 }
 
 .block-1, .block-2, .block-3, .block-4 {
@@ -258,7 +257,7 @@ header {
   max-width: 1200px;
   width: 100%;
   margin: 20px;
-  align-items: center;
+  align-items: center !important;
 }
 
 .text-blockk {
