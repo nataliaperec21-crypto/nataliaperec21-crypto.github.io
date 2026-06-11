@@ -524,6 +524,10 @@ footer {
 
 @media (max-width: 768px) {
 
+  .comments-section {
+    margin-left: 0;
+  }
+
   .cards {
     grid-template-columns: 1fr;
   }
