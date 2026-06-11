@@ -244,6 +244,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
 }
 
 .cardss {
@@ -264,7 +265,6 @@ header {
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   max-width: 800px;
   justify-content: center;
-  justify-items: center;
 }
 
 .featured {
