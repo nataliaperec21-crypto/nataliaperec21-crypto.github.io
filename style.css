@@ -267,7 +267,7 @@ header {
   color: var(--white);
   width: 100%;
   max-width: 800px;
-  padding: 20px 60px !important; 
+  padding: 20px 55px !important; 
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   text-align: center;
