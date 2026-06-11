@@ -257,7 +257,7 @@ header {
   max-width: 1200px;
   width: 100%;
   margin: 40px auto;
-  padding: 0 5px;
+  padding: 0 20px;
   align-items: center;
   justify-content: center;
 }
@@ -266,7 +266,7 @@ header {
   background-color: var(--secondary);
   color: var(--white);
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   padding: 20px 10px; 
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -517,8 +517,7 @@ footer {
 @media (max-width: 768px) {
 
   .comments-section {
-    margin-left: 0;
-    align-items: center;
+    margin-right: -20px;
   }
 
   .cards {
