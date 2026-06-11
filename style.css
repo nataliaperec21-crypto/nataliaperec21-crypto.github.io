@@ -265,6 +265,8 @@ header {
 .text-blockk {
   background-color: var(--secondary);
   color: var(--white);
+  width: 100%;
+  max-width: 800px;
   padding: 20px 60px !important; 
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
