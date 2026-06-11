@@ -267,7 +267,7 @@ header {
   color: var(--white);
   width: 100%;
   max-width: 800px;
-  padding: 20px 40px; 
+  padding: 20px 20px; 
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   text-align: center;
@@ -293,7 +293,7 @@ header {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   height: max-content;
-  margin-left: -140px !important;
+
 }
 
 .comments-section h2 {
