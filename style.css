@@ -266,7 +266,7 @@ header {
   background-color: var(--secondary);
   color: var(--white);
   width: 100%;
-  max-width: 750px;
+  max-width: 760px;
   padding: 20px 20px; 
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -293,7 +293,7 @@ header {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   height: max-content;
-
+  margin-left: -140px !important;
 }
 
 .comments-section h2 {
@@ -516,10 +516,7 @@ footer {
 
 @media (max-width: 768px) {
 
-  .comments-section {
-    width: 100%;
-    margin-right: -140px !important;
-  }
+  
 
   .cardss {
     grid-template-columns: 1fr;
@@ -569,5 +566,10 @@ footer {
 
   .footer-socials ul {
     gap: 10px;
+  }
+
+  .comments-section {
+    width: 100%;
+    margin-left: 0 !important;
   }
 }
