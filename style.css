@@ -266,7 +266,7 @@ header {
   background-color: var(--secondary);
   color: var(--white);
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   padding: 20px 10px; 
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -517,7 +517,12 @@ footer {
 @media (max-width: 768px) {
 
   .comments-section {
-    margin-right: -120px;
+    width: 100%;
+    margin-left: 0 auto !important;
+  }
+
+  .cardss {
+    grid-template-columns: 1fr;
   }
 
   .cards {
@@ -526,21 +531,16 @@ footer {
 
   .portfolio-comments-layout {
     grid-template-columns: 1fr;
+    padding: 0 10px;
   }
 
   .port-folio {
     grid-template-columns: 1fr;
   }
 
-
-
   .stats {
     flex-direction: column;
     align-items: center;
-  }
-
-  .cards1 {
-    grid-template-columns: 1fr; 
   }
 
   .layout {
