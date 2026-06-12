@@ -264,7 +264,7 @@ header {
   width: 100%;
 }
 .contact-container button {
-  padding: 40px;
+  padding: 40px -20px;
 }
 
 footer {
