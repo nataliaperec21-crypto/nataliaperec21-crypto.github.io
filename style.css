@@ -264,6 +264,10 @@ header {
   width: 100%;
 }
 
+.btn-submit {
+  padding: 40px;
+}
+
 footer {
   background-color: var(--secondary);
   color: var(--white);
