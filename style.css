@@ -267,6 +267,7 @@ header {
   flex-direction: column;
   gap: 15px;
   width: 100%;
+  font-weight: bold;
 }
 .contact-container button {
   padding: 40px;
