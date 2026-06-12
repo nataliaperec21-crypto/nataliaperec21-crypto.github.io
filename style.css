@@ -190,8 +190,11 @@ header {
   margin: 30px auto;
   padding: 20px;
   background-color: var(--secondary);
-  color: var(--white);
   border-radius: 12px;
+}
+
+.article-preview .open-article {
+  color: var(--white);
 }
 
 /* Оформление ссылок под обычные кнопки */
