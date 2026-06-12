@@ -218,7 +218,11 @@ header {
   font-weight: bold;
   font-size: 1.8rem;
   padding: 20px;
+  width: 100%;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .stat p {
