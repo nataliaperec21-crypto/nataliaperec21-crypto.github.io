@@ -196,6 +196,12 @@ header {
   border-radius: 12px;
 }
 
+.article-preview {
+  max-width: 1600px;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
 .btn-open, .btn-close {
   display: inline-block;
   padding: 10px 20px;
