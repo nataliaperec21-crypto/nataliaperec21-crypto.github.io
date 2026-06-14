@@ -188,7 +188,8 @@ header {
 
 
 .article-block {
-  
+  max-width: 1200px;
+  width: 100%;
 }
 
 .article-preview {
@@ -197,7 +198,7 @@ header {
   padding: 150px;
   border-radius: 20px;
   background-color: var(--secondary);
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .btn-open, .btn-close {
