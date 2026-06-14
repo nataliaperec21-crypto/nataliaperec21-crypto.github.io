@@ -200,7 +200,7 @@ header {
   background-color: var(--secondary);
   color: var(--white);
   text-align: center;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .article-preview a {
@@ -212,27 +212,27 @@ header {
 }
 
 .modal-overlay {
-  display: none;        /* ГЛАВНОЕ: Изначально полностью прячем этот блок! */
-  position: fixed;      /* Намертво привязываем окно к экрану телефона/ноута */
+  display: none;        
+  position: fixed;  
   top: 0; left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 999;         /* Кладись поверх абсолютно всех элементов на сайте */
+  z-index: 999;      
 }
-/* 2. Белое окошко с текстом внутри темного фона */
+
 .modal-content {
-  background-color: var(--secondary);
+  background-color: var(--white);
+  color: var(--secondary);
   max-width: 1500px;
   width: 90%;
   margin: 100px auto;
   padding: 30px;
   border-radius: 15px;
 }
-/* 3. А как его теперь показать? Используем :target */
-/* Это правило говорит: "Если в ссылке выбран ID #open-article, то..." */
+
 .modal-overlay:target {
-  display: block;       /* ...смени display: none на display: block! Окно появляется! */
+  display: block;
 }
 
 
