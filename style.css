@@ -190,8 +190,6 @@ header {
 .article-block {
   max-width: 1200px;
   width: 100%;
-  background-color: var(--secondary);
-  border-radius: 12px;
 }
 
 .article-preview {
