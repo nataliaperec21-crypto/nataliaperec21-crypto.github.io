@@ -233,7 +233,9 @@ header {
   border-radius: 15px;
 }
 
-
+.modal-overlay:target {
+  display: block;
+}
 
 
 
