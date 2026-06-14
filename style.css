@@ -319,6 +319,7 @@ header {
 }
 .contact-container button {
   padding: 40px;
+  border-radius: 15px;
 }
 
 footer {
