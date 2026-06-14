@@ -198,7 +198,7 @@ header {
   padding: 150px;
   border-radius: 20px;
   background-color: var(--secondary);
-  justify-items: center;
+  justify-content: center;
 }
 
 .btn-open, .btn-close {
