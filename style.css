@@ -195,7 +195,11 @@ header {
   border-radius: 12px;
 }
 
-.article-preview .open-article {
+.open-article {
+  color: var(--white);
+}
+
+.article-preview {
   color: var(--white);
 }
 
