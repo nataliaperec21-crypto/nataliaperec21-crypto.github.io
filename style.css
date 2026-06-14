@@ -188,17 +188,16 @@ header {
 
 
 .article-block {
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
-
   background-color: var(--secondary);
   border-radius: 12px;
 }
 
 .article-preview {
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
-  padding: 200px 0;
+  padding: 150px;
   background-color: var(--secondary);
 }
 
