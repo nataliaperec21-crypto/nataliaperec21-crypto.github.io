@@ -190,32 +190,27 @@ header {
 .article-block {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .article-preview {
-  max-width: 600px;
+  max-width: 1200px;
   width: 100%;
   padding: 150px;
   border-radius: 20px;
   background-color: var(--secondary);
   color: var(--white);
   text-align: center;
+  margin: 0 auto;
 }
-
-
 
 .article-preview a {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none; 
   border-radius: 8px;
-  color: var(--white);
+  color: var(--primary);
 }
 
-.btn-open { background-color: #007bef; }
-.btn-close { background-color: #e74c3c; margin-top: 15px; }
-/* 1. Наш темный задний фон, который перекрывает весь экран */
 .modal-overlay {
   display: none;        /* ГЛАВНОЕ: Изначально полностью прячем этот блок! */
   position: fixed;      /* Намертво привязываем окно к экрану телефона/ноута */
