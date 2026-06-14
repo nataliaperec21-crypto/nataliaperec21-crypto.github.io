@@ -189,18 +189,11 @@ header {
 
 .article-block {
   max-width: 1600px;
+  width: 100%;
   margin: 10px auto;
   padding: 20px;
   background-color: var(--secondary);
   border-radius: 12px;
-}
-
-.open-article {
-  color: var(--white);
-}
-
-.article-preview {
-  color: var(--white);
 }
 
 .btn-open, .btn-close {
