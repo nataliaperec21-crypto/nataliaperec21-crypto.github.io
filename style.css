@@ -201,6 +201,8 @@ header {
   color: var(--white);
   text-align: center;
   justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 .article-preview a {
