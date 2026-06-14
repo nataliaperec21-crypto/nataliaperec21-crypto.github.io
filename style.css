@@ -255,7 +255,7 @@ header {
   color: var(--white);
   flex: 1;
   max-width: 450px;
-  padding: 100px 100px;
+  padding: 80px 80px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
   text-align: center;
