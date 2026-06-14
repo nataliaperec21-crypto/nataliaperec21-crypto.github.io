@@ -202,13 +202,16 @@ header {
   margin: 0 auto;
 }
 
-.btn-open, .btn-close {
+
+
+.article-preview a {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none; 
   border-radius: 8px;
   color: var(--white);
 }
+
 .btn-open { background-color: #007bef; }
 .btn-close { background-color: #e74c3c; margin-top: 15px; }
 /* 1. Наш темный задний фон, который перекрывает весь экран */
