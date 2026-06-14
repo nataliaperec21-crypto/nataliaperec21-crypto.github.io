@@ -194,7 +194,7 @@ header {
   background-color: var(--secondary);
   color: var(--white);
   text-align: center;
-  margin: 10px 20px 10px 300px;
+  margin: 20px auto;
 }
 
 .article-preview a {
@@ -268,9 +268,6 @@ header {
   padding: 20px;
   width: 100%;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
 }
 
 .stat p {
@@ -318,8 +315,82 @@ header {
   font-weight: bold;
 }
 .contact-container button {
-  padding: 40px;
+  padding: 15px 25px;
   border-radius: 15px;
+}
+
+.faq-section {
+  max-width: 800px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.faq-question {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  list-style: none; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color var(--transition);
+}
+
+.faq-question::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  transition: transform var(--transition);
+}
+
+.faq-question:hover {
+  background-color: #f1f2f6; 
+}
+
+.faq-item[open] .faq-question {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.faq-item[open] .faq-question::after {
+  transform: rotate(45deg);
+  color: var(--primary);
+}
+
+.faq-answer {
+  padding: 20px;
+  background-color: var(--white);
+  border-top: 1px solid #eee;
+  color: #555;
+  font-size: 0.95rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 footer {
@@ -339,6 +410,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  .article-preview {
+  padding: 30px;
+  margin: 20px auto;
+}
 
   .cards {
     grid-template-columns: 1fr;
