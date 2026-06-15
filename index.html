@@ -3,80 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проект 13 — Ресторан</title>
+    <title>Проект 15</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Ресторан Italiano</h1>
-            <p>Настоящая итальянская кухня</p>
-            <a href="#contact" class="btn-main">Забронировать столик</a>
-        </div>
+    <header>
+
+        <div class="logotyp">IT Company</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#project">Проекты</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#tariffs">Тарифы</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+
+                <a href="#contact" class="btn-contact">Связаться</a>
+
     </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>IT Company</h1>
+            <p>Создаём современные сайты для IT бизнеса</p>
+            <a href="#sub" class="btn-main">Подписка</a>
+            <a href="#services" class="btn-main">Услуги</a>
+        </div>
+    </section>
 
     <main class="layout">
 
       <div class="block">
-        <div class="block-1">Вкусно</div>
-        <div class="block-2">Красиво</div>
-        <div class="block-3">Дешево</div>
-        <div class="block-4">Идеально</div>
+        <div class="block-1">Качественно</div>
+        <div class="block-2">Быстро</div>
+        <div class="block-3">Современно</div>
+        <div class="block-4">Надежно</div>
       </div>
 
-      <section class="content">
+      <section class="content" id="services">
           <div class="text-block">
-              <h2>Наше меню</h2>
-              <p>Здесь вы ознакомитесь с нашими пицами</p>
+              <h2>Наши услуги</h2>
+              <p>Здесь вы ознакомитесь с моими сайтами</p>
           </div>
 			
           <div class="cards">
               <article class="card">
                 <div class="card-img"><img src="foto/img1.jpg" alt="html5 verctka"></div>
                 <div class="card-info">
-                  <h3>Пицца</h3>
-                  <p>Тонкое тесто и свежие ингредиенты</p>
+                  <h3>Веб-разработка</h3>
+                  <p>Создание сайтов</p>
                 </div>
               </article>
               <article class="card">
                 <div class="card-img"><img src="foto/img2.jpg" alt="html5 verctka"></div>
                 <div class="card-info">
-                  <h3>Паста</h3>
-                  <p>Домашняя паста по традиционным рецептам</p>
+                  <h3>Дизайн</h3>
+                  <p>Современный UI/UX</p>
                 </div>
               </article>
               <article class="card">
                 <div class="card-img"><img src="foto/img3.jpg" alt="html5 verctka"></div>
                 <div class="card-info">
-                  <h3>Салаты</h3>
-                  <p>Свежие овощи и фирменные соусы</p>
+                  <h3>Поддержка</h3>
+                  <p>Обновление проектов</p>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img"><img src="foto/img4.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>Разработка-проектов</h3>
+                  <p>Создание проектов</p>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img"><img src="foto/img5.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>AI-дизайн</h3>
+                  <p>Автономия</p>
+                </div>
+              </article>
+              <article class="card">
+                <div class="card-img"><img src="foto/img6.jpg" alt="html5 verctka"></div>
+                <div class="card-info">
+                  <h3>Услуги</h3>
+                  <p>Обновление всего</p>
                 </div>
               </article>
           </div>
+      </section>
+    </main>
 
-          <section class="stats">
+    <hr class="full-screen-line">
+
+    <section class="project" id="project">
+    <h2 class="section-title">Популярный проект</h2>
+
+    <article class="featured-project">
+        <!-- Левая часть: Текст и кнопка -->
+        <div class="project-info">
+            <h3>Сайт для IT-бизнеса "под ключ"</h3>
+            <p>Создаём современные адаптивные сайты с высокой скоростью загрузки и уникальным дизайном, которые привлекают клиентов.</p>
+            <a href="#sub" class="btn-main">Подписка</a>
+        </div>
+        <!-- Правая часть: Картинка -->
+        <div class="project-img">
+            <img src="foto/img8.jpg" alt="html5 verctka">
+        </div>
+    </article>
+</section>
+
+    <hr class="full-screen-line">
+
+        <section class="port-folio" id="portfolio">
+            <div class="text-block" style="margin-bottom: 30px;">
+                <h2>Моё портфолио</h2>
+                <p>Здесь вы ознакомитесь с моими работами</p>
+            </div>
+            
+            <div class="cards">
+                <article class="card">
+                  <div class="card-img"><img src="foto/img7.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Info 1 карточки</h3>
+                    <p class="card-p">Мои работы</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+                  </div>
+                </article>
+                <article class="card featured">
+                  <div class="card-img"><img src="foto/img8.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Info 2 карточки</h3>
+                    <p class="card-p">Мои работы</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img9.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Info 3 карточки</h3>
+                    <p class="card-p">Мои работы</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img10.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Info 4 карточки</h3>
+                    <p class="card-p">Мои работы</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img11.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Info 5 карточки</h3>
+                    <p class="card-p">Мои работы</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+                  </div>
+                </article>
+                <article class="card">
+                  <div class="card-img"><img src="foto/img12.jpg" alt="html5 verctka"></div>
+                  <div class="card-info">
+                    <h3>Info 6 карточки</h3>
+                    <p class="card-p">Мои работы</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+                  </div>
+                </article>
+            </div>
+        </section>
+
+        <hr class="full-screen-line">
+
+        <section class="stats">
             <div class="stat">
-                <h2>120+</h2>
+                <h2>100+</h2>
                 <p>Клиентов</p>
             </div>
             <div class="stat">
-                <h2>50+</h2>
+                <h2>250+</h2>
                 <p>Проектов</p>
             </div>
             <div class="stat">
                 <h2>5 лет</h2>
                 <p>Опыта</p>
             </div>
-          </section>
-      </section>
-    </main>
+            <div class="stat">
+                <h2>24/7</h2>
+                <p>Поддержка</p>
+            </div>
+        </section>
 
-    <hr class="full-screen-line">
+        <section class="tariffs" id="tariffs">
+            <div class="stat">
+                <h2>Basic</h2>
+                <p class="card-p">1500грн</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+            </div>
+            <div class="stat">
+                <h2>Pro</h2>
+                <p class="card-p">2500грн</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+            </div>
+            <div class="stat">
+                <h2>Premium</h2>
+                <p class="card-p">3500грн</p>
+                    <a href="#contact" class="btn-buy">Заказать</a>
+            </div>
+        </section>
 
-<section class="portfolio-comments-layout">
+        <hr class="full-screen-line">
 
-        <div class="comments-section">
+        <section class="article-block" id="articles">
+
+            <div class="article-preview">
+
+                <h2>Популярная статья</h2>
+                <h3>Как создается HTML и CSS </h3>
+                <p>Небольшой текст статьи...</p>
+                <a href="#open-article" class="btn-article">Читать полностью</a>
+            </div>
+
+            <div class="modal-overlay" id="open-article">
+                <div class="modal-content">
+                    <h2>Как я изучал HTML и CSS</h2>
+                    <p>
+                        Искусственный интеллект (ИИ) — это компьютерные системы, способные 
+                        имитировать действия человека, например, обучаться, распознавать шаблоны
+                         и генерировать контент. Индустрия переживает бум: компании тратят около 
+                         $7500 на ИИ-инструменты для одного работника, а стартапы привлекают
+                          миллиардные инвестиции.
+                    </p>
+                    <a href="#" class="btn-class">Закрыть</a>
+                </div>
+            </div>
+
+         </section>
+
+         <hr class="full-screen-line">
+
+<section class="process-section">
+    <h2>Процесс работы</h2>
+    
+    <div class="process-steps">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Заявка</h3>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Обсуждение</h3>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Разработка</h3>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>Запуск</h3>
+        </div>
+    </div>
+</section>
+
+<section class="team-section">
+    <h2>Наша команда</h2>
+    
+    <div class="team-container">
+        <!-- 1. Иван (Нечетный) -->
+        <div class="team-card">
+            <div class="card-photo">Фото 1</div>
+            <h3>Иван Иванов</h3>
+            <p>HTML-верстальщик</p>
+        </div>
+        
+        <!-- 2. Анна (Четный) -->
+        <div class="team-card">
+            <div class="card-photo">Фото 2</div>
+            <h3>Анна Петрова</h3>
+            <p>CSS-дизайнер</p>
+        </div>
+        
+        <!-- 3. Петр (Нечетный) -->
+        <div class="team-card">
+            <div class="card-photo">Фото 3</div>
+            <h3>Петр Сидоров</h3>
+            <p>Фронтенд-разработчик</p>
+        </div>
+        
+        <!-- 4. Елена (Четный) -->
+        <div class="team-card">
+            <div class="card-photo">Фото 4</div>
+            <h3>Елена Смирнова</h3>
+            <p>Тестировщик</p>
+        </div>
+    </div>
+</section>
+
+        <hr class="full-screen-line">
+
+         <div class="comments-section" id="reviews">
             <h2>Отзывы</h2>
 
             <form action="https://formspree.io" method="POST" class="comment-form">
@@ -96,150 +328,49 @@
                     <div class="comment-avatar">И</div>
                     <div class="comment-content">
                         <h4>Иван Иванов</h4>
-                        <p>★★★★★ Очень вкусно!</p>
+                        <p>★★★★★ Хорошо сделано!</p>
                     </div>
                 </article>
                 <article class="comment-item">
                     <div class="comment-avatar">M</div>
                     <div class="comment-content">
                         <h4>Мария Петрова</h4>
-                        <p>★★★★★ Лучший ресторан в городе!</p>
+                        <p>★★★★★ Сайт сделан прекрасно!</p>
                     </div>
                 </article>
                 <article class="comment-item">
                     <div class="comment-avatar">M</div>
                     <div class="comment-content">
                         <h4>Мария Петрова</h4>
-                        <p>★★★★★ Вернемся снова!</p>
+                        <p>★★★★★ Закажем снова!</p>
                     </div>
                 </article>
             </div>
         </div>
 
-        <div class="port-folio">
-            <div class="text-block" style="margin-bottom: 30px;">
-                <h2>Популярные блюда</h2>
-                <p>Здесь вы ознакомитесь с лутшими пицами мира</p>
-            </div>
-            
-            <div class="cards">
-                <article class="card">
-                  <div class="card-img"><img src="foto/img4.jpg" alt="html5 verctka"></div>
-                  <div class="card-info">
-                    <h3>Маргарита</h3>
-                    <p class="card-p">100грн</p>
-                    <a href="#contact" class="btn-buy">Купить</a>
-                  </div>
-                </article>
-                <article class="card featured">
-                  <div class="card-img"><img src="foto/img5.jpg" alt="html5 verctka"></div>
-                  <div class="card-info">
-                    <h3>Пепперони</h3>
-                    <p class="card-p">250грн</p>
-                    <a href="#contact" class="btn-buy">Купить</a>
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-img"><img src="foto/img6.jpg" alt="html5 verctka"></div>
-                  <div class="card-info">
-                    <h3>Карбонара</h3>
-                    <p class="card-p">500грн</p>
-                    <a href="#contact" class="btn-buy">Купить</a>
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-img"><img src="foto/img7.jpg" alt="html5 verctka"></div>
-                  <div class="card-info">
-                    <h3>Лазанья</h3>
-                    <p class="card-p">100грн</p>
-                    <a href="#contact" class="btn-buy">Купить</a>
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-img"><img src="foto/img8.jpg" alt="html5 verctka"></div>
-                  <div class="card-info">
-                    <h3>Цезарь</h3>
-                    <p class="card-p">100грн</p>
-                    <a href="#contact" class="btn-buy">Купить</a>
-                  </div>
-                </article>
-                <article class="card">
-                  <div class="card-img"><img src="foto/img9.jpg" alt="html5 verctka"></div>
-                  <div class="card-info">
-                    <h3>Тирамису</h3>
-                    <p class="card-p">100грн</p>
-                    <a href="#contact" class="btn-buy">Купить</a>
-                  </div>
-                </article>
-            </div>
-        </div>
-</section>
-
-        <hr class="full-screen-line">
-
-    <section class="about content">
-        <div class="text-blockk">
-            <h2>О нас</h2>
-            <p>Мы готовим блюда по традиционным
-итальянским рецептам уже более 10 лет.</p>
-        </div>
-            <div class="cardss">
-              <article class="card">
-                <div class="card-img"><img src="foto/img10.jpg" alt="html5 verctka"></div>
-                <div class="card-info">
-                  <h3>Пицца</h3>
-                  <p>Тонкое тесто и свежие ингредиенты</p>
-                </div>
-              </article>
-              <article class="card">
-                <div class="card-img"><img src="foto/img11.jpg" alt="html5 verctka"></div>
-                <div class="card-info">
-                  <h3>Паста</h3>
-                  <p>Домашняя паста по традиционным рецептам</p>
-                </div>
-              </article>
-              <article class="card">
-                <div class="card-img"><img src="foto/img12.jpg" alt="html5 verctka"></div>
-                <div class="card-info">
-                  <h3>Салаты</h3>
-                  <p>Свежие овощи и фирменные соусы</p>
-                </div>
-               </article>
-                <article class="card">
-                <div class="card-img"><img src="foto/img13.jpg" alt="html5 verctka"></div>
-                <div class="card-info">
-                  <h3>Салаты</h3>
-                  <p>Свежие овощи и фирменные соусы</p>
-                </div>
-                </article>
-            </div>
-    </section>
-
-        <hr class="full-screen-line">
-
-    <section class="faq-section">
+    <section class="faq-section" id="faq">
         <h2>Часто задаваемые вопросы</h2>
     
         <div class="faq-container">
         
             <details class="faq-item">
-                <summary class="faq-question">Какую пицу вы делаете?</summary>
+                <summary class="faq-question">Какую статю вы делаете?</summary>
                 <div class="faq-answer">
-                    <p>Пицы которые трудно есть нужно выбрасывать или любить жену но больше писать нету времени и я не знаю что здесь еще писать.</p>
+                    <p>Статьи которые трудно писать нужно выбрасывать или любить жену но больше писать нету времени и я не знаю что здесь еще писать.</p>
                 </div>
             </details>
 
             <details class="faq-item">
-                <summary class="faq-question">Какую пицу вы делаете?</summary>
+                <summary class="faq-question">Какую статю вы делаете?</summary>
                 <div class="faq-answer">
-                    <p>Пицы которые трудно есть нужно выбрасывать или любить жену но больше писать нету времени и я не знаю что здесь еще писать.</p>
+                    <p>Статьи которые трудно писать нужно выбрасывать или любить жену но больше писать нету времени и я не знаю что здесь еще писать.</p>
                 </div>
             </details>
 
             <details class="faq-item">
-                <summary class="faq-question">Какую пицу вы делаете?</summary>
+                <summary class="faq-question">Какую статю вы делаете?</summary>
                 <div class="faq-answer">
-                    <p>Пицы которые трудно есть нужно выбрасывать или любить жену но больше писать нету времени и я не знаю что здесь еще писать.</p>
+                    <p>Статьи которые трудно писать нужно выбрасывать или любить жену но больше писать нету времени и я не знаю что здесь еще писать.</p>
                 </div>
             </details>
                 
@@ -247,6 +378,21 @@
     </section>
 
         <hr class="full-screen-line">
+
+        <section class="subscribe" id="sub">
+        <h2 class="section-title">Подписаться на новости</h2>
+        
+        <div class="contact-container">
+
+            <form action="https://formspree.io" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                </div>
+                <button type="submit" class="btn-submit">Подписаться</button>
+            </form> 
+        </div>
+    </section>
 
     <section class="contact" id="contact">
         <h2 class="section-title">Связаться со мной</h2>
@@ -263,11 +409,11 @@
             <form action="https://formspree.io" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="name">Ваше имя:</label>
-                    <input type="text" name="name" id="name" placeholder="Иван" required>
+                    <input type="text" name="name" id="namee" placeholder="Иван" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Ваш Email:</label>
-                    <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                    <input type="email" name="email" id="emaill" placeholder="example@mail.com" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Сообщение:</label>
@@ -277,6 +423,31 @@
             </form> 
         </div>
     </section>
+
+            <hr class="full-screen-line">
+
+    <section class="map-section">
+        <h2>Наш офис на карте</h2>
+        <div class="map-container">
+        <iframe src="https://google.com"
+        allowfullscreen
+        loading="lazy">
+        </iframe>
+        </div>
+    </section>
+
+    <section class="socials">
+                <p>Мы в соцсетях:</p>
+                <ul>
+                    <li><a href="https://Instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://Facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://vk.com" target="_blank">ВКонтакте</a></li>
+                    <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                </ul>
+    </section>
+
+            <hr class="full-screen-line">
 
     <footer>
         <div class="footer-container">
