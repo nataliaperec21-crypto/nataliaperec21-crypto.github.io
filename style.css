@@ -25,15 +25,17 @@ body {
 header {
   background-color: var(--primary);
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  padding: 20px;
+  padding: 20px 40px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  
+  display: flex;
+  justify-content: space-between; /* Растолкнет логотип влево, кнопку вправо, а меню по центру */
+  align-items: center;
 }
 
 .logotyp {
-  text-align: center;
+  font-weight: bold;
   font-size: 1.6rem;
 }
 
@@ -41,7 +43,9 @@ header {
   display: flex;
   text-decoration: none !important;
   text-align: center;
-  word-spacing: 5px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .hero {
