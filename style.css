@@ -32,6 +32,10 @@ header {
   text-decoration: none !important;
 }
 
+.logotyp {
+  text-align: center;
+}
+
 .hero {
   background-color: var(--secondary);
   color: var(--white);
