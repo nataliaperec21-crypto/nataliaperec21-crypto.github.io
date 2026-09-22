@@ -39,6 +39,8 @@ header {
 .nav-links {
   display: flex;
   text-decoration: none !important;
+  text-align: center;
+  word-spacing: 5px;
 }
 
 .hero {
