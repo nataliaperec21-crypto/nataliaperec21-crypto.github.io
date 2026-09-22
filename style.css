@@ -30,7 +30,7 @@ header {
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; /* Растолкнет логотип влево, кнопку вправо, а меню по центру */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -53,12 +53,11 @@ header {
   text-decoration: none !important;
   color: var(--secondary);
   font-size: 1rem;
-  transition: color red 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(red);
-  background-color: var(red);
+  color: var(--white);
 }
 
 .btn-contact {
