@@ -25,6 +25,7 @@ body {
 header {
   background-color: var(--primary);
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  display: flex;
   padding: 20px;
   position: sticky;
   top: 0;
