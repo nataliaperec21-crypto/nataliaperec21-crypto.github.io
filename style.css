@@ -48,6 +48,17 @@ header {
   padding: 0;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(red);
+}
+
 .hero {
   background-color: var(--secondary);
   color: var(--white);
