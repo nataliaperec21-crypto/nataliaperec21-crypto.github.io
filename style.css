@@ -53,12 +53,16 @@ header {
   text-decoration: none !important;
   color: var(--secondary);
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: color red 0.3s ease;
 }
 
 .nav-links a:hover {
   color: var(red);
   background-color: var(red);
+}
+
+.btn-contact {
+  text-decoration: none !important;
 }
 
 .hero {
