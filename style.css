@@ -258,6 +258,7 @@ header {
 
 .project-info {
   display: grid;
+  align-items: center;
   gap: 30px;
   width: 50%;
 }
