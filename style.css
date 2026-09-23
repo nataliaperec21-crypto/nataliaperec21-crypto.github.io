@@ -138,7 +138,7 @@ header {
 .layout {
   display: grid;
   grid-template-columns: 300px 1fr !important; 
-  gap: 30px;
+  gap: 80px;
   max-width: 1200px;
   width: 100%;
   margin: 40px auto;
