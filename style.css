@@ -240,7 +240,7 @@ header {
 
 .project h2 {
   display: inline-block;
-  padding: 20px 40px;
+  padding: 120px 40px;
   margin-bottom: 30px;
   /*width: 100%; */
   background-color: var(--secondary);
@@ -263,6 +263,7 @@ header {
   padding: 40px 40px;
   gap: 30px;
   flex: 1;
+  background-color: rgb(161, 161, 161);
 }
 
 .project-img {
