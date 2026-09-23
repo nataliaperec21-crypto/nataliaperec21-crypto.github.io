@@ -241,7 +241,7 @@ header {
 .project h2 {
   display: inline-block;
   padding: 20px 40px;
-  
+  /*width: 100%; */
   background-color: var(--secondary);
   color: var(--white);
   border-radius: 10px;
@@ -254,6 +254,7 @@ header {
   gap: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  width: 50%;
 }
 
 .project-info {
