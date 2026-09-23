@@ -240,7 +240,7 @@ header {
 
 .project h2 {
   display: block;
-  padding: 20px 20px;
+  padding: 40px 20px;
   margin-bottom: 30px;
   background-color: var(--secondary);
   color: var(--white);
@@ -263,7 +263,9 @@ header {
   padding: 40px 40px;
   gap: 30px;
   flex: 1;
-  
+  /* ВОТ ЭТО ДОБАВЬ: Команда прикажет всем элементам внутри Grid (включая кнопку) */
+  /* прижаться к левому краю и занимать только свою естественную ширину! */
+  justify-items: start;
 }
 
 .project-img {
