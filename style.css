@@ -239,10 +239,9 @@ header {
 }
 
 .project h2 {
-  display: inline-block;
-  padding: 120px 40px;
+  display: block;
+  padding: 20px 20px;
   margin-bottom: 30px;
-  /*width: 100%; */
   background-color: var(--secondary);
   color: var(--white);
   border-radius: 10px;
@@ -277,6 +276,24 @@ header {
   object-fit: cover;
   display: block;
   border-radius: 10px;
+}
+
+.btn-mainw {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-decoration: none !important;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 20px;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.btn-mainw:hover {
+  transform: scale(1.05);
+  color: var(--white);
+  background-color: #e6bc00;
 }
 
   
