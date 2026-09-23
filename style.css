@@ -255,7 +255,6 @@ header {
   gap: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  width: 50%;
 }
 
 .project-info {
@@ -263,7 +262,11 @@ header {
   align-items: center;
   padding: 40px 40px;
   gap: 30px;
-  width: 50%;
+  flex: 1;
+}
+
+.project-img {
+  flex: 1;
 }
 
 .project-img img{
