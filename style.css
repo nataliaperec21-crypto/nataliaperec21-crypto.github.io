@@ -54,6 +54,7 @@ header {
   color: var(--secondary);
   font-size: 1rem;
   transition: color 0.3s ease;
+  font-weight: bold;
 }
 
 .nav-links a:hover {
