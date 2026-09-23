@@ -265,7 +265,7 @@ header {
   flex: 1;
   /* ВОТ ЭТО ДОБАВЬ: Команда прикажет всем элементам внутри Grid (включая кнопку) */
   /* прижаться к левому краю и занимать только свою естественную ширину! */
-  
+  justify-items: start;
 }
 
 .project-img {
@@ -278,24 +278,6 @@ header {
   object-fit: cover;
   display: block;
   border-radius: 10px;
-}
-
-.btn-mainw {
-  display: inline-block;
-  background-color: var(--primary);
-  color: var(--secondary);
-  text-decoration: none !important;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-weight: bold;
-  margin: 20px;
-  transition: transform var(--transition), background-color var(--transition);
-}
-
-.btn-mainw:hover {
-  transform: scale(1.05);
-  color: var(--white);
-  background-color: #e6bc00;
 }
 
   
