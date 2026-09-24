@@ -378,6 +378,53 @@ header {
 
 
 
+.article-block {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.btn-open, .btn-close {
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.btn-open { background-color: #007bef; }
+.btn-close { background-color: #e74c3c; margin-top: 15px; }
+
+/* 1. Наш темный задний фон, который перекрывает весь экран */
+.modal-overlay {
+  display: none;        /* ГЛАВНОЕ: Изначально полностью прячем этот блок! */
+  
+  position: fixed;      /* Намертво привязываем окно к экрану телефона/ноута */
+  top: 0; left: 0;      /* Растягиваем от самого верхнего левого угла... */
+  width: 100%;          /* ...на всю ширину... */
+  height: 100%;         /* ...и на всю высоту экрана */
+  
+  background-color: rgba(0, 0, 0, 0.6); /* Черный фон с прозрачностью 60% */
+  z-index: 999;         /* Кладись поверх абсолютно всех элементов на сайте */
+}
+
+/* 2. Белое окошко с текстом внутри темного фона */
+.modal-content {
+  background-color: #fff;
+  max-width: 500px;
+  width: 90%;
+  margin: 100px auto;   /* Отступ 100px сверху, а auto выравнивает по горизонтали */
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* 3. А как его теперь показать? Используем :target */
+/* Это правило говорит: "Если в ссылке выбран ID #open-article, то..." */
+.modal-overlay:target {
+  display: block;       /* ...смени display: none на display: block! Окно появляется! */
+}
+
 
 
 
