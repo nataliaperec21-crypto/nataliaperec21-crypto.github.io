@@ -331,9 +331,6 @@ header {
   margin-bottom: 20px;
 }
 
-
-
-
   
 .stats {
   display: flex;
@@ -367,8 +364,6 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .tariffs {
   display: flex;
   justify-content: space-around;
@@ -383,43 +378,14 @@ header {
 
 
 
-.about.content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-  align-items: center;
-  justify-content: center;
-}
 
-.text-blockk {
-  background-color: var(--secondary);
-  color: var(--white);
-  width: 100%;
-  max-width: 760px;
-  padding: 20px 20px; 
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
 
-.featured {
-  background-color: var(--white);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  transform: translateY(-15px);
-  border: 3px solid gold;
-}
+
 
 .comments-section {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
   width: 100%;
   padding: 15px;
   background-color: var(--white);
