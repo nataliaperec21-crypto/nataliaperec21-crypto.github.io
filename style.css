@@ -301,7 +301,7 @@ header {
   flex-direction: column;
   gap: 30px;
 }
-  .cards {
+  .cardss {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 60px;
