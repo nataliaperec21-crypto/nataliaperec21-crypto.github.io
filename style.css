@@ -296,7 +296,13 @@ header {
 
 
 
-.port-folio .cards {
+  .port-folio {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+  .cards {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   max-width: 1000px;
@@ -364,7 +370,6 @@ header {
 
 
 
-
 .tariffs {
   display: flex;
   justify-content: space-around;
@@ -373,6 +378,7 @@ header {
   width: 100%;
   margin: 50px auto;
 }
+
 
 
 
