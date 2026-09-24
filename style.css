@@ -431,6 +431,132 @@ header {
 
 
 
+
+.process-section {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.process-section h2 {
+  margin-bottom: 40px;
+}
+
+/* Выстраиваем шаги горизонтально в шеренгу */
+.process-steps {
+  display: flex;
+  justify-content: space-between; /* Равномерно распределяем по ширине */
+  gap: 20px;
+}
+
+/* Каждый отдельный шаг */
+.step {
+  position: relative; /* Родоначальник координат для нашей будущей линии! */
+  flex: 1; /* Чтобы все шаги были одинаковой ширины */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Кружочек с цифрой внутри */
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: #007bef;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+  z-index: 2; /* Поднимаем кружочек выше линии, чтобы линия его не пересекала */
+}
+
+.step h3 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* --- А ТЕПЕРЬ СОЗДАЕМ ЛИНЕЮ ЧЕРЕЗ ::before --- */
+/* Мы говорим: "Браузер, нарисуй ПЕРЕД каждым шагом линию" */
+.step::before {
+  content: ""; /* Обязательно пустой контент, чтобы элемент создался */
+  position: absolute;
+  
+  /* Размещаем линию строго по центру кружочка */
+  top: 20px;   /* Половина высоты кружочка (40px / 2) */
+  left: -50px; /* Вытягиваем линию влево, к предыдущему шагу */
+  
+  /* Задаем размеры линии */
+  width: 100px; /* Длина полосы между кружками */
+  height: 2px;  /* Толщина линии */
+  
+  background-color: #007bef; /* Синий цвет линии */
+  z-index: 1;   /* Прячем линию под кружочек */
+}
+
+/* Маленькая хитрость: у самого ПЕРВОГО шага линии слева быть не должно! */
+.step:first-child::before {
+  display: none; /* Прячем линию для первого кружка */
+}
+
+
+
+
+
+/* Общие стили для сетки (делаем 4 колонки в ряд) */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Базовый стиль для ВСЕХ карточек */
+.team-card {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid transparent; /* Изначально рамка невидимая */
+  background-color: #fcfcfc;
+}
+
+.card-photo {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc; /* Вместо реального фото пока серый круг */
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- А ТЕПЕРЬ КРАСИМ ПО ОЧЕРЕДИ --- */
+
+/* Находим ВСЕ НЕЧЕТНЫЕ карточки (1-ю и 3-ю) */
+.team-card:nth-child(odd) {
+  border-color: #007bef; /* Синяя рамка */
+}
+.team-card:nth-child(odd) h3 {
+  color: #007bef; /* Синее имя */
+}
+
+/* Находим ВСЕ ЧЕТНЫЕ карточки (2-ю и 4-ю) */
+.team-card:nth-child(even) {
+  border-color: #2ecc71; /* Зеленая рамка */
+}
+.team-card:nth-child(even) h3 {
+  color: #2ecc71; /* Зеленое имя */
+}
+
+
+
+
+
+
 .comments-section {
   display: flex;
   flex-direction: column;
@@ -441,7 +567,7 @@ header {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   height: max-content;
-  margin-left: -140px !important;
+  margin-left: 0 auto !important;
 }
 
 .comments-section h2 {
