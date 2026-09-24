@@ -296,16 +296,6 @@ header {
 
 
 
-.portfolio-comments-layout {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 30px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
 .port-folio .cards {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
@@ -313,6 +303,27 @@ header {
   width: 100%;
   margin: 40px auto;
   padding: 0 20px;
+}
+
+.text-blockk {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  justify-items: start;
+}
+
+.text-blockk h2 {
+  margin-bottom: 10px;
+}
+
+.text-blockk h3 {
+  margin-bottom: 15px;
+}
+
+.text-blockk p {
+  margin-bottom: 20px;
 }
 
 .cardss {
