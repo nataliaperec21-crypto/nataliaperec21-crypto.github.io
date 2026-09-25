@@ -508,7 +508,6 @@ header {
 /* Общие стили для сетки (делаем 4 колонки в ряд) */
 .team-section {
   text-align: center;
-  margin: 15px auto;
 }
 
 .team-container {
@@ -516,7 +515,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 /* Базовый стиль для ВСЕХ карточек */
