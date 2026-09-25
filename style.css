@@ -835,14 +835,12 @@ header {
   gap: 20px;
   margin: 20px auto;
   padding: 10px 30px;
+  background-color: var(--secondary);
+  color: var(--white);
   justify-self: center
 }
 
 .socialss a {
-  background-color: var(--secondary);
-  color: var(--white);
-  margin: 20px auto;
-  padding: 10px 30px;
   list-style: none;
   text-decoration: none !important;
   font-size: 1rem;
