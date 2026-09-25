@@ -263,8 +263,6 @@ header {
   padding: 40px 40px;
   gap: 30px;
   flex: 1;
-  /* ВОТ ЭТО ДОБАВЬ: Команда прикажет всем элементам внутри Grid (включая кнопку) */
-  /* прижаться к левому краю и занимать только свою естественную ширину! */
   justify-items: start;
 }
 
@@ -384,7 +382,7 @@ header {
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
-  font-size: 16px;   /* Размер букв */
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -398,33 +396,30 @@ header {
 .btn-open { background-color: #007bef; }
 .btn-close { background-color: #e74c3c; margin-top: 15px; }
 
-/* 1. Наш темный задний фон, который перекрывает весь экран */
+/*  темный задний фон */
 .modal-overlay {
-  display: none;        /* ГЛАВНОЕ: Изначально полностью прячем этот блок! */
+  display: none;   
   
-  position: fixed;      /* Намертво привязываем окно к экрану телефона/ноута */
-  top: 0; left: 0;      /* Растягиваем от самого верхнего левого угла... */
-  width: 100%;          /* ...на всю ширину... */
-  height: 100%;         /* ...и на всю высоту экрана */
-  
-  background-color: rgba(0, 0, 0, 0.6); /* Черный фон с прозрачностью 60% */
-  z-index: 999;         /* Кладись поверх абсолютно всех элементов на сайте */
+  position: fixed; 
+  top: 0; left: 0;   
+  width: 100%;  
+  height: 100%;     
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 999;   
 }
 
-/* 2. Белое окошко с текстом внутри темного фона */
+
 .modal-content {
   background-color: #fff;
   max-width: 500px;
   width: 90%;
-  margin: 100px auto;   /* Отступ 100px сверху, а auto выравнивает по горизонтали */
+  margin: 100px auto;
   padding: 30px;
   border-radius: 15px;
 }
 
-/* 3. А как его теперь показать? Используем :target */
-/* Это правило говорит: "Если в ссылке выбран ID #open-article, то..." */
 .modal-overlay:target {
-  display: block;       /* ...смени display: none на display: block! Окно появляется! */
+  display: block;
 }
 
 
@@ -442,23 +437,20 @@ header {
   margin-bottom: 40px;
 }
 
-/* Выстраиваем шаги горизонтально в шеренгу */
 .process-steps {
   display: flex;
-  justify-content: space-between; /* Равномерно распределяем по ширине */
+  justify-content: space-between;
   gap: 20px;
 }
 
-/* Каждый отдельный шаг */
 .step {
-  position: relative; /* Родоначальник координат для нашей будущей линии! */
-  flex: 1; /* Чтобы все шаги были одинаковой ширины */
+  position: relative; 
+  flex: 1; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Кружочек с цифрой внутри */
 .step-number {
   width: 40px;
   height: 40px;
@@ -470,7 +462,7 @@ header {
   justify-content: center;
   font-weight: bold;
   margin-bottom: 15px;
-  z-index: 2; /* Поднимаем кружочек выше линии, чтобы линия его не пересекала */
+  z-index: 2;
 }
 
 .step h3 {
@@ -478,34 +470,26 @@ header {
   color: #333;
 }
 
-/* --- А ТЕПЕРЬ СОЗДАЕМ ЛИНЕЮ ЧЕРЕЗ ::before --- */
-/* Мы говорим: "Браузер, нарисуй ПЕРЕД каждым шагом линию" */
 .step::before {
-  content: ""; /* Обязательно пустой контент, чтобы элемент создался */
+  content: ""; 
   position: absolute;
   
-  /* Размещаем линию строго по центру кружочка */
-  top: 20px;   /* Половина высоты кружочка (40px / 2) */
-  left: -50px; /* Вытягиваем линию влево, к предыдущему шагу */
+  top: 20px;  
+  left: -50px;
   
-  /* Задаем размеры линии */
-  width: 100px; /* Длина полосы между кружками */
-  height: 2px;  /* Толщина линии */
+  width: 100px; 
+  height: 2px; 
   
-  background-color: #007bef; /* Синий цвет линии */
-  z-index: 1;   /* Прячем линию под кружочек */
+  background-color: #007bef; 
+  z-index: 1;  
 }
 
-/* Маленькая хитрость: у самого ПЕРВОГО шага линии слева быть не должно! */
+
 .step:first-child::before {
-  display: none; /* Прячем линию для первого кружка */
+  display: none;
 }
 
 
-
-
-
-/* Общие стили для сетки (делаем 4 колонки в ряд) */
 .team-section {
   text-align: center;
 }
@@ -518,19 +502,18 @@ header {
   margin: 30px auto;
 }
 
-/* Базовый стиль для ВСЕХ карточек */
 .team-card {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  border: 2px solid transparent; /* Изначально рамка невидимая */
+  border: 2px solid transparent; 
   background-color: #fcfcfc;
 }
 
 .card-photo {
   width: 100px;
   height: 100px;
-  background-color: #ccc; /* Вместо реального фото пока серый круг */
+  background-color: #ccc; 
   border-radius: 50%;
   margin: 0 auto 15px;
   display: flex;
@@ -538,22 +521,18 @@ header {
   justify-content: center;
 }
 
-/* --- А ТЕПЕРЬ КРАСИМ ПО ОЧЕРЕДИ --- */
-
-/* Находим ВСЕ НЕЧЕТНЫЕ карточки (1-ю и 3-ю) */
 .team-card:nth-child(odd) {
-  border-color: #007bef; /* Синяя рамка */
+  border-color: #007bef;
 }
 .team-card:nth-child(odd) h3 {
-  color: #007bef; /* Синее имя */
+  color: #007bef; 
 }
 
-/* Находим ВСЕ ЧЕТНЫЕ карточки (2-ю и 4-ю) */
 .team-card:nth-child(even) {
-  border-color: #2ecc71; /* Зеленая рамка */
+  border-color: #2ecc71; 
 }
 .team-card:nth-child(even) h3 {
-  color: #2ecc71; /* Зеленое имя */
+  color: #2ecc71; 
 }
 
 
@@ -879,10 +858,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-
-  /* 1. Шапка сайта и меню связи */
   header {
-    flex-direction: column; /* ИСПРАВЛЕНО: Меняем направление флекса на столбик */
+    flex-direction: column;
     gap: 15px;
     padding: 20px;
   }
@@ -893,30 +870,25 @@ footer {
   }
 
   .nav-links {
-    flex-direction: column; /* ИСПРАВЛЕНО: Пункты меню теперь тоже аккуратно встанут друг под друга */
-    gap: 15px;              /* Уменьшили зазор, чтобы меню не занимало весь экран */
+    flex-direction: column; 
+    gap: 15px;   
   }
 
-  /* 2. Двухколоночный макет (Боковое меню и Услуги) */
   .layout {
     grid-template-columns: 1fr !important; 
     gap: 20px;
   }
   
-  /* Боковые цветные плашки в лейауте раскрываются на всю ширину */
   .block-1, .block-2, .block-3, .block-4 {
     width: 100%;
     max-width: 100%;
   }
 
-  /* 3. Сетки карточек (Услуги и Портфолио) */
   .cards, .cardss {
     grid-template-columns: 1fr;
-    gap: 30px; /* Немного уменьшили гигантский gap для мобильных */
+    gap: 30px;
   }
 
-  /* 4. Статистика и Тарифы */
-  /* ИСПРАВЛЕНО: Разделили селекторы запятой, теперь обе секции встанут в столбик */
   .stats, .tariffs {
     flex-direction: column;
     align-items: center;
@@ -924,35 +896,31 @@ footer {
   }
 
   .stat {
-    max-width: 100%; /* Карточки тарифов раскрываются во всю ширину экрана телефона */
+    max-width: 100%;
     width: 100%;
-    padding: 40px 20px; /* Уменьшили внутренние отступы, чтобы блоки не были огромными */
+    padding: 40px 20px; 
   }
 
-  /* 5. Процесс работы (Шаги) */
   .process-steps {
     flex-direction: column;
     gap: 30px;
   }
   
   .step::before { 
-    display: none; /* Убираем сломавшиеся горизонтальные линии */
+    display: none; 
   }
 
-  /* 6. Наша команда */
   .team-container {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
   }
 
-  /* 7. Подписка и Контакты */
-  /* ИСПРАВЛЕНО: Уменьшили padding со 60px до безопасных 20px по бокам */
   .subscribe, .contact {
     padding: 30px 20px;
   }
 
   .contact {
-    clip-path: none; /* КРИТИЧЕСКИ ВАЖНО: отключаем обрезку формы, чтобы углы не сожрали поля ввода */
+    clip-path: none; 
   }
 
   .contact-container {
@@ -961,11 +929,10 @@ footer {
     gap: 20px;
   }
 
-  /* 8. Соцсети */
   .socials {
     flex-direction: column;
     gap: 15px;
-    width: calc(100% - 30px); /* Оставляем аккуратные отступы по краям экрана смартфона */
+    width: calc(100% - 30px); 
   }
   
   .socials ul {
@@ -974,7 +941,7 @@ footer {
     padding: 0;
   }
 
-  /* 9. Подвал сайта */
+
   .footer-container {
     flex-direction: column;
     gap: 15px;
