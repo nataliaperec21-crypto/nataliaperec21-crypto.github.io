@@ -820,7 +820,7 @@ header {
   border-radius: 2opx;
   color: #ffffff;
   text-align: center;
-  align-items: center;
+  margin: 0 auto;
   justify-content: center;
 }
 
