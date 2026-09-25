@@ -833,7 +833,7 @@ header {
   display: flex;
   align-items: center;
   gap: 40px;
-  max-width: 400px;
+  max-width: 800px;
   width: 100%;
   background-color: rgb(199, 199, 199);
   border-radius: 4px;
