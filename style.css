@@ -817,7 +817,7 @@ header {
   width: 100%;
   max-width: 600px;
   background-color: rgb(255, 222, 5);
-  border-radius: 2opx;
+  border-radius: 20px;
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
