@@ -880,6 +880,9 @@ footer {
 
 @media (max-width: 768px) {
 
+  .logotyp {
+    margin: 10px;
+  }
   
 
   .cardss {
