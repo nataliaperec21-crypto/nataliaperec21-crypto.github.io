@@ -824,9 +824,25 @@ header {
 }
 
 
+.socials {
+  display: flex;
 
+  list-style: none;
+  text-align: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
 
+.socialss a {
+  background-color: var(--secondary);
+  color: var(--white);
+  display: flex;
 
+  text-decoration: none !important;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 footer {
   background-color: var(--secondary);
