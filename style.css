@@ -831,12 +831,11 @@ header {
 
 .socials {
   display: flex;
-
   list-style: none;
-  text-align: center;
   gap: 50px;
   margin: 0;
   padding: 0;
+  justify-self: center
 }
 
 .socialss a {
