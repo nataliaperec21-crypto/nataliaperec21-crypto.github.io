@@ -833,6 +833,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin: 20px auto;
+  padding: 10px 30px;
   justify-self: center
 }
 
