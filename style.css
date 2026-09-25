@@ -880,63 +880,104 @@ footer {
 
 @media (max-width: 768px) {
 
+  /* 1. Шапка сайта и меню связи */
+  header {
+    flex-direction: column; /* ИСПРАВЛЕНО: Меняем направление флекса на столбик */
+    gap: 15px;
+    padding: 20px;
+  }
+
   .logotyp {
-    margin: 10px auto;
-  }
-  
-
-  .cardss {
-    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
+  .nav-links {
+    flex-direction: column; /* ИСПРАВЛЕНО: Пункты меню теперь тоже аккуратно встанут друг под друга */
+    gap: 15px;              /* Уменьшили зазор, чтобы меню не занимало весь экран */
   }
 
-  .portfolio-comments-layout {
-    grid-template-columns: 1fr;
-    padding: 0 10px;
-  }
-
-  .port-folio {
-    grid-template-columns: 1fr;
-  }
-
-  .stats {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  /* 2. Двухколоночный макет (Боковое меню и Услуги) */
   .layout {
     grid-template-columns: 1fr !important; 
     gap: 20px;
   }
   
+  /* Боковые цветные плашки в лейауте раскрываются на всю ширину */
   .block-1, .block-2, .block-3, .block-4 {
     width: 100%;
     max-width: 100%;
   }
 
-  .port-folio {
+  /* 3. Сетки карточек (Услуги и Портфолио) */
+  .cards, .cardss {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px; /* Немного уменьшили гигантский gap для мобильных */
+  }
+
+  /* 4. Статистика и Тарифы */
+  /* ИСПРАВЛЕНО: Разделили селекторы запятой, теперь обе секции встанут в столбик */
+  .stats, .tariffs {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .stat {
+    max-width: 100%; /* Карточки тарифов раскрываются во всю ширину экрана телефона */
+    width: 100%;
+    padding: 40px 20px; /* Уменьшили внутренние отступы, чтобы блоки не были огромными */
+  }
+
+  /* 5. Процесс работы (Шаги) */
+  .process-steps {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .step::before { 
+    display: none; /* Убираем сломавшиеся горизонтальные линии */
+  }
+
+  /* 6. Наша команда */
+  .team-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  /* 7. Подписка и Контакты */
+  /* ИСПРАВЛЕНО: Уменьшили padding со 60px до безопасных 20px по бокам */
+  .subscribe, .contact {
+    padding: 30px 20px;
+  }
+
+  .contact {
+    clip-path: none; /* КРИТИЧЕСКИ ВАЖНО: отключаем обрезку формы, чтобы углы не сожрали поля ввода */
   }
 
   .contact-container {
     flex-direction: column;
+    width: 100%;
+    gap: 20px;
   }
 
+  /* 8. Соцсети */
+  .socials {
+    flex-direction: column;
+    gap: 15px;
+    width: calc(100% - 30px); /* Оставляем аккуратные отступы по краям экрана смартфона */
+  }
+  
+  .socials ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* 9. Подвал сайта */
   .footer-container {
     flex-direction: column;
     gap: 15px;
-  }
-
-  .footer-socials ul {
-    gap: 10px;
-  }
-
-  .comments-section {
-    width: 100%;
-    margin-left: 0 !important;
+    text-align: center;
   }
 }
