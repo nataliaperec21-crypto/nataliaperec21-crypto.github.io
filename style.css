@@ -557,10 +557,6 @@ header {
 }
 
 
-
-
-
-
 .comments-section {
   display: flex;
   flex-direction: column;
@@ -749,6 +745,24 @@ header {
   border-radius: 15px;
 }
 
+
+.btn-submit {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-decoration: none !important;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 20px;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.btn-submit:hover {
+  transform: scale(1.05);
+  color: var(--white);
+  background-color: #696969;
+}
 
 
 .contact {
