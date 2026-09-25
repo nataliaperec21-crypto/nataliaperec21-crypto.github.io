@@ -835,7 +835,7 @@ header {
   gap: 15px;
   background-color: rgb(199, 199, 199);
   border-radius: 12px;
-  margin: 0 auto;
+  margin: 0 0 30px 0;
 }
 
 .socials p {
