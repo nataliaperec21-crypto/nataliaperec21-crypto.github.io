@@ -831,13 +831,14 @@ header {
 
 .socials {
   display: flex;
+  justify-content: center; 
   gap: 40px;
   max-width: 1200px;
   width: 100%;
   background-color: rgb(199, 199, 199);
   border-radius: 4px;
-  margin: 30px 40px 30px 40px;
-  padding: 15px 0 20px 40px;
+  margin: 30px auto;
+  padding: 20px;
   align-items: center;
 }
 
