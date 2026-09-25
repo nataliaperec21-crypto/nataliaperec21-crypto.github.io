@@ -818,7 +818,7 @@ header {
   max-width: 600px;
   background-color: rgb(199, 199, 199);
   border-radius: 20px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   margin: 0 auto;
   justify-content: center;
@@ -831,7 +831,7 @@ header {
 
 .socials {
   display: flex;
-  list-style: none;
+  flex-direction: column;
   gap: 50px;
   margin: 0;
   padding: 0;
@@ -841,8 +841,8 @@ header {
 .socialss a {
   background-color: var(--secondary);
   color: var(--white);
-  display: flex;
-
+  
+  list-style: none;
   text-decoration: none !important;
   font-size: 1rem;
   font-weight: bold;
