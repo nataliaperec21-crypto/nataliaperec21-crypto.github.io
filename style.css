@@ -833,11 +833,13 @@ header {
   display: flex;
   align-items: center;
   gap: 40px;
+  max-width: 400px;
+  width: 100%;
   background-color: rgb(199, 199, 199);
   border-radius: 6px;
   margin: 0;
-  max-width: 400px;
-  width: 100%;
+  margin-bottom: 30px;
+  
 }
 
 .socials p {
