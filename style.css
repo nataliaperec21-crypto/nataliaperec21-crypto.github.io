@@ -810,6 +810,24 @@ header {
   font-weight: bold;
 }
 
+.map-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgb(161, 161, 161);
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
 footer {
   background-color: var(--secondary);
   color: var(--white);
