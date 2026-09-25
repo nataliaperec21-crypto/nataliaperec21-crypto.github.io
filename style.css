@@ -833,7 +833,12 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+  background-color: var(--secondary);
+  margin: 0 auto;
+}
 
+.socials p {
+  color: #ffffff;
 }
 
 .socials ul {
