@@ -78,6 +78,7 @@ header {
   padding: 10px 20px;
   background-color: var(--secondary);
   color: var(--white);
+  list-style: none;
   text-decoration: none !important;
   border-radius: 5px;
   font-weight: 600;
@@ -95,9 +96,11 @@ header {
   min-height: 400px;
   padding: 20px 40px;
   display: flex;
+  
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .home h1 {
@@ -115,6 +118,7 @@ header {
   display: inline-block;
   background-color: var(--primary);
   color: var(--secondary);
+  list-style: none;
   text-decoration: none !important;
   padding: 15px 30px;
   border-radius: 10px;
@@ -130,5 +134,5 @@ header {
 }
 
 .hero-illustration {
-  
+
 }
