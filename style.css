@@ -39,6 +39,18 @@ header {
   font-size: 1.6rem;
 }
 
+.logo-circle {
+  stroke: var(--primary); /* Можешь использовать свою переменную! */
+  stroke-width: 6px;      /* Толщина линии */
+  transition: stroke 0.3s ease; /* Бонус: теперь линию можно плавно анимировать при наведении! */
+}
+
+/* Эффект: при наведении на логотип кружок станет зеленым */
+.logo-circle:hover {
+  stroke: #2ecc71; 
+}
+
+
 .nav-menu {
   display: flex;
   list-style: none;
@@ -61,13 +73,62 @@ header {
   color: var(--white);
 }
 
-.logo-circle {
-  stroke: var(--primary); /* Можешь использовать свою переменную! */
-  stroke-width: 6px;      /* Толщина линии */
-  transition: stroke 0.3s ease; /* Бонус: теперь линию можно плавно анимировать при наведении! */
+.btn-start {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  color: var(--white);
+  text-decoration: none !important;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-/* Эффект: при наведении на логотип кружок станет зеленым */
-.logo-circle:hover {
-  stroke: #2ecc71; 
+.btn-start:hover {
+  background-color: var(--white);
+  color: var(--secondary)
+}
+
+.home {
+  background-color: var(--secondary);
+  color: var(--white);
+  min-height: 400px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.home h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-decoration: none !important;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 20px;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.btn-hero:hover {
+  transform: scale(1.05);
+  color: var(--white);
+  background-color: #e6bc00;
+}
+
+.hero-illustration {
+  
 }
