@@ -1,1 +1,73 @@
+:root {
+  --primary: #f1c40f;       
+  --secondary: #1a252f;     
+  --bg-light: #f8f9fa;      
+  --white: #ffffff;         
+  --transition: 0.3s ease;  
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--secondary);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  
+  text-align: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none !important;
+  color: var(--secondary);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: var(--white);
+}
+
+.logo-circle {
+  stroke: var(--primary); /* Можешь использовать свою переменную! */
+  stroke-width: 6px;      /* Толщина линии */
+  transition: stroke 0.3s ease; /* Бонус: теперь линию можно плавно анимировать при наведении! */
+}
+
+/* Эффект: при наведении на логотип кружок станет зеленым */
+.logo-circle:hover {
+  stroke: #2ecc71; 
+}
