@@ -22,6 +22,7 @@ body {
   min-height: 100vh;
 }
 
+/* --- СТИЛИ ШАПКИ --- */
 header {
   background-color: var(--primary);
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
@@ -35,27 +36,23 @@ header {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
 }
-
 
 .logo-circle {
-  stroke: rgb(0, 0, 0); /* Можешь использовать свою переменную! */
-  stroke-width: 6px;      /* Толщина линии */
-  transition: stroke 0.3s ease; /* Бонус: теперь линию можно плавно анимировать при наведении! */
+  stroke: rgb(0, 0, 0); 
+  stroke-width: 6px;      
+  transition: stroke 0.3s ease; 
 }
 
-/* Эффект: при наведении на логотип кружок станет зеленым */
 .logo-circle:hover {
   stroke: #2ecc71;
 }
 
-
 .nav-menu {
   display: flex;
   list-style: none;
-  
   text-align: center;
   gap: 50px;
   margin: 0;
@@ -75,11 +72,12 @@ header {
 }
 
 .btn-start {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 20px;
   background-color: var(--secondary);
   color: var(--white);
-  list-style: none;
   text-decoration: none !important;
   border-radius: 5px;
   font-weight: 600;
@@ -88,16 +86,28 @@ header {
 
 .btn-start:hover {
   background-color: var(--white);
-  color: var(--secondary)
+  color: var(--secondary);
 }
 
+/* --- СТИЛИ HERO БЛОКА --- */
 .hero-section {
   background-color: var(--secondary);
   color: var(--white);
   width: 100%;
-  padding: 20px 40px;
+  padding: 60px 40px;
+  
+  /* ИСПРАВЛЕНО: Выстраиваем все элементы вертикально друг под друга строго по центру */
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-content h1 {
@@ -107,6 +117,7 @@ header {
 
 .hero-content p {
   font-size: 1.2rem;
+  max-width: 600px;
   margin-bottom: 20px;
   opacity: 0.9;
 }
@@ -115,12 +126,11 @@ header {
   display: inline-block;
   background-color: var(--primary);
   color: var(--secondary);
-  list-style: none;
   text-decoration: none !important;
   padding: 15px 30px;
   border-radius: 10px;
   font-weight: bold;
-  margin: 20px;
+  margin-top: 30px;
   transition: transform var(--transition), background-color var(--transition);
 }
 
@@ -130,18 +140,26 @@ header {
   background-color: #e6bc00;
 }
 
+/* --- СТИЛИ SVG ИЛЛЮСТРАЦИИ --- */
 .hero-illustration {
+  margin: 20px 0;
   display: flex;
   justify-content: center;
-  font-weight: bold;
-  font-size: 1.6rem;
 }
 
 .circle {
-  stroke-width: 6px;  
+  stroke: var(--primary); 
+  stroke-width: 4px;  
 }
-      
 
 .polygon {
-  stroke-width: 6px;  
+  stroke: var(--white);   
+  stroke-width: 3px;  
+}
+
+.text {
+  fill: var(--white);     
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }

@@ -11,10 +11,10 @@
     <!-- 1. ШАПКА САЙТА -->
     <header class="studio-header">
         <div class="logo">
-        <svg viewBox="0 0 100 100" width="50" height="50">
-            <circle class="logo-circle" cx="50" cy="50" r="40" fill="none" />
-            <text x="35" y="62" fill="#333" font-size="36px" font-family="sans-serif" font-weight="bold">C</text>
-        </svg>
+            <svg viewBox="0 0 100 100" width="50" height="50">
+                <circle class="logo-circle" cx="50" cy="50" r="40" fill="none" />
+                <text x="35" y="62" fill="#333" font-size="36px" font-family="sans-serif" font-weight="bold">C</text>
+            </svg>
         </div>
         
         <nav class="studio-nav">
@@ -25,10 +25,12 @@
             </ul>
         </nav>
 
-        <!-- КНОПКА С SVG-СТРЕЛОЧКОЙ, КОТОРУЮ ТЫ ПРИДУМАЛ! -->
+        <!-- КНОПКА С SVG-СТРЕЛОЧКОЙ -->
         <a href="#start" class="btn-start">
             Начать проект
-            <!-- Сюда мы вставим маленькую стрелочку-плей -->
+            <svg viewBox="0 0 20 20" width="16" height="16">
+                <polygon points="4,4 4,16 14,10" fill="currentColor" />
+            </svg>
         </a>
     </header>
 
@@ -37,18 +39,19 @@
         <div class="hero-content">
             <h1>Создаём дизайн, который работает</h1>
             <p>Мы объединяем искусство и технологии, чтобы ваш бизнес рос быстрее и привлекал клиентов.</p>
-        <div class="hero-illustration">
-    <svg viewBox="0 0 400 200" width="400" height="200">
-        <circle class="circle" cx="200" cy="100" r="80" fill="none" stroke-width="8"/> 
-        <!-- Эта линия-подчеркивание снизу уже гот/.", она служит ориентиром -->
-        <polygon class="polygon" points="200,20 131,140 269,140" fill="none"  />
-        <text class="text" x="200" y="100" font-size="12px">STUDIO</text>            
-    </svg>
-        </div>
+            
+            <!-- БОЛЬШАЯ SVG-ИЛЛЮСТРАЦИЯ ПО ЦЕНТРУ -->
+            <div class="hero-illustration">
+                <svg viewBox="0 0 400 200" width="400" height="200">
+                    <circle class="circle" cx="200" cy="100" r="80" fill="none" /> 
+                    <polygon class="polygon" points="200,20 131,140 269,140" fill="none" />
+                    <!-- text-anchor="middle" ставит слово строго по центру точки X=200 -->
+                    <text class="text" x="200" y="107" font-size="20px" text-anchor="middle">STUDIO</text>            
+                </svg>
+            </div>
+            
             <a href="#explore" class="btn-hero">Узнать больше</a>
         </div>
-
-        
     </main>
 
 </body>
