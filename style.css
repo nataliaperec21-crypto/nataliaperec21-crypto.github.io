@@ -43,7 +43,6 @@ header {
   stroke: var(--primary); /* Можешь использовать свою переменную! */
   stroke-width: 6px;      /* Толщина линии */
   transition: stroke 0.3s ease; /* Бонус: теперь линию можно плавно анимировать при наведении! */
-  stroke: rgb(0, 0, 0)
 }
 
 /* Эффект: при наведении на логотип кружок станет зеленым */
@@ -97,12 +96,10 @@ header {
 .hero-section {
   background-color: var(--secondary);
   color: var(--white);
-  max-width: 1800px;
   width: 100%;
   padding: 20px 40px;
   display: flex;
   justify-content: center;
-  text-align: center;
 }
 
 .hero-content h1 {
