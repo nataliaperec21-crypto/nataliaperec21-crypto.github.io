@@ -97,6 +97,7 @@ header {
 .hero-section {
   background-color: var(--secondary);
   color: var(--white);
+  width: 100%;
   max-width: 1200px;
   padding: 20px 40px;
   display: flex;
