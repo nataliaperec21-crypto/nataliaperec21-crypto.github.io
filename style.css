@@ -95,16 +95,16 @@ header {
 }
 
 .home {
-  background-color: var(--secondary);
-  color: var(--white);
-  min-height: 400px;
-  padding: 20px 40px;
   display: flex;
-  
   justify-content: center;
   text-align: center;
   align-items: center;
   margin: 0 auto;
+  
+  background-color: var(--secondary);
+  color: var(--white);
+  max-width: 800px;
+  padding: 20px 40px;
 }
 
 .home h1 {
