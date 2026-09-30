@@ -131,6 +131,7 @@ header {
   border-radius: 10px;
   font-weight: bold;
   margin-top: 30px;
+  align-self: center; 
   transition: transform var(--transition), background-color var(--transition);
 }
 
