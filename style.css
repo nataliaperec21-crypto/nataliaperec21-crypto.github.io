@@ -39,6 +39,7 @@ header {
   font-size: 1.6rem;
 }
 
+
 .logo-circle {
   stroke: rgb(0, 0, 0); /* Можешь использовать свою переменную! */
   stroke-width: 6px;      /* Толщина линии */
