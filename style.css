@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
 }
 
-/* --- СТИЛИ ШАПКИ --- */
 header {
   background-color: var(--primary);
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
@@ -89,14 +88,11 @@ header {
   color: var(--secondary);
 }
 
-/* --- СТИЛИ HERO БЛОКА --- */
 .hero-section {
   background-color: var(--secondary);
   color: var(--white);
   width: 100%;
   padding: 60px 40px;
-  
-  /* ИСПРАВЛЕНО: Выстраиваем все элементы вертикально друг под друга строго по центру */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +137,6 @@ header {
   background-color: #e6bc00;
 }
 
-/* --- СТИЛИ SVG ИЛЛЮСТРАЦИИ --- */
 .hero-illustration {
   margin: 20px 0;
   display: flex;
