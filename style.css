@@ -153,7 +153,6 @@ header {
   stroke-width: 3px;  
 }
 
-/* ИСПРАВЛЕНО: Проявили желтую молнию на главной эмблеме */
 .main-polyline {
   stroke: var(--primary);
   stroke-width: 6px;
@@ -191,7 +190,6 @@ header {
   transform: translateY(-5px);
 }
 
-/* --- ИСПРАВЛЕНО: СТИЛИ ДЛЯ ИКОНОК В КАРТОЧКАХ ПРЕИМУЩЕСТВ --- */
 .icon-rect {
   stroke: var(--primary);
 }
