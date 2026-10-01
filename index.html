@@ -40,7 +40,8 @@
                 <svg viewBox="0 0 400 200" width="400" height="200">
                     <circle class="circle" cx="200" cy="100" r="80" fill="none" /> 
                     <polygon class="polygon" points="200,20 131,140 269,140" fill="none" />
-                    <polyline points="180,25 220,90 170,110 210,175" fill="none" stroke="#ffcc00" stroke-opacity="0.6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- Добавили класс main-polyline, чтобы управлять молнией через CSS -->
+                    <polyline class="main-polyline" points="180,25 220,90 170,110 210,175" fill="none" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
                     <text class="text" x="200" y="107" font-size="20px" text-anchor="middle">STUDIO</text>            
                 </svg>
             </div>
@@ -51,29 +52,35 @@
 
     <section class="features-section" id="features">
     
+    <!-- Карточка 1: Дизайн -->
     <div class="feature-card">
         <div class="feature-icon">
             <svg viewBox="0 0 50 50" width="40" height="40">
-                <rect x="5" y="5" width="30" height="30" rx="6" fill="none" stroke="#f1c40f" stroke-width="3"/>
-                <circle cx="35" cy="35" r="10" fill="#1a252f" stroke="#f1c40f" stroke-width="3" />
+                <rect class="icon-rect" x="5" y="5" width="30" height="30" rx="6" fill="none" stroke-width="3"/>
+                <circle class="icon-circle" cx="35" cy="35" r="10" stroke-width="3" />
             </svg>
         </div>
         <h3>Web Design</h3>
         <p>Создаём уникальные и запоминающиеся интерфейсы.</p>
     </div>
 
+    <!-- Карточка 2: Скорость (ИСПРАВЛЕНО: Добавлен SVG-рисунок молнии) -->
     <div class="feature-card">
         <div class="feature-icon">
             <svg viewBox="0 0 50 50" width="40" height="40">
+                <polyline class="icon-polyline" points="25,5 15,25 35,25 25,45" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
         <h3>Fast Development</h3>
         <p>Быстрая загрузка и оптимизация под любые устройства.</p>
     </div>
 
+    <!-- Карточка 3: Решения (ИСПРАВЛЕНО: Добавлен SVG-рисунок стрелы-ракеты) -->
     <div class="feature-card">
         <div class="feature-icon">
             <svg viewBox="0 0 50 50" width="40" height="40">
+                <polygon class="icon-polygon" points="25,5 13,22 37,22" />
+                <line class="icon-line" x1="25" y1="22" x2="25" y2="45" stroke-width="4" stroke-linecap="round" />
             </svg>
         </div>
         <h3>Digital Solutions</h3>

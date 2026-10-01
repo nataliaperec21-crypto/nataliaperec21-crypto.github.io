@@ -153,6 +153,12 @@ header {
   stroke-width: 3px;  
 }
 
+/* ИСПРАВЛЕНО: Проявили желтую молнию на главной эмблеме */
+.main-polyline {
+  stroke: var(--primary);
+  stroke-width: 6px;
+}
+
 .text {
   fill: var(--white);     
   font-family: 'Segoe UI', sans-serif;
@@ -183,4 +189,26 @@ header {
 
 .feature-card:hover {
   transform: translateY(-5px);
+}
+
+/* --- ИСПРАВЛЕНО: СТИЛИ ДЛЯ ИКОНОК В КАРТОЧКАХ ПРЕИМУЩЕСТВ --- */
+.icon-rect {
+  stroke: var(--primary);
+}
+
+.icon-circle {
+  fill: var(--secondary);
+  stroke: var(--primary);
+}
+
+.icon-polyline {
+  stroke: var(--primary);
+}
+
+.icon-polygon {
+  fill: var(--primary);
+}
+
+.icon-line {
+  stroke: var(--primary);
 }
