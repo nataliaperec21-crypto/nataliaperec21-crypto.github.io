@@ -145,7 +145,19 @@ header {
 
 .circle {
   stroke: var(--primary); 
-  stroke-width: 4px;  
+  stroke-width: 4px;
+  /* 1. ДОБАВЬ ПЛАВНОСТЬ: Задаем время анимации для трансформации и контура */
+  transition: transform var(--transition), stroke var(--transition);
+  
+  /* 2. ЗАКРЕПИ ЦЕНТР: Указываем точные координаты центра круга из HTML (cx="200" cy="100") */
+  /* благодаря этому круг будет увеличиваться ровно из своей середины! */
+  transform-origin: 200px 100px; 
+}
+
+/* 3. ДОБАВЬ ЭФФЕКТ НАВЕДЕНИЯ: */
+.circle:hover {
+  stroke: #2ecc71;         /* При наведении контур плавно станет зеленым */
+  transform: scale(1.08);  /* Круг плавно увеличится на 8% */  
 }
 
 .polygon {
