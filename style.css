@@ -151,7 +151,8 @@ header {
   
   /* 2. ЗАКРЕПИ ЦЕНТР: Указываем точные координаты центра круга из HTML (cx="200" cy="100") */
   /* благодаря этому круг будет увеличиваться ровно из своей середины! */
-  transform-origin: 200px 100px; 
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
 }
 
 /* 3. ДОБАВЬ ЭФФЕКТ НАВЕДЕНИЯ: */
@@ -217,8 +218,4 @@ header {
 
 .icon-polygon {
   fill: var(--primary);
-}
-
-.icon-line {
-  stroke: var(--primary);
 }
