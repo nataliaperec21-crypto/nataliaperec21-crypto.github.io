@@ -17,8 +17,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--color-bg-dark);
-  color: var(--color-text);
+  background-color: var(--bg-light);
+  color: var(--color-bg-dark);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,8 @@ body {
 }
 
 header {
-  background-color: var(--color-bg-light);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  background-color: var(--color-main);
+  box-shadow: var(--card-shadow);
   padding: 20px 40px;
   position: sticky;
   top: 0;
@@ -45,7 +45,7 @@ header {
 .logo-circle {
   stroke: rgb(0, 0, 0); 
   stroke-width: 6px;      
-  transition: stroke 0.3s ease; 
+  transition: stroke var(--main-transition); 
 }
 
 .logo-circle:hover {
@@ -65,12 +65,12 @@ header {
   text-decoration: none !important;
   color: var(--color-text);
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: color var(--main-transition);
   font-weight: bold;
 }
 
 .nav-menu a:hover {
-  color: var(--color-text);
+  color: var(--color-white);
 }
 
 .btn-start {
@@ -78,16 +78,16 @@ header {
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
-  background-color: var(--secondary);
-  color: var(--white);
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
   text-decoration: none !important;
   border-radius: var(--card-radius);
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--main-transition);
 }
 
 .btn-start:hover {
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-bg-light);
   color: var(--color-text);
 }
 
@@ -123,7 +123,7 @@ header {
 
 .btn-hero {
   display: inline-block;
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-main);
   color: var(--color-text);
   text-decoration: none !important;
   padding: 15px 30px;
@@ -131,13 +131,13 @@ header {
   font-weight: bold;
   margin-top: 30px;
   align-self: center; 
-  transition: transform var(--transition), background-color var(--transition);
+  transition: transform var(--main-transition), background-color var(--main-transition);
 }
 
 .btn-hero:hover {
   transform: scale(1.05);
   color: var(--color-white);
-  background-color: #e6bc00;
+  background-color: var(--color-main);
 }
 
 .hero-illustration {
@@ -147,15 +147,16 @@ header {
 }
 
 .circle {
-  stroke: var(--color-bg-dark); 
+  stroke: var(--color-main); 
   stroke-width: 4px;
-  transition: transform var(--transition), stroke var(--transition);
+  transition: transform var(--main-transition), stroke var(--main-transition);
   transform-box: fill-box;
   transform-origin: 50% 50%;
 }
+
 .circle:hover {
-  stroke: #2ecc71;      
-  transform: scale(1.08);
+  stroke: #2ecc71; 
+  transform: scale(1.08); 
 }
 
 .polygon {
@@ -164,12 +165,12 @@ header {
 }
 
 .main-polyline {
-  stroke: var(--color-bg-dark);
+  stroke: var(--color-main);
   stroke-width: 6px;
 }
 
 .text {
-  fill: var(--color-bg-dark);     
+  fill: var(--color-white);     
   font-family: 'Segoe UI', sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
@@ -185,15 +186,15 @@ header {
 }
 
 .feature-card {
-  background-color: #ffffff;
+  background-color: var(--color-bg-light);
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  transition: transform var(--transition);
+  transition: transform var(--main-transition);
 }
 
 .feature-card:hover {
@@ -201,18 +202,18 @@ header {
 }
 
 .icon-rect {
-  stroke: var(--color-bg-dark);
+  stroke: var(--color-main);
 }
 
 .icon-circle {
-  fill: var(--color-bg-dark);
-  stroke: var(--color-bg-dark);
+  fill: var(--color-text);
+  stroke: var(--color-main);
 }
 
 .icon-polyline {
-  stroke: var(--color-bg-dark);
+  stroke: var(--color-main);
 }
 
 .icon-polygon {
-  fill: var(--color-bg-dark);
+  fill: var(--color-main);
 }
