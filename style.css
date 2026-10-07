@@ -7,6 +7,10 @@
   --card-radius: 15px; 
   --card-shadow: 0 5px 10px rgba(0,0,0,0.15);
   --main-transition: 0.3s ease;
+  --container-width: 1200px;
+  --section-padding: 60px 40px;
+  --card-padding: 30px;
+  --card-shadow-hover: 0 15px 25px rgba(0,0,0,0.2); 
 }
 
 * {
@@ -95,7 +99,7 @@ header {
   background-color: var(--color-bg-dark);
   color: var(--color-white);
   width: 100%;
-  padding: 60px 40px;
+  padding: var(--section-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,25 +184,25 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap: 30px;
-  max-width: 1200px;
+  max-width: var(--container-width);
   margin: 60px auto;
   padding: 0 40px;
 }
 
 .feature-card {
   background-color: var(--color-white);
-  padding: 30px;
+  padding: var(--card-padding);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  transition: transform var(--main-transition);
+  transition: transform var(--main-transition), box-shadow var(--main-transition) ;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
+  transform: var(--card-shadow-hover);
 }
 
 .icon-rect {
