@@ -202,7 +202,8 @@ header {
 }
 
 .feature-card:hover {
-  transform: var(--card-shadow-hover);
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .icon-rect {
