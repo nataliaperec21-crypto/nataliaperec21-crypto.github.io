@@ -1,5 +1,6 @@
 :root {
   --color-main: #ffcc00;  
+  --color-main-hover:#ba9d29; 
   --color-bg-dark: #1a1a1a; 
   --color-bg-light: #fafafa; 
   --color-text: #333333; 
@@ -145,7 +146,7 @@ header {
 .btn-hero:hover {
   transform: scale(1.05);
   color: var(--color-white);
-  background-color: var(--color-main);
+  background-color: var(--color-main-hover);  
 }
 
 .hero-illustration {
@@ -209,6 +210,10 @@ header {
   font-size: var(--fs-h3);
 }
 
+.feature-card p {
+  font-size: var(--fs-p);
+}
+
 
 .feature-card:hover {
   transform: translateY(-5px);
@@ -230,6 +235,10 @@ header {
 
 .icon-polygon {
   fill: var(--color-main);
+}
+
+.hero-curve {
+  stroke: var(--color-main);
 }
 
 @media (max-width: 768px) {
