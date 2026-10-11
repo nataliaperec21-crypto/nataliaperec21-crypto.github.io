@@ -231,3 +231,19 @@ header {
 .icon-polygon {
   fill: var(--color-main);
 }
+
+@media (max-width: 768px) {
+  :root {--section-padding: 40px 20px;}
+header {
+  flex-direction: column;
+  gap: 15px;
+}
+.nav-menu {
+  flex-direction: column;
+  gap: 15px;
+}
+.features-section {
+  padding: 0 20px;
+}
+
+}
