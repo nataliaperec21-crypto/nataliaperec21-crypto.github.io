@@ -6,11 +6,15 @@
   --color-white: #ffffff; 
   --card-radius: 15px; 
   --card-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  --main-transition: 0.3s ease;
+  --main-transition: 0.3s ease; /* переменная для времени анимации*/
   --container-width: 1200px;
   --section-padding: 60px 40px;
   --card-padding: 30px;
   --card-shadow-hover: 0 15px 25px rgba(0,0,0,0.2); 
+  --fs-h1: clamp(2rem, 5vw, 3.5rem); /* размер главного заголовка. Запиши туда адаптивное значение */
+  --fs-h3: 1.4rem;  /*  размер заголовков в карточках. Задай стабильный размер */
+  --fs-p: 1rem;  /* размер обычного текста и описаний */
+  --lh-base: 1.6;  /* адаптивный межстрочный интервал (line-height), чтобы текст легко читался */
 }
 
 * {
@@ -23,7 +27,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--color-bg-light);
   color: var(--color-text);
-  line-height: 1.6;
+  line-height: var(--lh-base);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -114,12 +118,12 @@ header {
 }
 
 .hero-content h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: var(--fs-h1);
   margin-bottom: 15px;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: var(--fs-p);
   max-width: 600px;
   margin-bottom: 20px;
   opacity: 0.9;
@@ -200,6 +204,11 @@ header {
   gap: 15px;
   transition: transform var(--main-transition), box-shadow var(--main-transition) ;
 }
+
+.feature-card h3 {
+  font-size: var(--fs-h3);
+}
+
 
 .feature-card:hover {
   transform: translateY(-5px);
