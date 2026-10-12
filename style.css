@@ -288,11 +288,6 @@ header {
   );
 }
 
-  
-
-
-
-
 @media (max-width: 768px) {
   :root {--section-padding: 40px 20px;}
 header {
