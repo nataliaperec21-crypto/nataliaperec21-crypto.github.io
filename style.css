@@ -291,28 +291,13 @@ header {
 
 
 
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: #ffcc00;
-  margin: 20px auto;
+.bum {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-weight: bold;
+  gap: 30px;
+  margin: 60px auto;
+  padding: 0 40px;
 }
-
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: #ffcc00;
-  margin: 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
 
 .box-polygon {
   clip-path: polygon(
