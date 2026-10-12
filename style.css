@@ -235,6 +235,7 @@ header {
   align-items: center;
   gap: 15px;
   text-align: center;
+  max-height: 220px;
   
   /* Плавность будущей магии смены дизайна */
   transition: flex-direction var(--main-transition), padding var(--main-transition), box-shadow var(--main-transition);
