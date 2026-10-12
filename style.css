@@ -257,8 +257,8 @@ header {
 
 
 .boxis {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  display: flex;
+  justify-content: center;
   gap: 30px;
   margin: 60px auto;
   padding: 0 40px;
