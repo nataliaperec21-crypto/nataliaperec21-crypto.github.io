@@ -45,7 +45,7 @@ body {
   line-height: var(--lh-base);
   display: flex;
   flex-direction: column;
-  min-height: 2000px;
+  min-height: 1500px;
 }
 
 header {
@@ -201,10 +201,10 @@ header {
 
 .features-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 30px;
   max-width: var(--container-width);
-  margin: 60px auto;
+  margin: 30px auto;
   padding: 0 40px;
 }
 
