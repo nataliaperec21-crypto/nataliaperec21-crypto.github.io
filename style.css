@@ -236,7 +236,16 @@ header {
     text-align: left; 
     padding: 40px; 
     box-shadow: var(--card-shadow-hover);
+    
+    /* ВОТ ЭТО ДОБАВЬ: Расталкиваем иконку и текст по краям широкой карточки */
+    justify-content: space-between; 
+    align-items: center;
   }
+  
+  .box {
+    margin: 0;
+  }
+
   .card-inner h3 {
     font-size: var(--fs-h1);
     color: var(--color-main); 
