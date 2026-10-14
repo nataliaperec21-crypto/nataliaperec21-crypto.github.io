@@ -25,8 +25,8 @@
 }
 
 svg {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; 
+  height: auto; 
 }
 
 ::-webkit-scrollbar {
@@ -235,7 +235,7 @@ header {
   transition: flex-direction var(--main-transition), 
   padding var(--main-transition), box-shadow var(--main-transition);
 }
-@container card (min-width: 150px) {
+@container card (min-width: 450px) {
   .card-inner {
     flex-direction: row; 
     text-align: left; 
@@ -259,6 +259,7 @@ header {
 .feature-card:hover .card-inner {
   box-shadow: var(--card-shadow-hover);
 }
+
 .icon-rect {
   stroke: var(--color-main);
 }
@@ -320,6 +321,7 @@ header {
   margin: 40px auto;
   padding: 0 40px;
 }
+
 
 @media (max-width: 768px) {
   :root {--section-padding: 40px 20px;}
