@@ -24,6 +24,11 @@
   box-sizing: border-box;
 }
 
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -230,14 +235,13 @@ header {
   transition: flex-direction var(--main-transition), 
   padding var(--main-transition), box-shadow var(--main-transition);
 }
-@container card (min-width: 450px) {
+@container card (min-width: 150px) {
   .card-inner {
     flex-direction: row; 
     text-align: left; 
-    padding: 40px; 
+    padding: 20px; 
     box-shadow: var(--card-shadow-hover);
     
-    /* ВОТ ЭТО ДОБАВЬ: Расталкиваем иконку и текст по краям широкой карточки */
     justify-content: space-between; 
     align-items: center;
   }
@@ -252,11 +256,9 @@ header {
   }
 }
 
-.feature-card:hover {
-  transform: translateY(-5px);
+.feature-card:hover .card-inner {
   box-shadow: var(--card-shadow-hover);
 }
-
 .icon-rect {
   stroke: var(--color-main);
 }
@@ -312,16 +314,15 @@ header {
   );
 }
 
-/* Настройки для нашего эксперимента */
 .wide-zone {
   width: 100%;
-  max-width: var(--container-width); /* Твои 1200px из переменных */
+  max-width: var(--container-width); 
   margin: 40px auto;
   padding: 0 40px;
 }
 
 .narrow-zone {
-  width: 350px; /* Жестко сжимаем коробку, чтобы карточке было тесно */
+  width: 350px; 
   margin: 40px auto;
   padding: 0 20px;
 }
