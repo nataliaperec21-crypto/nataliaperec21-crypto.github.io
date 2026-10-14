@@ -321,12 +321,6 @@ header {
   padding: 0 40px;
 }
 
-.narrow-zone {
-  width: 350px; 
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
 @media (max-width: 768px) {
   :root {--section-padding: 40px 20px;}
 header {
