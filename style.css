@@ -204,23 +204,58 @@ header {
   letter-spacing: 2px;
 }
 
-.features-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+.projects-section {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  max-width: var(--container-width);
-  margin: 30px auto;
-  padding: 0 40px;
 }
 
-.feature-card {
-  container-type: inline-size; 
-  container-name: card;
-  transition: transform var(--main-transition);
+.text-block {
+  background-color: var(--secondary);
+  color: var(--white);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
+
+.text-blockk h2 {
+  margin-bottom: 10px;
+}
+
+.text-blockk p {
+  margin-bottom: 20px;
+}
+
+.feature-cards {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: transform var(--main-transition), box-shadow var(--main-transition) ;
+}
+
+.feature-card h3 {
+  font-size: var(--fs-h3);
+}
+
+.feature-card p {
+  font-size: var(--fs-p);
+}
+
+
 .feature-card:hover {
   transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
 }
+
 .card-inner {
   background-color: var(--color-white);
   padding: var(--card-padding);        
