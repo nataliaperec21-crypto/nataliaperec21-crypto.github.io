@@ -3,7 +3,7 @@
   --color-main-hover:#ba9d29; 
   --color-bg-dark: #1a1a1a; 
   --color-bg-light: #fafafa; 
-  --color-text: #333333; 
+  --color-text: #000000; 
   --color-white: #ffffff; 
   --card-radius: 15px; 
   --card-shadow: 0 5px 10px rgba(0,0,0,0.15);
@@ -219,7 +219,7 @@ header {
   color: var(--white);
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -277,7 +277,7 @@ header {
 
 .card-info {
   padding: 20px;
-  color: var(--color-white); 
+  color: var(--color-text); 
 }
 
 .card-info h3 {
