@@ -244,8 +244,7 @@ header {
 
 .cards {
   background-color: var(--color-bg-dark);
-  padding: var(--card-padding);
-  border-radius: var(--card-radius);
+  padding: 15px;
   box-shadow: var(--card-shadow);
   display: flex;
   align-items: center;
