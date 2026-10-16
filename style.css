@@ -226,8 +226,8 @@ header {
 }
 
 .text-block {
-  background-color: var(--secondary);
-  color: var(--white);
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
   max-width: 1000px;
   width: 100%;
   margin: 20px;
