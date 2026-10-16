@@ -214,6 +214,18 @@ header {
   gap: 30px;
 }
 
+.cards {
+  background-color: var(--color-bg-light);
+  padding: 15px 40px;
+  box-shadow: var(--card-shadow);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: transform var(--main-transition), box-shadow var(--main-transition) ;
+}
+
 .text-block {
   background-color: var(--secondary);
   color: var(--white);
@@ -242,17 +254,7 @@ header {
   font-size: var(--fs-p);
 }
 
-.cards {
-  background-color: var(--color-bg-light);
-  padding: 15px 40px;
-  box-shadow: var(--card-shadow);
-  display: flex;
-  max-width: 1200px;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  transition: transform var(--main-transition), box-shadow var(--main-transition) ;
-}
+
 
 .card {
   background-color: var(--color-bg-dark);
