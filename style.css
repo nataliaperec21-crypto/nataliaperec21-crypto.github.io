@@ -243,7 +243,7 @@ header {
 }
 
 .cards {
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-bg-light);
   padding: 15px 40px;
   box-shadow: var(--card-shadow);
   display: flex;
@@ -254,7 +254,7 @@ header {
 }
 
 .card {
-  background-color: var(--color-main);
+  background-color: var(--color-bg-dark);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
