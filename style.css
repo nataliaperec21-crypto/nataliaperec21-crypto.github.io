@@ -249,6 +249,7 @@ header {
   box-shadow: var(--card-shadow);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 15px;
   transition: transform var(--main-transition), box-shadow var(--main-transition) ;
 }
@@ -274,7 +275,7 @@ header {
 }
 
 .card-info {
-  
+  padding: 20px;
   color: var(--color-white); 
 }
 
