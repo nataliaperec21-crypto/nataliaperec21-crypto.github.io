@@ -220,8 +220,7 @@ header {
   box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  align-items: center;
-  justify-content: center;
+  max-width: var(--container-width);
   gap: 15px;
   transition: transform var(--main-transition), box-shadow var(--main-transition) ;
 }
