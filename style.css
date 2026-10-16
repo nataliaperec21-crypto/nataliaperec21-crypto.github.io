@@ -247,6 +247,7 @@ header {
   padding: 15px 40px;
   box-shadow: var(--card-shadow);
   display: flex;
+  max-width: 1200px;
   align-items: center;
   justify-content: center;
   gap: 15px;
