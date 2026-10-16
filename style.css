@@ -254,7 +254,7 @@ header {
 }
 
 .card {
-  background-color: var(--color-text);
+  background-color: var(--color-main);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -263,7 +263,7 @@ header {
 }
 
 .card-img {
-  height: 200px;
+  height: 400px;
 }
 
 .card-img img {
