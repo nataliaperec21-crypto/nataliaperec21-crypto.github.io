@@ -264,6 +264,7 @@ header {
 
 .card-img {
   height: 400px;
+  width: 200px;
 }
 
 .card-img img {
