@@ -243,7 +243,7 @@ header {
 }
 
 .cards {
-  background-color: var(--color-white);
+  background-color: var(--color-bg-dark);
   padding: var(--card-padding);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
@@ -254,7 +254,7 @@ header {
 }
 
 .card {
-  background-color: var(--white);
+  background-color: var(--color-text);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -275,7 +275,7 @@ header {
 
 .card-info {
   padding: 20px;
-  color: var(--secondary); 
+  color: var(--color-white); 
 }
 
 .card-info h3 {
