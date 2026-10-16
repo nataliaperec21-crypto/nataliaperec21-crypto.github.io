@@ -222,7 +222,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   max-width: var(--container-width);
   gap: 15px;
-  justify-content: center;
+  margin: 0 auto;
   transition: transform var(--main-transition), box-shadow var(--main-transition) ;
 }
 
