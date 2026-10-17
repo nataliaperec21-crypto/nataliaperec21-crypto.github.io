@@ -401,6 +401,7 @@ header {
 }
 .socials p {
   color: #ffffff;
+  font-size: var(--fs-socials);
 }
 .socials ul {
   list-style: none !important; 
@@ -451,8 +452,5 @@ header {
   flex-direction: column;
   gap: 15px;
 }
-.socials {
-}
-.socials a {
-  }
+
 }
