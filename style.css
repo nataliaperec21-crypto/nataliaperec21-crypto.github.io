@@ -223,8 +223,8 @@ header {
   max-width: var(--container-width);
   gap: 15px;
   width: 100%;
-  margin: 0 auto;
-  transition: transform var(--main-transition), box-shadow var(--main-transition) ;
+  margin: 20px auto;
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
 
 .text-block {
@@ -232,7 +232,7 @@ header {
   color: var(--color-white);
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -252,7 +252,7 @@ header {
 }
 
 .feature-cards p {
-  font-size: var(--fs-p);
+  font-size: var(--fs-p)э;
 }
 
 
@@ -267,7 +267,6 @@ header {
 }
 
 .card-img {
-  height: 400px;
   width: 200px;
 }
 
