@@ -118,7 +118,7 @@ header {
 .hero-section {
   background-color: var(--color-bg-dark);
   color: var(--color-white);
-  width: var(--width);
+  width: var(--width-full); 
   padding: var(--section-padding);
   display: flex;
   flex-direction: column;
@@ -199,17 +199,17 @@ header {
   box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  max-width: var(--container-width);
+  max-width: var(--max-width-full);
   gap: var(--gap);
-  width: var(--width);
+  width: var(--width-full);
   margin: 20px auto;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
 .text-block {
   background-color: var(--color-bg-dark);
   color: var(--color-white); 
-  max-width: var(--container-width);
-  width: var(--width);
+  max-width: var(--max-width-full);
+  width: var(--width-full);
   margin: var(--margin);
   padding: var(--card-padding);
   border-radius: var(--card-radius);
@@ -242,10 +242,10 @@ header {
   box-shadow: var(--card-shadow-hover);
 }
 .card-img {
-  width: var(--width);
+  width: var(--width-full);
 }
 .card-img img {
-  width: var(--width);
+  width: var(--width-full);
   height: 220px; 
   object-fit: cover;
   display: block;
@@ -273,9 +273,9 @@ header {
   box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  max-width: var(--container-width);
+  max-width: var(--max-width-full);
   gap: var(--gap);
-  width: var(--width);
+  width: var(--width-full);
   margin: var(--margin);
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
@@ -352,12 +352,12 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: var(--width);
-  max-width: var(--container-width);
+  width: var(--width-full);
+  max-width: var(--max-width-full);
   margin: var(--margin);
   padding: var(--section-padding);
   border-radius: var(--card-radius);
-   
+    
   clip-path: polygon(
       0% 0%,
       100% 0%,
@@ -370,7 +370,7 @@ header {
   gap: 30px;
   align-items: center;
   justify-content: center;
-  width: var(--width);
+  width: var(--width-full);
   max-width: 600px;
   margin-top: 20px;
 }
@@ -378,7 +378,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-  width: var(--width);
+  width: var(--width-full);
 }
 .contact-links a {
   text-decoration: none !important;
@@ -422,8 +422,8 @@ footer {
 .footer-container {
   display: flex;
   justify-content: center; 
-  max-width: var(--container-width);
-  width: var(--width);
+  max-width: var(--max-width-full);
+  width: var(--width-full);
   margin: 0 auto;
 }
 .logo-circle {
