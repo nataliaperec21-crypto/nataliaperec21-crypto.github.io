@@ -39,8 +39,6 @@ svg {
   height: auto; 
 }
 
-:focus-visible
-
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -95,12 +93,16 @@ header {
   padding: 0;
   justify-content: center;
 }
-.nav-links a {
+.nav-links a:focus-visible {
   text-decoration: none !important;
   color: var(--color-text);
   font-size: var(--fs-p);
   transition: color var(--main-transition);
   font-weight: bold;
+  /*Включаем яркую обводку*/
+  outline: 3px solid var(--color-main);
+  /*Делаем отступ обводки от букв на 4 пикселя*/
+  outline-offset: 4px;
 }
 .nav-links a:hover {
   color: var(--color-white);
