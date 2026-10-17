@@ -5,30 +5,36 @@
   --color-bg-light: #fafafa; 
   --color-text: #000000; 
   --color-white: #ffffff; 
+
   --card-radius: 15px; 
   --card-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  --box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   --main-transition: 0.3s ease; /* переменная для времени анимации*/
-  --container-width: 1200px;
+  --transform: translateY(-5px);
+  --max-width: 1200px;
+  --max-width: 100%;
+  --width: 100%;
+  --padding: 15px 40px;
   --section-padding: 60px 40px;
   --card-padding: 30px;
   --card-shadow-hover: 0 15px 25px rgba(0,0,0,0.2); 
+  --margin: 20px auto;
+  --gap: 15px;
+
   --fs-h1: clamp(2rem, 5vw, 3.5rem); /* размер главного заголовка. Запиши туда адаптивное значение */
   --fs-h3: 1.4rem;  /*  размер заголовков в карточках. Задай стабильный размер */
   --fs-p: 1rem;  /* размер обычного текста и описаний */
   --lh-base: 1.6;  /* адаптивный межстрочный интервал (line-height), чтобы текст легко читался */
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 svg {
-  max-width: 100%; 
+  max-width: var(--max-width); 
   height: auto; 
 }
-
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -42,7 +48,6 @@ svg {
 ::-webkit-scrollbar-thumb:hover {
   background-color:  #ff9500;
 }
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--color-bg-light);
@@ -52,11 +57,10 @@ body {
   flex-direction: column;
   min-height: 1500px;
 }
-
 header {
   background-color: var(--color-main);
   box-shadow: var(--card-shadow);
-  padding: 20px 40px;
+  padding: var(--padding);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -64,22 +68,18 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo-circle {
   stroke: rgb(0, 0, 0); 
   stroke-width: 6px;      
   transition: stroke var(--main-transition); 
 }
-
 .logo-circle:hover {
   stroke: #2ecc71;
 }
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -89,19 +89,16 @@ header {
   padding: 0;
   justify-content: center;
 }
-
 .nav-links a {
   text-decoration: none !important;
   color: var(--color-text);
-  font-size: 1rem;
+  font-size: var(--fs-p);
   transition: color var(--main-transition);
   font-weight: bold;
 }
-
 .nav-links a:hover {
   color: var(--color-white);
 }
-
 .btn-contact {
   display: inline-flex;
   align-items: center;
@@ -114,67 +111,58 @@ header {
   font-weight: 600;
   transition: background-color var(--main-transition);
 }
-
 .btn-contact:hover {
   background-color: var(--color-bg-light);
   color: var(--color-text);
 }
-
 .hero-section {
   background-color: var(--color-bg-dark);
   color: var(--color-white);
-  width: 100%;
+  width: var(--width);
   padding: var(--section-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
 .hero-content h1 {
   font-size: var(--fs-h1);
   margin-bottom: 15px;
 }
-
 .hero-content p {
   font-size: var(--fs-p);
   max-width: 600px;
   margin-bottom: 20px;
   opacity: 0.9;
 }
-
 .btn-hero {
   display: inline-block;
   background-color: var(--color-main);
   color: var(--color-text);
   text-decoration: none !important;
-  padding: 15px 30px;
+  padding: var(--padding);
   border-radius: var(--card-radius);
   font-weight: bold;
   margin-top: 30px;
   align-self: center; 
   transition: transform var(--main-transition), background-color var(--main-transition);
 }
-
 .btn-hero:hover {
   transform: scale(1.05);
   color: var(--color-white);
   background-color: var(--color-main-hover);  
 }
-
 .hero-illustration {
   margin: 20px 0;
   display: flex;
   justify-content: center;
 }
-
 .circle {
   stroke: var(--color-main); 
   stroke-width: 4px;
@@ -182,142 +170,115 @@ header {
   transform-box: fill-box;
   transform-origin: 50% 50%;
 }
-
 .circle:hover {
   stroke: #2ecc71; 
   transform: scale(1.08); 
 }
-
 .polygon {
   stroke: var(--color-white);   
   stroke-width: 3px;  
 }
-
 .main-polyline {
   stroke: var(--color-main);
   stroke-width: 6px;
 }
-
 .text {
   fill: var(--color-white);     
   font-family: 'Segoe UI', sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
 }
-
 .projects-section {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
 .cards {
   background-color: var(--color-bg-light);
-  padding: 15px 40px;
+  padding: var(--padding); 
   box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   max-width: var(--container-width);
-  gap: 15px;
-  width: 100%;
+  gap: var(--gap);
+  width: var(--width);
   margin: 20px auto;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
-
 .text-block {
   background-color: var(--color-bg-dark);
-  color: var(--color-white);
-  max-width: 1000px;
-  width: 100%;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  color: var(--color-white); 
+  max-width: var(--container-width);
+  width: var(--width);
+  margin: var(--margin);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  box-shadow: var(--box-shadow);
   text-align: center;
 }
-
 .text-blockk h2 {
   margin-bottom: 10px;
 }
-
 .text-blockk p {
   margin-bottom: 20px;
 }
-
 .feature-cards h3 {
   font-size: var(--fs-h3);
 }
-
 .feature-cards p {
   font-size: var(--fs-p);
 }
-
 .project-card {
   background-color: var(--color-white);
   border-radius: var(--card-radius);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: var(--box-shadow);
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
-
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: var(--transform);
   box-shadow: var(--card-shadow-hover);
 }
-
 .card-img {
-  width: 100%;
+  width: var(--width);
 }
-
 .card-img img {
-  width: 100%;
+  width: var(--width);
   height: 220px; 
   object-fit: cover;
   display: block;
 }
-
 .card-info {
-  padding: 20px;
+  padding: var(--card-padding);
   color: var(--color-text); 
 }
-
 .card-info h3 {
   margin-bottom: 10px;
-  font-size: 1.3rem;
+  font-size: var(--fs-h3);
 }
-
 .feature-cards:hover {
-  transform: translateY(-5px);
+  transform: var(--transform);
   box-shadow: var(--card-shadow-hover);
 }
-
-
-
-
-
-
-
 .skills-section {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
 .skills {
   background-color: var(--color-bg-light);
-  padding: 15px 40px;
+  padding: var(--padding);
   box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   max-width: var(--container-width);
-  gap: 15px;
-  width: 100%;
-  margin: 20px auto;
+  gap: var(--gap);
+  width: var(--width);
+  margin: var(--margin);
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
-
 .feature-card {
   background-color: var(--color-white);
   padding: var(--card-padding);
@@ -326,45 +287,35 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: var(--gap);
   transition: transform var(--main-transition), box-shadow var(--main-transition) ;
 }
-
 .feature-card h3 {
   font-size: var(--fs-h3);
 }
-
 .feature-card p {
   font-size: var(--fs-p);
 }
-
-
 .feature-card:hover {
-  transform: translateY(-5px);
+  transform: var(--transform);
   box-shadow: var(--card-shadow-hover);
 }
-
 .icon-rect {
   stroke: var(--color-main);
 }
-
 .icon-circle {
   fill: var(--color-text);
   stroke: var(--color-main);
 }
-
 .icon-polyline {
   stroke: var(--color-main);
 }
-
 .icon-polygon {
   fill: var(--color-main);
 }
-
 .hero-curve {
   stroke: var(--color-main);
 }
-
 .box {
   width: 60px;
   height: 60px;
@@ -374,21 +325,17 @@ header {
   justify-content: center;
   font-weight: bold;
 }
-
 .box-circle {
   text-align: center;
   clip-path: circle(50% at 50% 50%);
 }
-
 .box-ellipse {
   text-align: center;
   clip-path: ellipse(40% 20% at 50% 50%);
 }
-
 .box-polygon {
   clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
 }
-
 .box-polygonn {
   clip-path: polygon(
     50% 0%, 55% 25%, 70% 10%, 72% 33%, 90% 15%, 85% 42%, 100% 45%, 87% 58%,
@@ -397,11 +344,6 @@ header {
     30% 10%, 45% 25%
   );
 }
-
-
-
-
-
 .portfolio-footer {
   background-color: rgb(186, 186, 186);
   color: var(--secondary);
@@ -410,11 +352,11 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 40px 60px;
-  border-radius: 15px;
+  width: var(--width);
+  max-width: var(--container-width);
+  margin: var(--margin);
+  padding: var(--section-padding);
+  border-radius: var(--card-radius);
   
   clip-path: polygon(
       0% 0%,
@@ -423,33 +365,26 @@ header {
       10% 100%
   );
 }
-
 .contact-container {
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: var(--width);
   max-width: 600px;
   margin-top: 20px;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 100%;
+  gap: var(--gap);
+  width: var(--width);
 }
-
 .contact-links a {
   text-decoration: none !important;
   color: var(--secondary);
   font-weight: bold;
 }
-
-
-
-
 .socials {
   display: flex;
   justify-content: center; 
@@ -457,62 +392,48 @@ header {
   width: calc(100% - 40px);
   background-color: rgb(199, 199, 199);
   border-radius: 4px;
-  margin: 30px auto;
-  padding: 20px;
+  margin: var(--margin);
+  padding: var(--card-padding);
   align-items: center;
 }
-
 .socials p {
   color: #ffffff;
 }
-
 .socials ul {
   list-style: none !important; 
   display: flex;              
-  gap: 15px;
+  gap: var(--gap);
 }
-
 .socials a {
   text-decoration: none !important;
-  font-size: 1rem;
+  font-size: var(--fs-p);
   font-weight: bold;
   transition: color var(--transition);
 }
-
 .socials a:hover {
   color: var(--primary);
 }
-
 footer {
   background-color: var(--secondary);
   color: var(--white);
   padding: 30px 20px;
   margin-top: auto;
 }
-
 .footer-container {
   display: flex;
   justify-content: center; 
-  max-width: 1200px;
-  width: 100%;
+  max-width: var(--max-width);
+  width: var(--width);
   margin: 0 auto;
 }
-
-
-
 .logo-circle {
   stroke: rgb(0, 0, 0); 
   stroke-width: 6px;      
   transition: stroke var(--main-transition); 
 }
-
 .logo-circle:hover {
   stroke: #2ecc71;
 }
-
-
-
-
 @media (max-width: 768px) {
   :root {--section-padding: 40px 20px;}
 header {
