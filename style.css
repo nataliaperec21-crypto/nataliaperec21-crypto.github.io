@@ -205,9 +205,6 @@ header {
   letter-spacing: 2px;
 }
 
-
-
-
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -255,8 +252,6 @@ header {
   font-size: var(--fs-p);
 }
 
-
-
 .project-card {
   background-color: var(--color-white);
   border-radius: var(--card-radius);
@@ -297,6 +292,112 @@ header {
   transform: translateY(-5px);
   box-shadow: var(--card-shadow-hover);
 }
+
+
+
+
+
+
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills {
+  background-color: var(--color-bg-light);
+  padding: 15px 40px;
+  box-shadow: var(--card-shadow);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: var(--container-width);
+  gap: 15px;
+  width: 100%;
+  margin: 20px auto;
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+
+.feature-card {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: transform var(--main-transition), box-shadow var(--main-transition) ;
+}
+
+.feature-card h3 {
+  font-size: var(--fs-h3);
+}
+
+.feature-card p {
+  font-size: var(--fs-p);
+}
+
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.icon-rect {
+  stroke: var(--color-main);
+}
+
+.icon-circle {
+  fill: var(--color-text);
+  stroke: var(--color-main);
+}
+
+.icon-polyline {
+  stroke: var(--color-main);
+}
+
+.icon-polygon {
+  fill: var(--color-main);
+}
+
+.hero-curve {
+  stroke: var(--color-main);
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.box-circle {
+  text-align: center;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.box-ellipse {
+  text-align: center;
+  clip-path: ellipse(40% 20% at 50% 50%);
+}
+
+.box-polygon {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+
+.box-polygonn {
+  clip-path: polygon(
+    50% 0%, 55% 25%, 70% 10%, 72% 33%, 90% 15%, 85% 42%, 100% 45%, 87% 58%,
+    98% 73%, 78% 75%, 82% 98%, 65% 85%, 58% 100%, 50% 80%, 42% 100%, 35% 85%,
+    18% 98%, 22% 75%, 2% 73%, 13% 58%, 0% 45%, 15% 42%, 10% 15%, 28% 33%,
+    30% 10%, 45% 25%
+  );
+}
+
 
 
 
