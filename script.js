@@ -1,2 +1,1 @@
-let myTest = "Ура, файл создался!";
-console.log(myTest);
+alert("Ура! JS файл успешно подключен!");
