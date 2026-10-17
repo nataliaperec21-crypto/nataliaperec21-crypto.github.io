@@ -416,7 +416,7 @@ header {
 .footer-container {
   display: flex;
   justify-content: center; 
-  max-width: var(--max-width-full);
+  max-width: var(--container-width);
   width: var(--width-full);
   margin: 0 auto;
 }
