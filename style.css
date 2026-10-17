@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+  line-height: var(--lh-base);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.task-container {
+  max-width: 400px;
+}
