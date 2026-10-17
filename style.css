@@ -11,9 +11,9 @@
   --box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   --main-transition: 0.3s ease; /* переменная для времени анимации*/
   --transform: translateY(-5px);
-  --max-width: 1200px;
-  --max-width: 100%;
-  --width: 100%;
+  --container-width: 1200px;
+  --max-width-full: 100%;
+  --width-full: 100%;
   --padding: 15px 40px;
   --section-padding: 60px 40px;
   --card-padding: 30px;
@@ -32,7 +32,7 @@
   box-sizing: border-box;
 }
 svg {
-  max-width: var(--max-width); 
+  max-width: var(--max-width-full);
   height: auto; 
 }
 ::-webkit-scrollbar {
@@ -382,7 +382,7 @@ header {
 }
 .contact-links a {
   text-decoration: none !important;
-  color: var(--secondary);
+  color: var(--color-bg-dark);
   font-weight: bold;
 }
 .socials {
@@ -408,21 +408,21 @@ header {
   text-decoration: none !important;
   font-size: var(--fs-p);
   font-weight: bold;
-  transition: color var(--transition);
+  transition: var(--main-transition);
 }
 .socials a:hover {
-  color: var(--primary);
+  color: var(--color-main-hover);
 }
 footer {
-  background-color: var(--secondary);
-  color: var(--white);
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
   padding: 30px 20px;
   margin-top: auto;
 }
 .footer-container {
   display: flex;
   justify-content: center; 
-  max-width: var(--max-width);
+  max-width: var(--container-width);
   width: var(--width);
   margin: 0 auto;
 }
@@ -447,20 +447,8 @@ header {
 .hero-section {
   padding: 0 20px;
 }
-
-.projects-section {
-  flex-direction: column;
-  gap: 15px;
-}
-
-.skills-section {
-  flex-direction: column;
-  gap: 15px;
-}
-
 .portfolio-footer {
   flex-direction: column;
   gap: 15px;
 }
-
 }
