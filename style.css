@@ -199,7 +199,7 @@ header {
   box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  max-width: var(--max-width-full);
+  max-width: var(--container-width);
   gap: var(--gap);
   width: var(--width-full);
   margin: 20px auto;
@@ -208,7 +208,7 @@ header {
 .text-block {
   background-color: var(--color-bg-dark);
   color: var(--color-white); 
-  max-width: var(--max-width-full);
+  max-width: var(--container-width);
   width: var(--width-full);
   margin: var(--margin);
   padding: var(--card-padding);
@@ -258,7 +258,7 @@ header {
   margin-bottom: 10px;
   font-size: var(--fs-h3);
 }
-.feature-cards:hover {
+.feature-card:hover {
   transform: var(--transform);
   box-shadow: var(--card-shadow-hover);
 }
@@ -273,7 +273,7 @@ header {
   box-shadow: var(--card-shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  max-width: var(--max-width-full);
+  max-width: var(--container-width);
   gap: var(--gap);
   width: var(--width-full);
   margin: var(--margin);
@@ -412,12 +412,6 @@ header {
 }
 .socials a:hover {
   color: var(--color-main-hover);
-}
-footer {
-  background-color: var(--color-bg-dark);
-  color: var(--color-white);
-  padding: 30px 20px;
-  margin-top: auto;
 }
 .footer-container {
   display: flex;
