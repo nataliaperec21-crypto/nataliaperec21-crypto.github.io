@@ -16,4 +16,17 @@ body {
 
 .task-container {
   max-width: 400px;
+  background-color: bisque;
+}
+
+.task-container input {
+  display: block;
+}
+
+.task-container label {
+  display: block;
+}
+
+.task-container button {
+  display: block;
 }
