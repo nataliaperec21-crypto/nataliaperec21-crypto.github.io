@@ -395,7 +395,7 @@ header {
   background-color: rgb(199, 199, 199);
   border-radius: 4px;
   margin: var(--margin);
-  padding: var(--card-padding);
+  padding: var(--padding-socials);
   align-items: center;
 }
 .socials p {
@@ -408,7 +408,7 @@ header {
 }
 .socials a {
   text-decoration: none !important;
-  font-size: var(--fs-p);
+  font-size: var(--fs-socials);
   font-weight: bold;
   transition: var(--main-transition);
 }
