@@ -353,7 +353,7 @@ header {
   justify-content: center;
   text-align: center;
   width: var(--width-full);
-  max-width: var(--max-width-full);
+  max-width: var(--container-width);
   margin: var(--margin);
   padding: var(--section-padding);
   border-radius: var(--card-radius);
