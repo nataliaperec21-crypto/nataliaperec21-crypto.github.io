@@ -501,6 +501,18 @@ footer {
 
 
 
+.logo-circle {
+  stroke: rgb(0, 0, 0); 
+  stroke-width: 6px;      
+  transition: stroke var(--main-transition); 
+}
+
+.logo-circle:hover {
+  stroke: #2ecc71;
+}
+
+
+
 
 @media (max-width: 768px) {
   :root {--section-padding: 40px 20px;}
