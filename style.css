@@ -252,27 +252,33 @@ header {
 }
 
 .feature-cards p {
-  font-size: var(--fs-p)э;
+  font-size: var(--fs-p);
 }
 
 
 
-.card {
-  background-color: var(--color-bg-dark);
-  border-radius: 10px;
+.project-card {
+  background-color: var(--color-white);
+  border-radius: var(--card-radius);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .card-img {
-  width: 200px;
+  width: 100%;
 }
 
 .card-img img {
   width: 100%;
-  height: 100%;
+  height: 220px; 
   object-fit: cover;
   display: block;
 }
