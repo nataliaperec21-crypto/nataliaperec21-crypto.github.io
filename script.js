@@ -1,1 +1,0 @@
-document.body.innerHTML = "<h1>Ура! JS файл успешно подключен!</h1>";
