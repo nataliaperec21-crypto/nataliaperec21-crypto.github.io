@@ -21,6 +21,8 @@
   --margin: 20px auto;
   --gap: 15px;
 
+  --padding-socials: clamp(15px, 3vw, 30px);
+  --fs-socials: clamp(0.55rem, 2vw, 1rem);
   --fs-h1: clamp(2rem, 5vw, 3.5rem); /* размер главного заголовка. Запиши туда адаптивное значение */
   --fs-h3: 1.4rem;  /*  размер заголовков в карточках. Задай стабильный размер */
   --fs-p: 1rem;  /* размер обычного текста и описаний */
@@ -449,10 +451,7 @@ header {
   gap: 15px;
 }
 .socials {
-  width: var(--width-full);
-  max-width: var(--width-full);
 }
 .socials a {
-    font-size: 0.9rem;
   }
 }
