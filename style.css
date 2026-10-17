@@ -402,7 +402,6 @@ header {
 .socials p {
   color: #ffffff;
   font-size: var(--fs-socials);
-  margin-left: 40px;
 }
 .socials ul {
   list-style: none !important; 
