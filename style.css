@@ -192,7 +192,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
+} 
 .cards {
   background-color: var(--color-bg-light);
   padding: var(--padding); 
@@ -266,7 +266,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
+} 
 .skills {
   background-color: var(--color-bg-light);
   padding: var(--padding);
@@ -357,7 +357,7 @@ header {
   margin: var(--margin);
   padding: var(--section-padding);
   border-radius: var(--card-radius);
-  
+   
   clip-path: polygon(
       0% 0%,
       100% 0%,
@@ -440,12 +440,27 @@ header {
   flex-direction: column;
   gap: 15px;
 }
-.nav-menu {
+.nav-links {
   flex-direction: column;
   gap: 15px;
 }
-.features-section {
+.hero-section {
   padding: 0 20px;
+}
+
+.projects-section {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skills-section {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.portfolio-footer {
+  flex-direction: column;
+  gap: 15px;
 }
 
 }
