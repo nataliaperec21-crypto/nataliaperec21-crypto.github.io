@@ -41,23 +41,25 @@ body {
   justify-content: right;
 }
 
-.task-container input {
-  display: block;
+.form-group input {
+  font-weight: 500;
   margin: 20px auto;
-  padding: 5px;
+  padding: 15px;
+  min-width: 100px;
 }
 
-.task-container label {
-  display: block;
+.form-group label {
   margin-top: 5px;
   padding: 5px;
   width: 100%;
+  outline: none;
 }
 
-.task-container button {
+.form-group button {
   display: block;
   margin-top: 5px;
   border-radius: 6px;
   padding: 5px;
   width: 100%;
+  font-weight: bold;
 }
