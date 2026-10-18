@@ -21,9 +21,17 @@ body {
   padding: 20px 20px ;
 }
 
+.task-container h3 {
+  text-align: center;
+}
+
+.task-container p {
+  text-align: center;
+}
+
 .task-container input {
   display: block;
-  margin: 20px auto;
+  margin: 20px 0 20px 40px;
   padding: 5px;
 }
 
@@ -39,5 +47,5 @@ body {
   margin-top: 5px;
   border-radius: 6px;
   padding: 5px;
-  justify-content: center;
+  text-align: center;
 }
