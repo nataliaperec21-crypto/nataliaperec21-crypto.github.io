@@ -28,11 +28,16 @@ body {
   margin-top: 20px;
 }
 
+.labin {
+  display: flex;
+  gap: 15px;
+  justify-content: right;
+}
+
 .task-container input {
   display: block;
   margin: 20px auto;
   padding: 5px;
-  text-align: left;
 }
 
 .task-container label {
@@ -47,5 +52,5 @@ body {
   margin-top: 5px;
   border-radius: 6px;
   padding: 5px;
-  text-align: center;
+  width: 100%;
 }
