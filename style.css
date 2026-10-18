@@ -18,7 +18,8 @@ body {
   max-width: 600px;
   background-color: bisque;
   margin: 0 auto;
-  padding: 20px 20px ;
+  padding: 20px 20px;
+  display: block;
 }
 
 .task-container h3 {
@@ -31,8 +32,9 @@ body {
 
 .task-container input {
   display: block;
-  margin: 20px 0 20px 40px;
+  margin: 20px auto;
   padding: 5px;
+  text-align: right;
 }
 
 .task-container label {
