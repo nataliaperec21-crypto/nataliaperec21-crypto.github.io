@@ -24,18 +24,18 @@ body {
 .task-container input {
   display: block;
   margin: 20px auto;
-  padding: 10px;
+  padding: 5px;
 }
 
 .task-container label {
   display: block;
   margin-top: 5px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .task-container button {
   display: block;
-  margin: 20px auto;
+  margin-top: 5px;
   border-radius: 6px;
-  padding: 10px;
+  padding: 5px;
 }
