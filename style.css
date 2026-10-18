@@ -55,7 +55,8 @@ body {
   outline: none;
 }
 
-.labin button {
+.but {
+  background-color: aliceblue;
   display: block;
   margin-top: 15px;
   border-radius: 6px;
