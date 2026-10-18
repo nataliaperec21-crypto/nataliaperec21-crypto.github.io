@@ -58,10 +58,11 @@ body {
 .but {
   background-color: aliceblue;
   display: block;
-  margin: 15px auto;
-  border-radius: 6px;
-  padding: 15px 15px;
   border: none;
   cursor: pointer;
   font-weight: bold;
+  margin: 15px auto;
+  border-radius: 6px;
+  padding: 15px 15px;
+  
 }
