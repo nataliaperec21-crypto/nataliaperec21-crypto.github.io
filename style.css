@@ -9,9 +9,6 @@ body {
   background-color: var(--color-bg-light);
   color: var(--color-text);
   line-height: var(--lh-base);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .task-container {
@@ -35,7 +32,7 @@ body {
   display: block;
   margin: 20px auto;
   padding: 5px;
-  text-align: right;
+  text-align: left;
 }
 
 .task-container label {
