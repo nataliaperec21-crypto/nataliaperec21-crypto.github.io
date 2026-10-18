@@ -28,6 +28,12 @@ body {
   margin-top: 20px;
 }
 
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Толкает инпут вправо, а лабел оставляет слева */
+}
+
 .labin {
   display: flex;
   flex-direction: column;
