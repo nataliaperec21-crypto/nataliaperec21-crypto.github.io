@@ -10,10 +10,12 @@ button.addEventListener('click', function() {
   let city = document.getElementById('userCity').value;
 
   // Выводим эти переменные в консоль
-  console.log("--- Информация обо мне ---");
-  console.log("Имя:", name);
-  console.log("Возраст:", age);
-  console.log("Город:", city);
+  //console.log("--- Информация обо мне ---");
+  //console.log("Имя:", name);
+  //console.log("Возраст:", age);
+  //console.log("Город:", city);
+
+  console.log(`Привет, ${name}! Тебе уже ${age} лет, и ты живешь в шикарном городе ${city}!`);
   
   alert("Данные отправлены в консоль! Открой консоль (F12), чтобы посмотреть.");
 });
