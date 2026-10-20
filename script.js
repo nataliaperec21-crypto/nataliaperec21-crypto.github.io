@@ -25,11 +25,11 @@ button.addEventListener('click', function() {
   // city (Имя коробки для города)
   let city = document.getElementById('userCity').value;
 
-  if (name === '') {
-    alert("введите текст");
-} else {
-    alert(`Привет, ${name}!`)
-}
+  if (name.trim() === '') {
+      alert("Введите имя!");
+      return; // 🛑 СТОП! Если имя пустое, код ниже НЕ выполнится, и карточка НЕ станет зеленой!
+  }
+
 
   // 6. ВЫВОДИМ В ЖУРНАЛ КРАСИВЫЙ ОТВЕТ
   // console.log (Записать в Журнал Консоли / панель F12)
