@@ -25,6 +25,12 @@ button.addEventListener('click', function() {
   // city (Имя коробки для города)
   let city = document.getElementById('userCity').value;
 
+  if (name === '') {
+    alert("введите текст");
+} else {
+    alert(`Привет, ${name}!`)
+}
+
   // 6. ВЫВОДИМ В ЖУРНАЛ КРАСИВЫЙ ОТВЕТ
   // console.log (Записать в Журнал Консоли / панель F12)
   // Косые кавычки `` (клавиша Ё) позволяют вставлять коробки через \${}
